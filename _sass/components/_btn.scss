@@ -13,9 +13,14 @@
     &:hover {
         transform: skew(-7deg) translateX(3.5%);
     }
+    
+    &.btn-prev:hover {
+        transform: skew(7deg) translateX(-3.5%);
+    }
 }
 
-.btn-next {
+.btn-next,
+.btn-prev {
     color: $color-grey;
     @include clearfix;
     
@@ -41,6 +46,14 @@
     img {
         vertical-align: middle;
         margin-left: 30px;
+    }
+}
+
+.btn-prev {
+    img {
+        margin-left: 0;
+        margin-right: 30px;
+        transform: rotate(180deg);
     }
 }
 

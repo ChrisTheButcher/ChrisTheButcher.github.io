@@ -15,7 +15,11 @@
     }
     
     .angular-ripple {
-        background: rgba(black, 0.1);
+        background: rgba($color-grey, 0.1);
+        
+        .theme-light & {
+            background: rgba(white, 0.3);
+        }
     }
 }
 
@@ -24,4 +28,8 @@
     border: 3px solid $color-grey;
     border-radius: 50%;
     display: inline-block;
+    
+    .theme-light & {
+        border-color: white;
+    }
 }

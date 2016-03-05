@@ -1,8 +1,17 @@
-$content-wrapper: 725px;
+$content-wrapper: 800px;       
+@mixin full {
+    width: 100vw;
+    margin-left: -20px;
+    @include bp($screen-xs) { margin-left: -30px; }
+    @include bp($content-wrapper) {
+        $gutter: 40px;
+        margin-left: calc(((100vw - #{$content-wrapper}) * -0.5) - #{$gutter});
+    }
+}
 
 .chapter-content {   
-    @include fluid-type(16px, 18px);
-    line-height: 1.6;
+    @include fluid-type(16px, 20px);
+    line-height: 1.65;
     
     .wrapper {
         @include v-wrapper;
@@ -11,14 +20,14 @@ $content-wrapper: 725px;
     
     p:first-of-type {
         font-family: $font-regular;
-        @include fluid-type(18px, 21px);
-        line-height: 1.5;
+        @include fluid-type(18px, 22px);
+        line-height: 1.65;
         margin-top: 0;
     }
     
     img {
-        max-width: 100%;
         margin: 1em 0;
+        @include full;
     }
 }
 

@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body {% if page.categories contains "chapter" %} class="theme-light" {% endif %}>
     {% include icon-menu.html %}  
 
     {{ content }}

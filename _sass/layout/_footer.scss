@@ -1,4 +1,7 @@
 .footer {
+    .wrapper {
+        max-width: 2000px;
+    }
     ul {
         @include reset-space;
         list-style: none;

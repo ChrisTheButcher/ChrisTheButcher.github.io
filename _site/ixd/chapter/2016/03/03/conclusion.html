@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#fff568">
 </head>
 
-  <body>
+  <body  class="theme-light" >
     <a href="/ixd/#overview" title="Christian Wijnia" class="icon-menu-wrapper" angular-ripple>
     <span class="icon-menu"></span>
 </a>  
@@ -45,15 +45,7 @@
       ng-init='slides = [{"cover":"/img/sunset.jpg"}]'
       ng-controller="SliderController">
       
-    <article itemscope itemtype="http://schema.org/BlogPosting">
-        <header class="chapter-header">
-            <div class="wrapper">
-                <h1 class="chapter-title" itemprop="name headline">Conclusion</h1>
-                <span class="type-subtitle">Chapter VI</span>
-            </div>
-        </header>
-        
-        
+    <article itemscope itemtype="http://schema.org/BlogPosting">       
         
             <div class="chapter-slider">
                 <ul rn-carousel rn-carousel-index="index">
@@ -64,6 +56,14 @@
                 
                 <div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="index"></div>
             </div>
+        
+        
+        <header class="chapter-header">
+            <div class="wrapper">
+                <h1 class="chapter-title" itemprop="name headline">Conclusion</h1>
+                <span class="type-subtitle">Chapter VI</span>
+            </div>
+        </header>
         
 
         <div class="chapter-content" itemprop="articleBody">
@@ -107,6 +107,18 @@
             </div>
         </div>
         
+        
+            <nav class="chapter-nav chapter-nav-prev">
+                <div class="wrapper">
+                    <a class="btn btn-prev" angular-ripple href="/ixd">
+                        <img src="/img/icon-arrow-right.svg" alt="Back">
+                        <span class="text">
+                            <h3>The end</h3>                         
+                            Take me back
+                        </span>
+                    </a>
+                </div>
+            </nav>
         
 
     </article>

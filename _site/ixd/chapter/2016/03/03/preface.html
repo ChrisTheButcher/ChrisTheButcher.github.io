@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#fff568">
 </head>
 
-  <body>
+  <body  class="theme-light" >
     <a href="/ixd/#overview" title="Christian Wijnia" class="icon-menu-wrapper" angular-ripple>
     <span class="icon-menu"></span>
 </a>  
@@ -45,15 +45,7 @@
       ng-init='slides = [{"cover":"/img/sunrise.jpg","body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nulla id sapien accumsan, id dictum mauris efficitur. Integer nec metus vitae massa pretium vehicula vitae vitae quam. Nunc in rutrum ligula.\n\nLorem ipsum dolor sit amet, consectetur [adipiscing](http://google.com) elit. Donec eleifend nulla id sapien accumsan, id dictum mauris efficitur. Integer nec metus vitae massa pretium vehicula vitae vitae quam. Nunc in rutrum ligula.\n"},{"cover":"/img/sunset.jpg","body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nulla id sapien accumsan, id dictum mauris efficitur. Integer nec metus vitae massa pretium vehicula vitae vitae quam. Nunc in rutrum ligula.\n\nLorem ipsum dolor sit amet, consectetur [adipiscing](http://google.com) elit.\n\n> [Link](http://example.com)\n\n- List 1\n- List 2\n"}]'
       ng-controller="SliderController">
       
-    <article itemscope itemtype="http://schema.org/BlogPosting">
-        <header class="chapter-header">
-            <div class="wrapper">
-                <h1 class="chapter-title" itemprop="name headline">Preface</h1>
-                <span class="type-subtitle">Chapter I</span>
-            </div>
-        </header>
-        
-        
+    <article itemscope itemtype="http://schema.org/BlogPosting">       
         
             <div class="chapter-slider">
                 <ul rn-carousel rn-carousel-index="index">
@@ -64,6 +56,14 @@
                 
                 <div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="index"></div>
             </div>
+        
+        
+        <header class="chapter-header">
+            <div class="wrapper">
+                <h1 class="chapter-title" itemprop="name headline">Preface</h1>
+                <span class="type-subtitle">Chapter I</span>
+            </div>
+        </header>
         
 
         <div class="chapter-content" itemprop="articleBody">

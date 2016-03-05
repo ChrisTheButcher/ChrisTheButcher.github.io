@@ -4,6 +4,7 @@
     
     .wrapper {
         @include v-wrapper;
+        max-width: 2000px;
     }
     
     .chapter-list {
