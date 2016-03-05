@@ -21,6 +21,5 @@ markdown: kramdown
 
 gems: 
   - octopress-autoprefixer
-  - jekyll-babel
   
 babel_js_extensions: 'es6'
