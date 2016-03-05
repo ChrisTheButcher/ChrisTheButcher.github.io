@@ -1172,39 +1172,39 @@ a {
     -webkit-transform: skew(7deg) translateX(-3.5%);
             transform: skew(7deg) translateX(-3.5%); }
 
-.btn-next,
-.btn-prev {
+.btn.btn-next,
+.btn.btn-prev {
   color: #303030; }
-  .btn-next::after,
-  .btn-prev::after {
+  .btn.btn-next::after,
+  .btn.btn-prev::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (max-width: 480px) {
-    .btn-next,
-    .btn-prev {
+    .btn.btn-next,
+    .btn.btn-prev {
       display: block; }
-      .btn-next:hover,
-      .btn-prev:hover {
+      .btn.btn-next:hover,
+      .btn.btn-prev:hover {
         -webkit-transform: none;
                 transform: none; }
-      .btn-next img,
-      .btn-prev img {
+      .btn.btn-next img,
+      .btn.btn-prev img {
         margin-top: 12px;
         float: right; } }
-  .btn-next h3,
-  .btn-prev h3 {
+  .btn.btn-next h3,
+  .btn.btn-prev h3 {
     margin: 0; }
-  .btn-next .text,
-  .btn-prev .text {
+  .btn.btn-next .text,
+  .btn.btn-prev .text {
     vertical-align: middle;
     display: inline-block; }
-  .btn-next img,
-  .btn-prev img {
+  .btn.btn-next img,
+  .btn.btn-prev img {
     vertical-align: middle;
     margin-left: 30px; }
 
-.btn-prev img {
+.btn.btn-prev img {
   margin-left: 0;
   margin-right: 30px;
   -webkit-transform: rotate(180deg);

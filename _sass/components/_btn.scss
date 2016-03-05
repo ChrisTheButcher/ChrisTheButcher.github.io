@@ -19,8 +19,8 @@
     }
 }
 
-.btn-next,
-.btn-prev {
+.btn.btn-next,
+.btn.btn-prev {
     color: $color-grey;
     @include clearfix;
     
@@ -49,7 +49,7 @@
     }
 }
 
-.btn-prev {
+.btn.btn-prev {
     img {
         margin-left: 0;
         margin-right: 30px;
