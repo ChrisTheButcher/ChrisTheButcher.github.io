@@ -1209,6 +1209,9 @@ a {
   margin-right: 30px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
+  @media screen and (max-width: 480px) {
+    .btn.btn-prev img {
+      float: left; } }
 
 [angular-ripple] {
   position: relative;
