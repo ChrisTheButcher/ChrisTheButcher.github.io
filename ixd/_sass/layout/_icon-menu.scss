@@ -1,0 +1,27 @@
+[angular-ripple].icon-menu-wrapper {  
+    $gutter: 20px;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: $gutter;
+    display: inline-block;
+    z-index: 5000;
+    overflow: initial;
+    
+    @include bp($screen-xs) {
+        $gutter: 30px;
+        padding: $gutter;    
+    }
+    
+    .angular-ripple {
+        background: rgba(black, 0.1);
+    }
+}
+
+.icon-menu {
+    @include size(18px);
+    border: 3px solid $color-grey;
+    border-radius: 50%;
+    display: inline-block;
+}

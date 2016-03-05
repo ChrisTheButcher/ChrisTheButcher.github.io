@@ -1,0 +1,19 @@
+.hero {
+    height: 100vh;
+    background: $color-primary;
+    overflow: hidden;
+    text-align: center;
+    max-height: 650px;
+    min-height: 300px;
+    position: relative;
+    
+    .wrapper {
+        @include middle;
+        @include v-wrapper;
+        width: 100%;
+    }
+    
+    h1 {
+        margin-top: 0;
+    }
+}

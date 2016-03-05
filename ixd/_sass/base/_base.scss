@@ -1,0 +1,11 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-grey-lightest;
+    font-size: 16px;
+    color: $color-grey;
+    font-family: $font-light;
+    -webkit-font-smoothing: antialiased;
+}

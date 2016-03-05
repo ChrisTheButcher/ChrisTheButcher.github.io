@@ -1,0 +1,27 @@
+{
+  "name": "christhebutcher.github.io",
+  "homepage": "https://github.com/ChrisTheButcher/christhebutcher.github.io",
+  "authors": [
+    "christhebutcher <ccwijnia@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.5.0",
+    "angular-touch": "~1.5.0",
+    "angular-carousel": "~1.0.1",
+    "angular-carousel.min": "https://github.com/revolunet/angular-carousel/blob/master/dist/angular-carousel.min.css"
+  },
+  "dependencies": {
+    "angular-ripple": "*"
+  }
+}

@@ -1,0 +1,22 @@
+.footer {
+    ul {
+        @include reset-space;
+        list-style: none;
+        
+        li {
+            display: inline-block;
+            padding: 20px 0;
+            
+            @include bp($screen-xs) {
+                padding: 30px 0;
+            }
+            @include bp($screen-sm) {
+                padding: 40px 0;
+            }
+            margin-right: 20px;
+            @include fluid-type(16px, 18px);
+            
+            &:last-child { margin: 0;}
+        }
+    }
+}

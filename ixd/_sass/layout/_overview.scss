@@ -1,0 +1,60 @@
+.cards {
+    $gutter: 20px;
+    overflow: hidden;
+    
+    .wrapper {
+        @include v-wrapper;
+    }
+    
+    .chapter-list {
+        @include reset-space;
+        @include grid-row($gutter);
+        list-style: none;
+        margin-bottom: -$gutter;
+        
+        .chapter-card-col {
+            @include grid-col(1,2, $gutter);
+            margin-bottom: $gutter;
+        }
+    }
+    
+    @include bp($screen-xs) {
+        $gutter: 30px;
+        
+        .chapter-list {
+            @include grid-row($gutter);
+            margin-bottom: -$gutter;
+            .chapter-card-col {
+                @include grid-col(1,2, $gutter);
+                margin-bottom: $gutter;
+            }
+        }
+    }
+    
+    @include bp($screen-sm) {
+        $gutter: 30px;
+        
+        .chapter-list {
+            margin-bottom: -$gutter;
+            @include grid-row($gutter);
+            .chapter-card-col {
+                @include grid-col(1,3, $gutter);
+                margin-bottom: $gutter;
+            }
+        }
+    }
+    
+    @include bp($screen-md) {
+        $gutter: 40px;
+        
+        .chapter-list {
+            margin-bottom: -$gutter;
+            @include grid-row($gutter);
+            .chapter-card-col {
+                @include grid-col(1,3, $gutter);
+                margin-bottom: $gutter;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,107 @@
+.chapter-content {   
+    @include fluid-type(16px, 18px);
+    line-height: 1.6;
+    
+    .wrapper {
+        @include v-wrapper;    
+    }
+    
+    p:first-of-type {
+        font-family: $font-regular;
+        @include fluid-type(18px, 21px);
+        line-height: 1.5;
+        margin-top: 0;
+    }
+}
+
+.chapter-header {
+    background: white;
+    text-align: center;
+    
+    .wrapper {
+        @include v-wrapper;  
+        margin-top: -0.2575em;          
+        margin-bottom: -0.2575em;  
+    }
+    
+    h1 {
+        margin: 0;
+        margin-bottom: 0.25em;
+    }
+}
+
+.chapter-nav {
+    text-align: right;
+    margin-top: 50px;
+    
+    .btn {
+        vertical-align: bottom;
+    }
+}
+
+ul[rn-carousel] {
+    background: darken($color-grey-lightest, 15%);
+    height: 0;
+    padding-bottom: 48.828125%; // 1024 / 500
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    
+    @include bp(922px) {
+        padding-bottom: 0;
+        height: 450px;
+    }
+    
+    li {
+        @include abs;
+    }
+    
+    .slider-image {
+        @include abs;
+        background-size: cover;
+        background-position: center;
+        
+        @include bp($screen-md) {
+            .is-not-mobile & {
+                background-attachment: fixed;
+            }
+        }
+    }
+}
+
+.chapter-carousel {
+    position: relative;
+    
+    div.rn-carousel-indicator {
+       position: absolute;
+       bottom: 20px;
+       left: 50%;
+       transform: translateX(-50%);
+       z-index: 1000;
+       
+       @include bp($screen-xs) {
+           bottom: 30px;
+       }
+       @include bp($screen-sm) {
+           bottom: 40px;
+       }
+       
+       span {
+           @include size(12px);
+           border: 2px solid white;
+           background: none;
+           opacity: 1;
+           display: inline-block;
+           overflow: hidden;
+           border-radius: 50%;
+           text-indent: -500px;
+           margin: 0 9px;
+
+           &.active {
+               background: white;
+               opacity: 1;
+           }
+       } 
+    } 
+}

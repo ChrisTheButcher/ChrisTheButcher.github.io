@@ -1,0 +1,25 @@
+// Colors
+$color-primary: #FFF568;
+$color-secondary: #00f;
+
+$color-grey: #303030;
+$color-grey-lightest: #f4f4f4;
+
+$color-overlay: rgba($color-grey, 0.5);
+
+// Paths
+$path-fonts: '/fonts';
+$path-img: '/img';
+
+// Fonts
+$font-black: 'chivoblack';
+$font-black-italic: 'chivoblack_italic';
+$font-bold: 'chivobold';
+$font-regular: 'chivoregular';
+$font-light: 'chivolight';
+
+// Break Points
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;

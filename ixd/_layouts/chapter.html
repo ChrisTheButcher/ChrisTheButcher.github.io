@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<main class="chapter">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+
+        <header class="chapter-header">
+            <div class="wrapper">
+                <h1 class="chapter-title" itemprop="name headline">{{ page.title }}</h1>
+                <span class="type-subtitle">{{ page.chapter }}</span>
+            </div>
+        </header>
+        
+        {% if page.slides %}
+            <div class="chapter-carousel" 
+                ng-init="slides = [{% for slide in page.slides %}'{{slide}}',{% endfor %}]" 
+                ng-controller="SliderController">
+                
+                <ul rn-carousel rn-carousel-index="index">
+                    <li ng-repeat="slide in slides">
+                        <div class="slider-image" ng-style="{
+                            backgroundImage: 'url('+slide+')'
+                        }"></div>
+                    </li>
+                </ul>
+                
+                <div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="index"></div>
+            </div>
+        {% endif %}
+
+        <div class="chapter-content" itemprop="articleBody">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </div>
+        
+        {% if page.previous.url %}
+            <nav class="chapter-nav">
+                <div class="wrapper">
+                    <a class="btn btn-next" angular-ripple href="{{page.previous.url}}">
+                        <span class="text">
+                            <h3>{{page.previous.title}}</h3>                         
+                            {{page.previous.chapter}}
+                        </span>
+                        <img src="/img/icon-arrow-right.svg" alt="Next">
+                    </a>
+                </div>
+            </nav>
+        {% endif %}
+
+    </article>
+</main>
