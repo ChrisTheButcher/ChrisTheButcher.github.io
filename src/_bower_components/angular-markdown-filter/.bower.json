@@ -1,0 +1,27 @@
+{
+  "name": "angular-markdown-filter",
+  "version": "1.3.2",
+  "main": "markdown.js",
+  "keywords": [
+    "angular",
+    "markdown",
+    "filter",
+    "showdown"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": ">=1.2.*",
+    "showdown": "~1.2.3"
+  },
+  "homepage": "https://github.com/vpegado/angular-markdown-filter",
+  "_release": "1.3.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.3.2",
+    "commit": "d753aba085d1d934814f2fb37c1bd6ce5e98d582"
+  },
+  "_source": "git://github.com/vpegado/angular-markdown-filter.git",
+  "_target": "~1.3.2",
+  "_originalSource": "angular-markdown-filter",
+  "_direct": true
+}

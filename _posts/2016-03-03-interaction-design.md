@@ -6,8 +6,7 @@ cover: /img/work.jpg
 categories: ixd chapter
 date:   2016-03-03 16:00 +0100
 slides:
-  - /img/work.jpg
-  - /img/sunset.jpg
+  - cover: /img/work.jpg
 ---
 
 Wat houdt interaction design in hij ons?

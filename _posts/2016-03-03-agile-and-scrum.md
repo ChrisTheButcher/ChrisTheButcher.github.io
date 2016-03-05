@@ -6,8 +6,7 @@ chapter: Chapter IV
 categories: ixd chapter
 date:   2016-03-03 15:00 +0100
 slides:
-  - /img/scrum.jpg
-  - /img/sunset.jpg
+  - cover: /img/scrum.jpg
 ---
 
 Binnen Boerdam werken volgens het agile principe aan de hand van de SCRUM-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderen. De 12 agile principes volgens de Engelse Wikipedia:

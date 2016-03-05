@@ -6,27 +6,42 @@ window.mobilecheck = function() {
 
 document.body.classList.add(window.mobilecheck() ? 'is-mobile' : 'is-not-mobile');
 
-var app = angular.module('app', ['angularRipple', 'angular-carousel'], function($interpolateProvider) {
+var app = angular.module('app', ['angularRipple', 'angular-carousel', 'hc.marked'], function($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
 });
 
+app.config(['markedProvider', function (markedProvider) {
+  markedProvider.setOptions({gfm: true});
+}]);
+
 app.controller("SliderController", function($scope){
     $scope.index = 0;
-    document.addEventListener("keydown", function(e){
+    
+    var running = false;
+    var run = function(){
+      running = true;
+      setTimeout(function(){
+        running = false;    
+      },300);
+    };
+    var prev = function(){
+        if($scope.index === 0) return;
+        $scope.index--;
+        run();  
+    }
+    var next = function(){
+        if($scope.index === $scope.slides.length - 1) return;
+        $scope.index++;
+        run();
+    }
+    
+    document.addEventListener("keydown", function(e){      
+        if(running || $scope.slides.length < 2) return;
         
-        if($scope.slides.length < 2) return;
-
-        if (e.which == 37) {
-            if($scope.index === 0) return;
-            $scope.index--;
-        }
-        if (e.which == 39) {
-            if($scope.index === $scope.slides.length - 1) return;
-            $scope.index++;
-        } 
+        if (e.which == 37) prev();
+        if (e.which == 39) next();
         
-        $scope.$apply(); 
-        
+        $scope.$apply();  
     });
 })

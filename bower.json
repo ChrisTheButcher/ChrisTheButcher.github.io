@@ -19,7 +19,8 @@
     "angular": "~1.5.0",
     "angular-touch": "~1.5.0",
     "angular-carousel": "~1.0.1",
-    "angular-carousel.min": "https://github.com/revolunet/angular-carousel/blob/master/dist/angular-carousel.min.css"
+    "angular-carousel.min": "https://github.com/revolunet/angular-carousel/blob/master/dist/angular-carousel.min.css",
+    "angular-marked": "~1.0.1"
   },
   "dependencies": {
     "angular-ripple": "*"

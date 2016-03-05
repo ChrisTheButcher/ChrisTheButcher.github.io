@@ -10,8 +10,8 @@
     <meta name="description" content="Binnen Boerdam werken volgens het agile principe aan de hand van de SCRUM-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderen. De 12 ...">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://christhebutcher.github.io//ixd/chapter/2016/03/03/agile-and-scrum.html">
-    <link rel="alternate" type="application/rss+xml" title="Christian Wijnia" href="http://christhebutcher.github.io//feed.xml">
+    <link rel="canonical" href="http://christhebutcher.github.io/ixd/chapter/2016/03/03/agile-and-scrum.html">
+    <link rel="alternate" type="application/rss+xml" title="Christian Wijnia" href="http://christhebutcher.github.io/feed.xml">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
@@ -41,9 +41,11 @@
     <span class="icon-menu"></span>
 </a>  
 
-    <main class="chapter">
+    <main class="chapter"
+      ng-init='slides = [{"cover":"/img/scrum.jpg"}]'
+      ng-controller="SliderController">
+      
     <article itemscope itemtype="http://schema.org/BlogPosting">
-
         <header class="chapter-header">
             <div class="wrapper">
                 <h1 class="chapter-title" itemprop="name headline">Agile & Scrum</h1>
@@ -52,15 +54,11 @@
         </header>
         
         
-            <div class="chapter-carousel" 
-                ng-init="slides = ['/img/scrum.jpg','/img/sunset.jpg',]" 
-                ng-controller="SliderController">
-                
+        
+            <div class="chapter-slider">
                 <ul rn-carousel rn-carousel-index="index">
                     <li ng-repeat="slide in slides">
-                        <div class="slider-image" ng-style="{
-                            backgroundImage: 'url('+slide+')'
-                        }"></div>
+                        <div class="chapter-slider-image" ng-style="{ backgroundImage: 'url('+slide.cover+')' }"></div>
                     </li>
                 </ul>
                 
@@ -70,6 +68,17 @@
 
         <div class="chapter-content" itemprop="articleBody">
             <div class="wrapper">
+                 
+                    <div class="chapter-slider-content-container">
+                        <div class="chapter-slider-body" 
+                            ng-repeat="slide in slides" 
+                            ng-class="{'active' : $index === index }"
+                            marked="slide.body"
+                            ng-if="slide.body">
+                        </div>
+                    </div>
+                
+                
                 <p>Binnen Boerdam werken volgens het agile principe aan de hand van de SCRUM-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderen. De 12 agile principes volgens de Engelse Wikipedia:</p>
 
 <ul>

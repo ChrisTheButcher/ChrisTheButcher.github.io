@@ -4,8 +4,12 @@
     display: inline-block;
     text-align: left;
     padding: 25px 30px;
-    
     transition: transform 0.2s ease-in-out;
+    
+    .angular-ripple {
+        background-color: rgba(white, 0.5);
+    }
+    
     &:hover {
         transform: skew(-7deg) translateX(3.5%);
     }

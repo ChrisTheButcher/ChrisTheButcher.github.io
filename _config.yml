@@ -11,7 +11,7 @@ subtitle: Interaction Designer
 email: christian@boerdam.nl
 description: Christian Wijnia - Interaction Designer @ boerdam.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://christhebutcher.github.io/" # the base hostname & protocol for your site
+url: "http://christhebutcher.github.io" # the base hostname & protocol for your site
 twitter_username: chriswijnia
 github_username:  christhebutcher
 boerdam_username: christian
@@ -23,3 +23,4 @@ gems:
   - octopress-autoprefixer
   
 babel_js_extensions: 'es6'
+exclude: ["node_modules", "gulpfile.js", "package.json"]

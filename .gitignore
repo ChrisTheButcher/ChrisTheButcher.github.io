@@ -1,3 +1,4 @@
 .sass-cache
 .jekyll-metadata
-/ixd/_site
+/_site
+node_modules

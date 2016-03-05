@@ -3,19 +3,19 @@
   <channel>
     <title>Christian Wijnia</title>
     <description>Christian Wijnia - Interaction Designer @ boerdam.</description>
-    <link>http://christhebutcher.github.io//</link>
-    <atom:link href="http://christhebutcher.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Mar 2016 14:49:24 +0100</pubDate>
-    <lastBuildDate>Sat, 05 Mar 2016 14:49:24 +0100</lastBuildDate>
+    <link>http://christhebutcher.github.io/</link>
+    <atom:link href="http://christhebutcher.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 05 Mar 2016 17:04:39 +0100</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2016 17:04:39 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Preface</title>
-        <description>&lt;p&gt;Hello, world.&lt;/p&gt;
+        <description>
 </description>
         <pubDate>Thu, 03 Mar 2016 18:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io//ixd/chapter/2016/03/03/preface.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io//ixd/chapter/2016/03/03/preface.html</guid>
+        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/preface.html</link>
+        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/preface.html</guid>
         
         
         <category>ixd</category>
@@ -30,11 +30,13 @@
 
 &lt;p&gt;Bij Boerdam werken we in een breed team van ongeveer 12 personen. De samenstelling bestaat uit een administratief medewerker, product owners, developers, interactieve vormgevers, contentmakers, stagiaires en Ivo, de baas.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/img/boerdam-team.png&quot; alt=&quot;Het Boerdam team&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;We geloven in het beter maken van de wereld doormiddel van technologie. Daarom werken we aan sociale projecten die iets bijdragen aan de samenleving.&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 17:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io//ixd/chapter/2016/03/03/boerdam.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io//ixd/chapter/2016/03/03/boerdam.html</guid>
+        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/boerdam.html</link>
+        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/boerdam.html</guid>
         
         
         <category>ixd</category>
@@ -80,8 +82,8 @@ De definitie van interaction design volgens de Engels Wikipedia is “the practi
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 16:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io//ixd/chapter/2016/03/03/interaction-design.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io//ixd/chapter/2016/03/03/interaction-design.html</guid>
+        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/interaction-design.html</link>
+        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/interaction-design.html</guid>
         
         
         <category>ixd</category>
@@ -118,8 +120,8 @@ De definitie van interaction design volgens de Engels Wikipedia is “the practi
 &lt;p&gt;Elke dag beginnen we met een stand-up. Een meeting van maximaal 15 minuten waarin elk scrum team-lid vertelt wat hij gisteren heeft gedaan, vandaag gaat doen en tegen welke blokkades hij aanloopt. Geduurde de dag wordt er intensief samengewerkt met product owners, developers en contentmakers. Stakeholders worden bij het ontwerp- en ontwikkelwerk ook vroeg in het proces betrokken.&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 15:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io//ixd/chapter/2016/03/03/agile-and-scrum.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io//ixd/chapter/2016/03/03/agile-and-scrum.html</guid>
+        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/agile-and-scrum.html</link>
+        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/agile-and-scrum.html</guid>
         
         
         <category>ixd</category>
@@ -130,29 +132,11 @@ De definitie van interaction design volgens de Engels Wikipedia is “the practi
     
       <item>
         <title>Projects</title>
-        <description>&lt;h2 id=&quot;hedon&quot;&gt;Hedon&lt;/h2&gt;
-&lt;p&gt;Hedon is hier een mooi voorbeeld van. Hedon is de poptempel van Zwolle en omstreken die voor een groot gedeelte wordt gerund door vrijwilligers. Met sociale projecten als De Fakkelteit waarin middels Hip-Hop ontwikkeling van jongeren wordt gestimuleerd onderscheid Hedon zich van andere podia.&lt;/p&gt;
-
-&lt;p&gt;Hedon heeft op 14 februari 2014 hun nieuwe pand geopend. Helaas bleef de site nog achter! Daarom zijn ze eind 2014 naar ons toe gekomen met de vraag om de site weer top notch te maken. Met een multimedia site waarin Spotify, Youtube, fotografie en Soundcloud zijn geïntergreerd is dit doel inmiddels bereikt. Centraal staat het concept “laten je inspireren door ons programma” waarmee aan de hand van je mood gezocht kan worden naar passende shows. Verder hebben we een vernieuwde pagina pagina ontwikkeld waarop bezoekers geinspireerd worden door fotografie en video van voorgaande show. Ook wordt op deze pagina vooruit gegeken naar komende shows met youtube van HEADS UP!. Inmiddels werken we aan een aantal mooie toevoegingen.&lt;/p&gt;
-
-&lt;h2 id=&quot;jijoverijssel&quot;&gt;JIJ&amp;amp;Overijssel&lt;/h2&gt;
-&lt;p&gt;Met JIJ&amp;amp;Overijssel stimuleert provincie Overijssel sociale initiatieven. Groen! Groener! Groenst! is een voorbeeld van een initiatief dat een mooi resultaat heeft opgeleverd. Een wedstrijd uitgeschreven door de provincie waarbij het beste groene idee voor kinderen werd gezocht. Meer dan 30 ingezonden initiatieven als resultaat. Op het Groen! Groener! Groenst! event is het idee ’De 50 dingen die je gedaan moet hebben voor je 12de’ verkozen tot beste. Initiatiefnemers, beleidsmakers en betrokkenen geven naderhand aan zich meer betrokken te voelen met de provinciale politiek dan voorheen. Naast het het ontwikkelen van een faciliterend online platform hebben we het concept gemaakt, hebben we een eigen JIJ&amp;amp;Overijssel-redactie en organiseerden we het Groen! Groener! Groenst! event.&lt;/p&gt;
-
-&lt;p&gt;In het aanbestedingstraject heb ik de vormgeving van verschillende presentaties verzorgt. Na het winnen van de aanbesteding hebben we het concept verder uitgedacht en zijn we begonnen aan ons eerste agile experiment. Als designer en front-end developer was ik verantwoordelijk voor het ontwerp en de front-end. Daarnaast heeft het scrum-team advies gegeven en meegedacht over het concept. Het project is klein begonnen als ‘marktplaats’ voor ideeën binnen Overijssel en uitgegroeid tot een voorwaardig online platform.&lt;/p&gt;
-
-&lt;p&gt;We streamen regelmatig grote evenementen zoals bevrijdingsfestival Overijssel en Dauwpop. Hiervoor hebben we een videostreaming-pagina ontworpen. Ook kunnen gebruikers gemakkelijk zien hoeveel energie het initiatief heeft aan de hand van een energiemeter. Een voorbeeld van een recente verbeteringen aan het platform zijn een mediamodule en notificaties.&lt;/p&gt;
-
-&lt;h2 id=&quot;rova&quot;&gt;ROVA&lt;/h2&gt;
-&lt;p&gt;Bij ROVA staat service en dienstverlening centraal. Als inwoner kun je op ROVA bouwen. Daarom ontwikkelden we samen met ROVA een nieuwe website uitgaande van het principe toptaken. Wat deze website uniek maakt is dat elke gebruiker zijn eigen persoonlijke site te zien krijgt. Op basis van zijn of haar locatie weten we wat wel of niet relevante content is voor de gebruiker en daar speelt de site op in.&lt;/p&gt;
-
-&lt;p&gt;Als lead-vormgever heb ik samen met collega-vormgevers de complete online huisstijl ontworpen. Deze wordt consistent doorgevoerd op alle online pagina’s, actie-sites, e-mailsjablonen, social media-accounts en apps. Daarnaast was ik verantwoordelijk voor het interaction design van de website en nieuw te ontwikkelen app. Op basis van een agile proces heb ik verschillende schetsen, wireframes, sjablonen, flows en pixel-perfect pagina’s vormgegeven. Voor collega’s is er een style guide ontworpen als basis voor nieuw te ontwikkelen uitingen. Ook is er aan de hand van mood boards een corporate fotoshoot geweest die aansluit op het concept “dicht bij de mensen” en “informatie op maat”.&lt;/p&gt;
-
-&lt;h2 id=&quot;mvrdv&quot;&gt;MVRDV&lt;/h2&gt;
-&lt;p&gt;voor MVRDV heb ik een compleet vernieuwd responsive mobile-first front-end ontworpen en geïmplementeerd. MVRDV een architectenbureau met vestigingen in Sjanghai en Rotterdam is bekend van de Markthal in Rotterdam. Een foodhal waarin verleden en toekomst van eten samenkomt op één plek.&lt;/p&gt;
+        <description>
 </description>
         <pubDate>Thu, 03 Mar 2016 14:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io//ixd/chapter/2016/03/03/projects.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io//ixd/chapter/2016/03/03/projects.html</guid>
+        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/projects.html</link>
+        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/projects.html</guid>
         
         
         <category>ixd</category>
@@ -189,8 +173,8 @@ De definitie van interaction design volgens de Engels Wikipedia is “the practi
 &lt;p&gt;Elke dag beginnen we met een stand-up. Een meeting van maximaal 15 minuten waarin elk scrum team-lid vertelt wat hij gisteren heeft gedaan, vandaag gaat doen en tegen welke blokkades hij aanloopt. Geduurde de dag wordt er intensief samengewerkt met product owners, developers en contentmakers. Stakeholders worden bij het ontwerp- en ontwikkelwerk ook vroeg in het proces betrokken.&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 13:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io//ixd/chapter/2016/03/03/conclusion.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io//ixd/chapter/2016/03/03/conclusion.html</guid>
+        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/conclusion.html</link>
+        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/conclusion.html</guid>
         
         
         <category>ixd</category>

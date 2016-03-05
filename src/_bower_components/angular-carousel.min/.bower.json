@@ -1,0 +1,10 @@
+{
+  "name": "angular-carousel.min",
+  "_cacheHeaders": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "main": "index.css",
+  "_source": "https://github.com/revolunet/angular-carousel/blob/master/dist/angular-carousel.min.css",
+  "_target": "*",
+  "_originalSource": "https://github.com/revolunet/angular-carousel/blob/master/dist/angular-carousel.min.css"
+}
