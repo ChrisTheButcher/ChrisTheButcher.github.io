@@ -31254,6 +31254,8 @@ makeSwipeDirective('ngSwipeRight', 1, 'swiperight');
 
 })(window, window.angular);
 
+
+
 /**
  * Angular Carousel - Mobile friendly touch carousel for AngularJS
  * @version v1.0.0 - 2015-10-09
@@ -32935,7 +32937,10 @@ angular.module('angular-carousel.shifty', [])
   ;(function (Tweenable) {
 
     /*!
-     * @typedef 
+     * @typedef {{
+     *   formatString: string
+     *   chunkNames: Array.<string>
+     * }}
      */
     var formatManifest;
 
@@ -33349,6 +33354,7 @@ angular.module('angular-carousel.shifty', [])
     });
 
 })();
+
 
 /**
  * marked - a markdown parser
@@ -34988,4 +34994,4 @@ angular.module('hc.marked', [])
 }]);
 
 },{"marked":"marked"}]},{},[1])(1)
-});
+}); 
