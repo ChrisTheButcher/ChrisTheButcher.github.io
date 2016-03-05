@@ -1,4 +1,0 @@
-source "http://rubygems.org"
-
-gem "octopress-autoprefixer"
-gem 'jekyll-babel'
