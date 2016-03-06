@@ -5,8 +5,8 @@
     <description>Christian Wijnia - Interaction Designer @ boerdam.</description>
     <link>http://christhebutcher.github.io/</link>
     <atom:link href="http://christhebutcher.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Mar 2016 20:29:12 +0100</pubDate>
-    <lastBuildDate>Sun, 06 Mar 2016 20:29:12 +0100</lastBuildDate>
+    <pubDate>Sun, 06 Mar 2016 20:57:37 +0100</pubDate>
+    <lastBuildDate>Sun, 06 Mar 2016 20:57:37 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -114,7 +114,7 @@
         <title>Agile &amp; Scrum</title>
         <description>&lt;p&gt;Binnen Boerdam werken volgens het agile principe aan de hand van de &lt;a href=&quot;https://en.wikipedia.org/wiki/Scrum_(software_development)&quot;&gt;Scrum&lt;/a&gt;-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderingen.&lt;/p&gt;
 
-&lt;h2 id=&quot;de-12-agile-principes-volgens-wikipediahttpsenwikipediaorgwikiinteractiondesign&quot;&gt;De 12 agile principes volgens &lt;a href=&quot;https://en.wikipedia.org/wiki/Interaction_design&quot;&gt;Wikipedia&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;de-12-agile-principes-volgens-wikipediahttpsenwikipediaorgwikiinteractiondesign&quot;&gt;De 12 agile principes volgens &lt;a href=&quot;https://en.wikipedia.org/wiki/Interaction_design&quot;&gt;wikipedia&lt;/a&gt;&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Customer satisfaction by early and continuous delivery of valuable software&lt;/li&gt;
@@ -209,9 +209,11 @@
 
 &lt;ul class=&quot;links&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;build with Jekyll&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://tympanus.net/codrops/2015/12/23/freebie-colored-line-icons-svg-ai-png/&quot;&gt;colored line icons&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.io&quot;&gt;hosted by Github Pages&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://boerdam.nl/mensen/janneke/&quot;&gt;photography by Janneke&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://unsplash.com/&quot;&gt;photography by Unsplash&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.omnibus-type.com/fonts/chivo.php&quot;&gt;Chivo font&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tympanus.net/codrops/2015/12/23/freebie-colored-line-icons-svg-ai-png/&quot;&gt;colored line icons&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/ChrisTheButcher/ChrisTheButcher.github.io&quot;&gt;code, design and concept by me ;)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

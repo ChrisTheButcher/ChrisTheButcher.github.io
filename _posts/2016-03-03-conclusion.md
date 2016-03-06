@@ -21,12 +21,14 @@ Komende periode wil ik mijzelf in de volle breedte verder ontwikkelen. Mijn leer
 - Opleiding Interaction Design afronden
 
 <img src="/img/banner-thumbs-up.svg" alt="Credits">
-
+ 
 <ul class="links">
   <li><a href="https://jekyllrb.com/">build with Jekyll</a></li>
-  <li><a href="http://tympanus.net/codrops/2015/12/23/freebie-colored-line-icons-svg-ai-png/">colored line icons</a></li>
   <li><a href="https://github.io">hosted by Github Pages</a></li>
   <li><a href="http://boerdam.nl/mensen/janneke/">photography by Janneke</a></li>
+  <li><a href="https://unsplash.com/">photography by Unsplash</a></li>
+  <li><a href="http://www.omnibus-type.com/fonts/chivo.php">Chivo font</a></li>
+  <li><a href="http://tympanus.net/codrops/2015/12/23/freebie-colored-line-icons-svg-ai-png/">colored line icons</a></li>
   <li><a href="https://github.com/ChrisTheButcher/ChrisTheButcher.github.io">code, design and concept by me ;)</a></li>
 </ul>
 

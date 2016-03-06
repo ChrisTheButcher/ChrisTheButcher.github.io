@@ -15,8 +15,8 @@ slides:
 
 Binnen Boerdam werken volgens het agile principe aan de hand van de [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development))-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderingen.
 
-## De 12 agile principes volgens [Wikipedia](https://en.wikipedia.org/wiki/Interaction_design)
-
+## De 12 agile principes volgens [wikipedia](https://en.wikipedia.org/wiki/Interaction_design)
+ 
 - Customer satisfaction by early and continuous delivery of valuable software
 - Welcome changing requirements, even in late development
 - Working software is delivered frequently (weeks rather than months)

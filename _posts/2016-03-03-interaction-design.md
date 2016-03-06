@@ -7,6 +7,8 @@ categories: ixd chapter
 date:   2016-03-03 16:00 +0100
 slides:
   - cover: /img/work.jpg
+  - cover: /img/smartphone.jpg
+    theme: light
 ---
 
 Wat houdt interaction design in hij ons?
