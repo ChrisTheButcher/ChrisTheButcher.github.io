@@ -7,6 +7,14 @@ categories: ixd chapter
 date:   2016-03-03 15:00 +0100
 slides:
   - cover: /img/scrum.jpg
+    theme: light
+  - cover: /img/slide-scrum.svg
+  - cover: /img/scrum.jpg
+    theme: light
+  - cover: /img/slide-scrum.svg
+  - cover: /img/scrum.jpg
+    theme: light
+  - cover: /img/slide-scrum.svg
 ---
 
 Binnen Boerdam werken volgens het agile principe aan de hand van de SCRUM-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderen. De 12 agile principes volgens de Engelse Wikipedia:
@@ -23,6 +31,7 @@ Binnen Boerdam werken volgens het agile principe aan de hand van de SCRUM-method
 - Simplicity—the art of maximizing the amount of work not done—is essential
 - Best architectures, requirements, and designs emerge from self-organizing teams
 - Regularly, the team reflects on how to become more effective, and adjusts accordingly
+
 
 In de praktijk ziet dat bij ons er als volgt uit. We werken in korte sprints. Elke sprint duurt 2 week, daarna begint de volgende sprint. Elke twee week is er sprake van een oplevering. Tijdens de sprints werken teamleden samen met product owners en stakeholders aan een product.
 

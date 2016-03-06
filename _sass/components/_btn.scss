@@ -55,7 +55,6 @@
         margin-right: 30px;
         transform: rotate(180deg);
         
-            
         @include bp($screen-xs, max) {
             float: left;
         }

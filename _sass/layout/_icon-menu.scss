@@ -28,6 +28,7 @@
     border: 3px solid $color-grey;
     border-radius: 50%;
     display: inline-block;
+    transition: border-color .3s ease-in-out;
     
     .theme-light & {
         border-color: white;

@@ -1,10 +1,16 @@
 $content-wrapper: 800px;       
 @mixin full {
-    width: 100vw;
+    width: calc(100% + 40px);
     margin-left: -20px;
-    @include bp($screen-xs) { margin-left: -30px; }
+    
+    @include bp($screen-xs) { 
+        margin-left: -30px; 
+        width: calc(100% + 60px);
+    }
+    
     @include bp($content-wrapper) {
         $gutter: 40px;
+        width: 100vw;
         margin-left: calc(((100vw - #{$content-wrapper}) * -0.5) - #{$gutter});
     }
 }
@@ -69,16 +75,16 @@ $content-wrapper: 800px;
     ul[rn-carousel] {
         background: darken($color-grey-lightest, 15%);
         height: 0;
-        padding-bottom: 48.828125%; // 1024 / 500
-        min-height: 300px;
+        padding-bottom: 65.72265625%; 
+        //min-height: 300px;
         overflow: hidden;
         position: relative;
         margin: 0;
         
-        @include bp(922px) {
+        /*@include bp(922px) {
             padding-bottom: 0;
             height: 450px;
-        }
+        }*/
         
         & > li {
             @include abs;
@@ -90,11 +96,11 @@ $content-wrapper: 800px;
         background-size: cover;
         background-position: center;
         
-        @include bp($screen-md) {
+        /*@include bp($screen-md) {
             .is-not-mobile & {
                 background-attachment: fixed;
             }
-        }
+        }*/
     }
     
     div.rn-carousel-indicator {
@@ -113,7 +119,7 @@ $content-wrapper: 800px;
        
        span {
            @include size(12px);
-           border: 2px solid white;
+           border: 2px solid $color-grey;
            background: none;
            opacity: 1;
            display: inline-block;
@@ -122,10 +128,18 @@ $content-wrapper: 800px;
            text-indent: -500px;
            margin: 0 9px;
            transition: background .2s ease-in-out;  
+           
+           .theme-light & {
+               border-color: white;
+           }
 
            &.active {
-               background: white;
+               background: $color-grey;
                opacity: 1;
+               
+               .theme-light & {
+                   background: white;
+               }
            }
        } 
     } 
