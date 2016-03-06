@@ -20,6 +20,8 @@ Komende periode wil ik mijzelf in de volle breedte verder ontwikkelen. Mijn leer
 - Front-end skills verbeteren. Sass, Javascript, Angular, NodeJS, HTML5, etc.
 - Opleiding Interaction Design afronden
 
+<img src="/img/banner-thumbs-up.svg" alt="Credits">
+
 <ul class="links">
   <li><a href="https://jekyllrb.com/">build with Jekyll</a></li>
   <li><a href="http://tympanus.net/codrops/2015/12/23/freebie-colored-line-icons-svg-ai-png/">colored line icons</a></li>

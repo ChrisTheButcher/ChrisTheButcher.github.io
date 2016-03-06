@@ -5,8 +5,8 @@
     <description>Christian Wijnia - Interaction Designer @ boerdam.</description>
     <link>http://christhebutcher.github.io/</link>
     <atom:link href="http://christhebutcher.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Mar 2016 20:14:15 +0100</pubDate>
-    <lastBuildDate>Sun, 06 Mar 2016 20:14:15 +0100</lastBuildDate>
+    <pubDate>Sun, 06 Mar 2016 20:18:22 +0100</pubDate>
+    <lastBuildDate>Sun, 06 Mar 2016 20:18:22 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -204,6 +204,8 @@
   &lt;li&gt;Front-end skills verbeteren. Sass, Javascript, Angular, NodeJS, HTML5, etc.&lt;/li&gt;
   &lt;li&gt;Opleiding Interaction Design afronden&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/banner-thumbs-up.svg&quot; alt=&quot;Credits&quot; /&gt;&lt;/p&gt;
 
 &lt;ul class=&quot;links&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;build with Jekyll&lt;/a&gt;&lt;/li&gt;
