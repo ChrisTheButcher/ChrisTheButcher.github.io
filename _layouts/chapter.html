@@ -6,6 +6,13 @@ layout: default
       ng-init='slides = {{ page.slides | jsonify }}'
       ng-controller="SliderController">
       
+    <header class="chapter-header">
+        <div class="wrapper">
+            <h1 class="chapter-title" itemprop="name headline">{{ page.title }}</h1>
+            <span class="type-subtitle">{{ page.chapter }}</span>
+        </div>
+    </header>
+    
     <article itemscope itemtype="http://schema.org/BlogPosting">       
         {% if page.slides %}
             <div class="chapter-slider">
@@ -19,14 +26,35 @@ layout: default
             </div>
         {% endif %}
         
-        <header class="chapter-header">
+        <div class="chapter-details"
+             ng-repeat="slide in slides" 
+             ng-class="{'active' : $index === index }"
+             ng-if="slide.details">
+             
             <div class="wrapper">
-                <h1 class="chapter-title" itemprop="name headline">{{ page.title }}</h1>
-                <span class="type-subtitle">{{ page.chapter }}</span>
+                <h2>[[ slide.details.client ]]</h2>
+                
+                <div class="row">
+                    <div class="col">
+                        <h3>Wish</h3>
+                        <div marked="slide.details.wish"></div>
+                    </div> 
+                    <div class="col">
+                        <h3>Solution</h3>
+                        <div marked="slide.details.solution"></div>
+                    </div>                   
+                    <div class="col">
+                        <h3>Responsibility</h3>
+                        <div marked="slide.details.task"></div>
+                    </div>
+                    
+                    <div class="col">
+                         <a ng-href="[[ slide.details.url ]]">[[ slide.details.url | noHttp ]]</a>
+                    </div>
+                </div>
             </div>
-        </header>
+        </div>
         
-
         <div class="chapter-content" itemprop="articleBody">
             <div class="wrapper">
                  {% if page.slides %}
@@ -34,7 +62,7 @@ layout: default
                         <div class="chapter-slider-body" 
                             ng-repeat="slide in slides" 
                             ng-class="{'active' : $index === index }"
-                            marked="slide.body"
+                            marked="slide.body | quotes"
                             ng-if="slide.body">
                         </div>
                     </div>

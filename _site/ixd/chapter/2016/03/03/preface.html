@@ -42,9 +42,16 @@
 </a>  
 
     <main class="chapter"
-      ng-init='slides = [{"cover":"/img/sunrise.jpg","body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nulla id sapien accumsan, id dictum mauris efficitur. Integer nec metus vitae massa pretium vehicula vitae vitae quam. Nunc in rutrum ligula.\n\nLorem ipsum dolor sit amet, consectetur [adipiscing](http://google.com) elit. Donec eleifend nulla id sapien accumsan, id dictum mauris efficitur. Integer nec metus vitae massa pretium vehicula vitae vitae quam. Nunc in rutrum ligula.\n"},{"cover":"/img/sunset.jpg","body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend nulla id sapien accumsan, id dictum mauris efficitur. Integer nec metus vitae massa pretium vehicula vitae vitae quam. Nunc in rutrum ligula.\n\nLorem ipsum dolor sit amet, consectetur [adipiscing](http://google.com) elit.\n\n> [Link](http://example.com)\n\n- List 1\n- List 2\n"}]'
+      ng-init='slides = [{"cover":"/img/sunrise.jpg","body":"<div class=\"text-center\">\n<img src=\"/img/avatar.png\" class=\"img-small\" alt=\"Christian Wijnia\">\n</div>\n\nIk ben Christian Wijnia, sinds 2012 interaction designer bij [Boerdam](http://boerdam.nl) in Zwolle. Afgelopen half jaar heb ik hier ook stage gelopen.\n\nOp deze site laat ik je zien wat een interaction designer dagelijks in de praktijk doet. Dit doe ik aan de hand van een aantal cases. <br/> In het hoofdstuk Agile & Scrum laat ik zien via welke methodiek we werken, welke meerwaarde dit biedt en tegen welke uitdagingen we hierbij aanlopen. \n\nVooraf wil ik mijn collega‘s bij Boerdam bedanken. In het bijzonder Heidie en Ivo voor het begeleiden en motiveren van mij in deze stageperiode.\n"}]'
       ng-controller="SliderController">
       
+    <header class="chapter-header">
+        <div class="wrapper">
+            <h1 class="chapter-title" itemprop="name headline">Preface</h1>
+            <span class="type-subtitle">Chapter I</span>
+        </div>
+    </header>
+    
     <article itemscope itemtype="http://schema.org/BlogPosting">       
         
             <div class="chapter-slider">
@@ -58,14 +65,35 @@
             </div>
         
         
-        <header class="chapter-header">
+        <div class="chapter-details"
+             ng-repeat="slide in slides" 
+             ng-class="{'active' : $index === index }"
+             ng-if="slide.details">
+             
             <div class="wrapper">
-                <h1 class="chapter-title" itemprop="name headline">Preface</h1>
-                <span class="type-subtitle">Chapter I</span>
+                <h2>[[ slide.details.client ]]</h2>
+                
+                <div class="row">
+                    <div class="col">
+                        <h3>Wish</h3>
+                        <div marked="slide.details.wish"></div>
+                    </div> 
+                    <div class="col">
+                        <h3>Solution</h3>
+                        <div marked="slide.details.solution"></div>
+                    </div>                   
+                    <div class="col">
+                        <h3>Responsibility</h3>
+                        <div marked="slide.details.task"></div>
+                    </div>
+                    
+                    <div class="col">
+                         <a ng-href="[[ slide.details.url ]]">[[ slide.details.url | noHttp ]]</a>
+                    </div>
+                </div>
             </div>
-        </header>
+        </div>
         
-
         <div class="chapter-content" itemprop="articleBody">
             <div class="wrapper">
                  
@@ -73,7 +101,7 @@
                         <div class="chapter-slider-body" 
                             ng-repeat="slide in slides" 
                             ng-class="{'active' : $index === index }"
-                            marked="slide.body"
+                            marked="slide.body | quotes"
                             ng-if="slide.body">
                         </div>
                     </div>

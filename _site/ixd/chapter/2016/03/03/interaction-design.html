@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>IxD - Interaction Design</title>
-    <meta name="description" content="Wat houdt interaction design in hij ons?De definitie van interaction design volgens de Engels Wikipedia is “the practice of designing interactive digital pro...">
+    <meta name="description" content="Wat houdt interaction design in hij ons?">
 
     <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="http://christhebutcher.github.io/ixd/chapter/2016/03/03/interaction-design.html">
@@ -45,6 +45,13 @@
       ng-init='slides = [{"cover":"/img/work.jpg"}]'
       ng-controller="SliderController">
       
+    <header class="chapter-header">
+        <div class="wrapper">
+            <h1 class="chapter-title" itemprop="name headline">Interaction Design</h1>
+            <span class="type-subtitle">Chapter III</span>
+        </div>
+    </header>
+    
     <article itemscope itemtype="http://schema.org/BlogPosting">       
         
             <div class="chapter-slider">
@@ -58,14 +65,35 @@
             </div>
         
         
-        <header class="chapter-header">
+        <div class="chapter-details"
+             ng-repeat="slide in slides" 
+             ng-class="{'active' : $index === index }"
+             ng-if="slide.details">
+             
             <div class="wrapper">
-                <h1 class="chapter-title" itemprop="name headline">Interaction Design</h1>
-                <span class="type-subtitle">Chapter III</span>
+                <h2>[[ slide.details.client ]]</h2>
+                
+                <div class="row">
+                    <div class="col">
+                        <h3>Wish</h3>
+                        <div marked="slide.details.wish"></div>
+                    </div> 
+                    <div class="col">
+                        <h3>Solution</h3>
+                        <div marked="slide.details.solution"></div>
+                    </div>                   
+                    <div class="col">
+                        <h3>Responsibility</h3>
+                        <div marked="slide.details.task"></div>
+                    </div>
+                    
+                    <div class="col">
+                         <a ng-href="[[ slide.details.url ]]">[[ slide.details.url | noHttp ]]</a>
+                    </div>
+                </div>
             </div>
-        </header>
+        </div>
         
-
         <div class="chapter-content" itemprop="articleBody">
             <div class="wrapper">
                  
@@ -73,45 +101,48 @@
                         <div class="chapter-slider-body" 
                             ng-repeat="slide in slides" 
                             ng-class="{'active' : $index === index }"
-                            marked="slide.body"
+                            marked="slide.body | quotes"
                             ng-if="slide.body">
                         </div>
                     </div>
                 
                 
-                <p>Wat houdt interaction design in hij ons?
-De definitie van interaction design volgens de Engels Wikipedia is “the practice of designing interactive digital products, environments, systems, and services.”</p>
+                <p>Wat houdt interaction design in hij ons?</p>
 
-<p>In de praktijk zijn dit mijn dagelijkse werkzaamheden.</p>
+<blockquote>
+  <p>the practice of designing interactive digital products, environments, systems, and services. <small>De definitie van interaction design volgens <a href="https://en.wikipedia.org/wiki/Interaction_design">Wikipedia</a></small></p>
+</blockquote>
 
+<h3 id="interaction-design">Interaction design</h3>
 <ul>
-  <li>Interaction design
-    <ul>
-      <li>Concepting</li>
-      <li>Research</li>
-      <li>Schetsen</li>
-      <li>Wireframing</li>
-      <li>Flowcharting</li>
-      <li>Moodboard ontwerp</li>
-      <li>Styleguide ontwerp</li>
-      <li>Pagina ontwerp</li>
-      <li>User interface component ontwerp</li>
-      <li>Front-end development
-        <ul>
-          <li>C# razor</li>
-          <li>ECMAScript (JavaScript, AngularJS, jQuery, GulpJS, TypeScript)</li>
-          <li>CSS (SASS)</li>
-          <li>HTML5 (SVG, accessibility, Canvas)</li>
-          <li>Versiebeheer (Git, TFS)</li>
-        </ul>
-      </li>
-      <li>Advies aan stakeholders en product owners</li>
-      <li>Presentatie aan stakeholders en product owners</li>
-      <li>Samenwerken in een SCRUM-team</li>
-      <li>Bewaken design en concept</li>
-    </ul>
-  </li>
+  <li>Concepting</li>
+  <li>Research</li>
+  <li>Schetsen</li>
+  <li>Wireframing</li>
+  <li>Flowcharting</li>
+  <li>Moodboard ontwerp</li>
+  <li>Styleguide ontwerp</li>
+  <li>Pagina ontwerp</li>
+  <li>User interface component ontwerp</li>
+  <li>Bewaken design en concept</li>
 </ul>
+
+<h3 id="front-end-development">Front-end development</h3>
+<ul>
+  <li>C# razor</li>
+  <li>ECMAScript (JavaScript, AngularJS, jQuery, GulpJS, TypeScript)</li>
+  <li>CSS (SASS)</li>
+  <li>HTML5 (SVG, accessibility, Canvas)</li>
+  <li>Versiebeheer (Git, TFS)</li>
+</ul>
+
+<h3 id="scrum">Scrum</h3>
+<ul>
+  <li>Advies aan stakeholders en product owners</li>
+  <li>Presentatie aan stakeholders en product owners</li>
+  <li>Samenwerken in een Scrum-team</li>
+</ul>
+
 
             </div>
         </div>

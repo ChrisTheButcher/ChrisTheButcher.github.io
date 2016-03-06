@@ -17,9 +17,9 @@
     .angular-ripple {
         background: rgba($color-grey, 0.1);
         
-        .theme-light & {
+        /*.theme-light & {
             background: rgba(white, 0.3);
-        }
+        }*/
     }
 }
 
@@ -30,7 +30,7 @@
     display: inline-block;
     transition: border-color .3s ease-in-out;
     
-    .theme-light & {
+    /*.theme-light & {
         border-color: white;
-    }
+    }*/
 }

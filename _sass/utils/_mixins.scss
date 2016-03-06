@@ -144,6 +144,24 @@
     }
 }
 
+@mixin v-wrapper-s {
+    $gutter: 20px;
+    padding-top: $gutter;    
+    padding-bottom: $gutter;
+    
+    @include bp($screen-xs) {
+        $gutter: 30px;
+        padding-top: $gutter;    
+        padding-bottom: $gutter;
+    }
+    
+    @include bp($screen-sm) {
+        $gutter: 40px;
+        padding-top: $gutter;    
+        padding-bottom: $gutter;
+    }
+}
+
 @mixin ripple($bg-color, $hover: null) {
   @if $hover != null {
     background-color: nth($bg-color, 1);

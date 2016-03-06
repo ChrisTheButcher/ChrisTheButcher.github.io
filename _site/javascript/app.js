@@ -7,6 +7,11 @@ window.mobilecheck = function() {
 
 document.body.classList.add(window.mobilecheck() ? 'is-mobile' : 'is-not-mobile');
 
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+
 var app = angular.module('app', ['angularRipple', 'angular-carousel', 'hc.marked'], function($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
@@ -15,6 +20,23 @@ var app = angular.module('app', ['angularRipple', 'angular-carousel', 'hc.marked
 app.config(['markedProvider', function (markedProvider) {
   markedProvider.setOptions({gfm: true});
 }]);
+
+
+app.filter('quotes', function() {
+    return function (text) {
+        if(text) {
+            return text.replaceAll('‘', '\'').replaceAll('“', '\"');    
+        }
+    };
+});
+
+app.filter('noHttp', function() {
+    return function (text) {
+        if(text) {
+            return text.replaceAll('http://', '');    
+        }
+    };
+});
 
 app.controller("SliderController", function($scope, $timeout, $location){
     $scope.index = 0;
@@ -47,11 +69,12 @@ app.controller("SliderController", function($scope, $timeout, $location){
     });
     
     var setUrl = function(){
+        if($scope.slides.length < 2) return;
         $location.path($scope.index + 1);
     };
     
-    var getUrl = function(){
-        var pathId = parseInt($location.path().substring(1));
+    var getUrl = function(){       
+        var pathId = $location.path().substring(1);
         
         if (pathId > $scope.slides.length || pathId < 1) {
             $scope.index = 0;

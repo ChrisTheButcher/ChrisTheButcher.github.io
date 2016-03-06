@@ -5,8 +5,8 @@
     <description>Christian Wijnia - Interaction Designer @ boerdam.</description>
     <link>http://christhebutcher.github.io/</link>
     <atom:link href="http://christhebutcher.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Mar 2016 12:46:49 +0100</pubDate>
-    <lastBuildDate>Sun, 06 Mar 2016 12:46:49 +0100</lastBuildDate>
+    <pubDate>Sun, 06 Mar 2016 17:42:16 +0100</pubDate>
+    <lastBuildDate>Sun, 06 Mar 2016 17:42:16 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -27,13 +27,17 @@
     
       <item>
         <title>Boerdam</title>
-        <description>&lt;p&gt;Boerdam staat voor digital happiness. “Voor ons betekent dat het bedenken, ontwerpen en ontwikkelen ambitieuze, digitale concepten die de wereld een tikkeltje mooier maken.” luidt het manifesto.&lt;/p&gt;
+        <description>&lt;p&gt;Boerdam staat voor Digital Happiness.&lt;/p&gt;
 
-&lt;p&gt;Bij Boerdam werken we in een breed team van ongeveer 12 personen. De samenstelling bestaat uit een administratief medewerker, product owners, developers, interactieve vormgevers, contentmakers, stagiaires en Ivo, de baas.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Voor ons betekent dat het bedenken, ontwerpen en ontwikkelen van ambitieuze, digitale concepten die de wereld een tikkeltje mooier maken &lt;small&gt;Het Boerdam &lt;a href=&quot;http://boerdam.nl/manifesto/&quot;&gt;manifesto&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;lead&quot;&gt;Bij Boerdam werken we in een breed team van ongeveer 12 personen. De samenstelling bestaat uit een administratief medewerker, product owners, developers, interactieve vormgevers, contentmakers, stagiaires en Ivo, de baas.&lt;/p&gt;
+
+&lt;p&gt;We geloven in het beter maken van de wereld doormiddel van technologie. Daarom werken we graag aan sociale projecten die iets bijdragen aan de samenleving.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/boerdam-team.png&quot; alt=&quot;Het Boerdam team&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We geloven in het beter maken van de wereld doormiddel van technologie. Daarom werken we aan sociale projecten die iets bijdragen aan de samenleving.&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 17:00:00 +0100</pubDate>
         <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/boerdam.html</link>
@@ -48,39 +52,42 @@
     
       <item>
         <title>Interaction Design</title>
-        <description>&lt;p&gt;Wat houdt interaction design in hij ons?
-De definitie van interaction design volgens de Engels Wikipedia is “the practice of designing interactive digital products, environments, systems, and services.”&lt;/p&gt;
+        <description>&lt;p&gt;Wat houdt interaction design in hij ons?&lt;/p&gt;
 
-&lt;p&gt;In de praktijk zijn dit mijn dagelijkse werkzaamheden.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;the practice of designing interactive digital products, environments, systems, and services. &lt;small&gt;De definitie van interaction design volgens &lt;a href=&quot;https://en.wikipedia.org/wiki/Interaction_design&quot;&gt;Wikipedia&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
+&lt;h3 id=&quot;interaction-design&quot;&gt;Interaction design&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Interaction design
-    &lt;ul&gt;
-      &lt;li&gt;Concepting&lt;/li&gt;
-      &lt;li&gt;Research&lt;/li&gt;
-      &lt;li&gt;Schetsen&lt;/li&gt;
-      &lt;li&gt;Wireframing&lt;/li&gt;
-      &lt;li&gt;Flowcharting&lt;/li&gt;
-      &lt;li&gt;Moodboard ontwerp&lt;/li&gt;
-      &lt;li&gt;Styleguide ontwerp&lt;/li&gt;
-      &lt;li&gt;Pagina ontwerp&lt;/li&gt;
-      &lt;li&gt;User interface component ontwerp&lt;/li&gt;
-      &lt;li&gt;Front-end development
-        &lt;ul&gt;
-          &lt;li&gt;C# razor&lt;/li&gt;
-          &lt;li&gt;ECMAScript (JavaScript, AngularJS, jQuery, GulpJS, TypeScript)&lt;/li&gt;
-          &lt;li&gt;CSS (SASS)&lt;/li&gt;
-          &lt;li&gt;HTML5 (SVG, accessibility, Canvas)&lt;/li&gt;
-          &lt;li&gt;Versiebeheer (Git, TFS)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Advies aan stakeholders en product owners&lt;/li&gt;
-      &lt;li&gt;Presentatie aan stakeholders en product owners&lt;/li&gt;
-      &lt;li&gt;Samenwerken in een SCRUM-team&lt;/li&gt;
-      &lt;li&gt;Bewaken design en concept&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Concepting&lt;/li&gt;
+  &lt;li&gt;Research&lt;/li&gt;
+  &lt;li&gt;Schetsen&lt;/li&gt;
+  &lt;li&gt;Wireframing&lt;/li&gt;
+  &lt;li&gt;Flowcharting&lt;/li&gt;
+  &lt;li&gt;Moodboard ontwerp&lt;/li&gt;
+  &lt;li&gt;Styleguide ontwerp&lt;/li&gt;
+  &lt;li&gt;Pagina ontwerp&lt;/li&gt;
+  &lt;li&gt;User interface component ontwerp&lt;/li&gt;
+  &lt;li&gt;Bewaken design en concept&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;front-end-development&quot;&gt;Front-end development&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;C# razor&lt;/li&gt;
+  &lt;li&gt;ECMAScript (JavaScript, AngularJS, jQuery, GulpJS, TypeScript)&lt;/li&gt;
+  &lt;li&gt;CSS (SASS)&lt;/li&gt;
+  &lt;li&gt;HTML5 (SVG, accessibility, Canvas)&lt;/li&gt;
+  &lt;li&gt;Versiebeheer (Git, TFS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;scrum&quot;&gt;Scrum&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Advies aan stakeholders en product owners&lt;/li&gt;
+  &lt;li&gt;Presentatie aan stakeholders en product owners&lt;/li&gt;
+  &lt;li&gt;Samenwerken in een Scrum-team&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
         <pubDate>Thu, 03 Mar 2016 16:00:00 +0100</pubDate>
         <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/interaction-design.html</link>
@@ -95,7 +102,9 @@ De definitie van interaction design volgens de Engels Wikipedia is “the practi
     
       <item>
         <title>Agile &amp; Scrum</title>
-        <description>&lt;p&gt;Binnen Boerdam werken volgens het agile principe aan de hand van de SCRUM-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderen. De 12 agile principes volgens de Engelse Wikipedia:&lt;/p&gt;
+        <description>&lt;p&gt;Binnen Boerdam werken volgens het agile principe aan de hand van de &lt;a href=&quot;https://en.wikipedia.org/wiki/Scrum_(software_development)&quot;&gt;Scrum&lt;/a&gt;-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderingen.&lt;/p&gt;
+
+&lt;h2 id=&quot;de-12-agile-principes-volgens-wikipediahttpsenwikipediaorgwikiinteractiondesign&quot;&gt;De 12 agile principes volgens &lt;a href=&quot;https://en.wikipedia.org/wiki/Interaction_design&quot;&gt;Wikipedia&lt;/a&gt;&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Customer satisfaction by early and continuous delivery of valuable software&lt;/li&gt;
@@ -112,13 +121,36 @@ De definitie van interaction design volgens de Engels Wikipedia is “the practi
   &lt;li&gt;Regularly, the team reflects on how to become more effective, and adjusts accordingly&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In de praktijk ziet dat bij ons er als volgt uit. We werken in korte sprints. Elke sprint duurt 2 week, daarna begint de volgende sprint. Elke twee week is er sprake van een oplevering. Tijdens de sprints werken teamleden samen met product owners en stakeholders aan een product.&lt;/p&gt;
+&lt;h2 id=&quot;de-praktijk&quot;&gt;De praktijk&lt;/h2&gt;
+&lt;p&gt;We werken in korte sprints. Elke sprint duurt 2 week, daarna begint de volgende sprint. Elke twee week is er sprake van een oplevering. Tijdens de sprints werken teamleden samen met product owners en stakeholders aan een product.&lt;/p&gt;
 
-&lt;p&gt;We werken aan de hand van een backlog waarin user stories staan. Bijvoorbeeld “Als geïnteresseerde wil ik me gemakkelijk en snel kunnen inschrijven voor de nieuwsbrief”. Deze user stories staan gerangschikt op prioriteit. De items die bovenaan de lijst staan komen in de volgende sprint.&lt;/p&gt;
+&lt;p&gt;We werken aan de hand van een backlog waarin user stories staan.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Als geïnteresseerde wil ik me gemakkelijk en snel kunnen inschrijven voor de nieuwsbrief
+&lt;small&gt;User story voorbeeld&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Deze user stories staan gerangschikt op prioriteit. De items die bovenaan de lijst staan komen in de volgende sprint.&lt;/p&gt;
 
 &lt;p&gt;De belangrijkste dag is de review dag. Dit is de laatste dag van de sprint. Dan worden de gemaakte producten gepresenteerd door het scrum team aan alle betrokken stakeholders. Aan de hand van nieuwe inzichten worden nieuwe user stories geschreven. Na de review beginnen we de nieuwe sprint met het plannen. Hierna gaan we aan de gang met de sprint.&lt;/p&gt;
 
 &lt;p&gt;Elke dag beginnen we met een stand-up. Een meeting van maximaal 15 minuten waarin elk scrum team-lid vertelt wat hij gisteren heeft gedaan, vandaag gaat doen en tegen welke blokkades hij aanloopt. Geduurde de dag wordt er intensief samengewerkt met product owners, developers en contentmakers. Stakeholders worden bij het ontwerp- en ontwikkelwerk ook vroeg in het proces betrokken.&lt;/p&gt;
+
+&lt;h2 id=&quot;wat-levert-het-op&quot;&gt;Wat levert het op?&lt;/h2&gt;
+&lt;p&gt;Klanttevredenheid, door snelle en constiste releases. Voorspelbaarheid, door inschatting van kosten van backlog-items en registreren van behaald werk per sprint (velocity). Gemakklijk kunnen inspelen op veranderingen in requirements voorhoogd flexibiliteit en daardoor klanttevredenheid.&lt;/p&gt;
+
+&lt;h2 id=&quot;scrum-en-design&quot;&gt;Scrum en design&lt;/h2&gt;
+&lt;p&gt;Toen we begonnen te &lt;em&gt;scrummen&lt;/em&gt; vond ik het moeilijk om mijn design-proces aan te passen binnen de flow van een sprint. Als designer wil je het complete product vormgeven, maar binnen sprints ben je bezig met kleine componenten van een product.&lt;/p&gt;
+
+&lt;p&gt;Onze eerste aanpak was als volgt. We maakten een of twee globale ontwerpen en op basis hiervan werden compenenten in detail ontworpen en ontwikkeld.&lt;/p&gt;
+
+&lt;p&gt;We liepen met deze aanpak tegen problemen aan. Zo waren we na een aantal sprints de grote lijnen uit het oog verloren. We waren niet meer bezig met klantwaarde, maar met individuele backlog-items.&lt;/p&gt;
+
+&lt;p&gt;Onze scrum-master kwam toen met het idee om de doelen beter in kaart te brengen. Dit zijn we gaan doen door doelen op een groot papier in de spreekkamer op te hangen en deze wanneer nodig te updaten. Elk backlog-item wordt getoetst aan de hand van deze doelen, waardoor de klantwaarde hoog blijft en het scrum-team een brid-eye-view blijft houden over de projecten.&lt;/p&gt;
+
+&lt;h2 id=&quot;scrum-en-budget&quot;&gt;Scrum en budget&lt;/h2&gt;
+&lt;p&gt;Een ander punt waar we achter kwamen toen we gingen scrummen was dat niet elk project even winstgevend is. Waar ik als scrum-teamlid veel me te maken heb is de &lt;a href=&quot;https://en.wikipedia.org/wiki/Scope_creep&quot;&gt;scope screep&lt;/a&gt;. Dit betekent dat een backlog-item groter en groter wordt door het toevoegen van onnodige requirements en features waar geen klantwaarde in zit. Verder is binnen een sprint veel ruimte voor overleg. Zo word elke laatse maandag van de sprint een review-dag gepland die soms wel vijf uur kan duren. Gedurende de sprint wordt nog een aantal keer gerefined. Dit alles factureren we niet.&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 15:00:00 +0100</pubDate>
         <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/agile-and-scrum.html</link>
