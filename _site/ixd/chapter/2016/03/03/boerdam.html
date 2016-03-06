@@ -42,8 +42,10 @@
 </a>  
 
     <main class="chapter"
-      ng-init='slides = [{"cover":"/img/boerdam-front.jpg"}]'
-      ng-controller="SliderController">
+      
+        ng-init='slides = [{"cover":"/img/boerdam-front.jpg"}]'
+        ng-controller="SliderController"
+      >
       
     <header class="chapter-header">
         <div class="wrapper">
@@ -63,7 +65,6 @@
                 
                 <div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="index"></div>
             </div>
-        
         
         <div class="chapter-details"
              ng-repeat="slide in slides" 
@@ -93,6 +94,8 @@
                 </div>
             </div>
         </div>
+        
+        
         
         <div class="chapter-content" itemprop="articleBody">
             <div class="wrapper">

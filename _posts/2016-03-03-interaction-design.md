@@ -13,6 +13,9 @@ Wat houdt interaction design in hij ons?
 
 > the practice of designing interactive digital products, environments, systems, and services. <small>De definitie van interaction design volgens [Wikipedia](https://en.wikipedia.org/wiki/Interaction_design)</small>
 
+## Werkzaamheden
+Mijn dag begint met de stand-up. Hierbij zijn scrum-teamleden en eventuele stakeholders. Daarna ga ik verder waar ik de vorige dag was gebleven of begin ik met backlog-item met de hoogste prioriteit. Dit item kan in verschillende fases zijn. Het project kan in de conceptfase zijn, maar ook in de ontwerp-/onderzoeksfase of in de afrondingsfase. Afhankelijk van de fases zijn dit de de taken waar ik verantwoordelijk voor ben:
+
 ### Interaction design
 - Concepting
 - Research

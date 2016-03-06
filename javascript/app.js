@@ -59,15 +59,6 @@ app.controller("SliderController", function($scope, $timeout, $location){
         run();
     }
     
-    document.addEventListener("keydown", function(e){      
-        if(running || $scope.slides.length < 2) return;
-        
-        if (e.which == 37) prev();
-        if (e.which == 39) next();
-        
-        $scope.$apply();  
-    });
-    
     var setUrl = function(){
         if($scope.slides.length < 2) return;
         $location.path($scope.index + 1);
@@ -86,6 +77,17 @@ app.controller("SliderController", function($scope, $timeout, $location){
         }
     };
     
+    
+
+    document.addEventListener("keydown", function(e){      
+        if(running || $scope.slides.length < 2) return;
+        
+        if (e.which == 37) prev();
+        if (e.which == 39) next();
+        
+        $scope.$apply();  
+    });
+    
     $scope.$watch('index', function() {
         if ($scope.slides[$scope.index].theme === "light") {
             document.body.classList.add('theme-light');
@@ -99,7 +101,7 @@ app.controller("SliderController", function($scope, $timeout, $location){
         },10);
     });
     
-
     window.addEventListener('load', getUrl);
     window.addEventListener('hashchange', getUrl);
+
 })

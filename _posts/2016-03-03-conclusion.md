@@ -5,29 +5,29 @@ chapter: Chapter VI
 cover: /img/sunset.jpg
 categories: ixd chapter
 date:   2016-03-03 13:00 +0100
-slides:
-  - cover: /img/sunset.jpg
 ---
 
-Binnen Boerdam werken volgens het agile principe aan de hand van de SCRUM-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderen. De 12 agile principes volgens de Engelse Wikipedia:
+Als interaction designer bij Boerdam werk je aan toffe projecten binnen een kundig multidiciplinair team. Ik vind de combinatie tussen creatie en development erg leuk. Ik leer veel van andere scrum-team leden die vanuit een andere expertise werken. Van content tot back-end development, tot concept.
 
-- Customer satisfaction by early and continuous delivery of valuable software
-- Welcome changing requirements, even in late development
-- Working software is delivered frequently (weeks rather than months)
-- Close, daily cooperation between business people and developers
-- Projects are built around motivated individuals, who should be trusted
-- Face-to-face conversation is the best form of communication (co-location)
-- Working software is the principal measure of progress
-- Sustainable development, able to maintain a constant pace
-- Continuous attention to technical excellence and good design
-- Simplicity—the art of maximizing the amount of work not done—is essential
-- Best architectures, requirements, and designs emerge from self-organizing teams
-- Regularly, the team reflects on how to become more effective, and adjusts accordingly
+Een agile-traject met een klant aangaan is een grote aanrader. Ik merk dat ik als designer veel leer van de klant en zijn doelstellingen en daardoor uiteindelijk tot een beter resultaat kom. 
 
-In de praktijk ziet dat bij ons er als volgt uit. We werken in korte sprints. Elke sprint duurt 2 week, daarna begint de volgende sprint. Elke twee week is er sprake van een oplevering. Tijdens de sprints werken teamleden samen met product owners en stakeholders aan een product.
+De balans vinden tussen budget, klantwaarde en een stevig design willen neerzet blijft lastig. In de toekomst zou ik mogelijke oplossingen verder willen onderzoeken. 
 
-We werken aan de hand van een backlog waarin user stories staan. Bijvoorbeeld “Als geïnteresseerde wil ik me gemakkelijk en snel kunnen inschrijven voor de nieuwsbrief”. Deze user stories staan gerangschikt op prioriteit. De items die bovenaan de lijst staan komen in de volgende sprint.
+Komende periode wil ik mijzelf in de volle breedte verder ontwikkelen. Mijn leerdoelen zijn:
 
-De belangrijkste dag is de review dag. Dit is de laatste dag van de sprint. Dan worden de gemaakte producten gepresenteerd door het scrum team aan alle betrokken stakeholders. Aan de hand van nieuwe inzichten worden nieuwe user stories geschreven. Na de review beginnen we de nieuwe sprint met het plannen. Hierna gaan we aan de gang met de sprint. 
+- Verbreding zoeken in grafisch design en branding, doormiddel van aansluiten bij vakvereniging en lezen van vakbladen/-blogs
+- Samenwerking met content verbeteren, door meer te communiceren met contentmakers en backlog-items samen starten
+- Front-end skills verbeteren. Sass, Javascript, Angular, NodeJS, HTML5, etc.
+- Opleiding Interaction Design afronden
 
-Elke dag beginnen we met een stand-up. Een meeting van maximaal 15 minuten waarin elk scrum team-lid vertelt wat hij gisteren heeft gedaan, vandaag gaat doen en tegen welke blokkades hij aanloopt. Geduurde de dag wordt er intensief samengewerkt met product owners, developers en contentmakers. Stakeholders worden bij het ontwerp- en ontwikkelwerk ook vroeg in het proces betrokken.
+<ul class="links">
+  <li><a href="https://jekyllrb.com/">build with Jekyll</a></li>
+  <li><a href="http://tympanus.net/codrops/2015/12/23/freebie-colored-line-icons-svg-ai-png/">colored line icons</a></li>
+  <li><a href="https://github.io">hosted by Github Pages</a></li>
+  <li><a href="http://boerdam.nl/mensen/janneke/">photography by Janneke</a></li>
+  <li><a href="https://github.com/ChrisTheButcher/ChrisTheButcher.github.io">code, design and concept by me ;)</a></li>
+</ul>
+
+_Credits aan het Boerdam-team en Shirley van den Berg voor het geven van feedback_
+
+<small class="foot-note">Christian Wijnia</small>

@@ -8,8 +8,8 @@ date:   2016-03-03 15:00 +0100
 slides:
   - cover: /img/scrum.jpg
     theme: light
-  - cover: /img/slide-scrum.svg
-  - cover: /img/slide-sprints-alt2.svg 
+  - cover: /img/slide-scrum-s.svg
+  - cover: /img/slide-sprints-alt2-s.svg  
     theme: light
 ---
 
@@ -45,7 +45,7 @@ De belangrijkste dag is de review dag. Dit is de laatste dag van de sprint. Dan 
 Elke dag beginnen we met een stand-up. Een meeting van maximaal 15 minuten waarin elk scrum team-lid vertelt wat hij gisteren heeft gedaan, vandaag gaat doen en tegen welke blokkades hij aanloopt. Geduurde de dag wordt er intensief samengewerkt met product owners, developers en contentmakers. Stakeholders worden bij het ontwerp- en ontwikkelwerk ook vroeg in het proces betrokken.
 
 ## Wat levert het op?
-Klanttevredenheid, door snelle en constiste releases. Voorspelbaarheid, door inschatting van kosten van backlog-items en registreren van behaald werk per sprint (velocity). Gemakklijk kunnen inspelen op veranderingen in requirements voorhoogd flexibiliteit en daardoor klanttevredenheid.
+Klanttevredenheid, door snelle en consistente releases. Voorspelbaarheid, door inschatting van kosten van backlog-items en registreren van behaald werk per sprint (velocity). Gemakklijk kunnen inspelen op veranderingen in requirements voorhoogd flexibiliteit en daardoor klanttevredenheid.
 
 ## Scrum en design
 Toen we begonnen te _scrummen_ vond ik het moeilijk om mijn design-proces aan te passen binnen de flow van een sprint. Als designer wil je het complete product vormgeven, maar binnen sprints ben je bezig met kleine componenten van een product.
@@ -57,4 +57,4 @@ We liepen met deze aanpak tegen problemen aan. Zo waren we na een aantal sprints
 Onze scrum-master kwam toen met het idee om de doelen beter in kaart te brengen. Dit zijn we gaan doen door doelen op een groot papier in de spreekkamer op te hangen en deze wanneer nodig te updaten. Elk backlog-item wordt getoetst aan de hand van deze doelen, waardoor de klantwaarde hoog blijft en het scrum-team een brid-eye-view blijft houden over de projecten.
 
 ## Scrum en budget
-Een ander punt waar we achter kwamen toen we gingen scrummen was dat niet elk project even winstgevend is. Waar ik als scrum-teamlid veel me te maken heb is de [scope screep](https://en.wikipedia.org/wiki/Scope_creep). Dit betekent dat een backlog-item groter en groter wordt door het toevoegen van onnodige requirements en features waar geen klantwaarde in zit. Verder is binnen een sprint veel ruimte voor overleg. Zo word elke laatste maandag van de sprint een review-dag gepland die soms wel vijf uur kan duren. Gedurende de sprint wordt nog een aantal keer gerefined. Dit alles factureren we niet.
+Een ander punt waar we achter kwamen toen we gingen scrummen was dat niet elk project even winstgevend is. Waar ik als scrum-teamlid veel me te maken heb is de [scope screep](https://en.wikipedia.org/wiki/Scope_creep). Dit betekent dat een backlog-item groter en groter wordt door het toevoegen van onnodige requirements en features waar geen klantwaarde in zit. Verder is binnen een sprint veel ruimte voor overleg. Zo word elke laatste maandag van de sprint een review-dag gepland die soms wel vijf uur kan duren. Gedurende de sprint wordt nog een aantal keer gerefined. Dit alles factureren we niet. Doormiddel van het timeboxen van meetings kan overlegtijd worden geminimaliseerd. De scope creep kan worden verhoorkomen door de klantwaarde en doelen in het oog te houden.

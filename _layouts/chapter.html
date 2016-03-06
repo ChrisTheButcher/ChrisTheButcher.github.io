@@ -3,8 +3,10 @@ layout: default
 ---
 
 <main class="chapter"
-      ng-init='slides = {{ page.slides | jsonify }}'
-      ng-controller="SliderController">
+      {% if page.slides %}
+        ng-init='slides = {{ page.slides | jsonify }}'
+        ng-controller="SliderController"
+      {% endif %}>
       
     <header class="chapter-header">
         <div class="wrapper">
@@ -24,7 +26,6 @@ layout: default
                 
                 <div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="index"></div>
             </div>
-        {% endif %}
         
         <div class="chapter-details"
              ng-repeat="slide in slides" 
@@ -54,6 +55,8 @@ layout: default
                 </div>
             </div>
         </div>
+        
+        {% endif %}
         
         <div class="chapter-content" itemprop="articleBody">
             <div class="wrapper">

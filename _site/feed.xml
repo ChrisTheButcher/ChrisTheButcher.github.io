@@ -5,14 +5,21 @@
     <description>Christian Wijnia - Interaction Designer @ boerdam.</description>
     <link>http://christhebutcher.github.io/</link>
     <atom:link href="http://christhebutcher.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Mar 2016 17:42:16 +0100</pubDate>
-    <lastBuildDate>Sun, 06 Mar 2016 17:42:16 +0100</lastBuildDate>
+    <pubDate>Sun, 06 Mar 2016 20:14:15 +0100</pubDate>
+    <lastBuildDate>Sun, 06 Mar 2016 20:14:15 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Preface</title>
-        <description>&lt;div&gt;
+        <description>&lt;div class=&quot;text-center&quot;&gt;
+&lt;img src=&quot;/img/avatar.png&quot; class=&quot;img-small&quot; alt=&quot;Christian Wijnia&quot; /&gt;
 &lt;/div&gt;
+
+&lt;p&gt;Ik ben Christian Wijnia, sinds 2012 interaction designer bij &lt;a href=&quot;http://boerdam.nl&quot;&gt;Boerdam&lt;/a&gt; in Zwolle. Afgelopen half jaar heb ik hier ook stage gelopen.&lt;/p&gt;
+
+&lt;p&gt;Op deze site laat ik je zien wat een interaction designer dagelijks in de praktijk doet. Dit doe ik aan de hand van een aantal cases. &lt;br /&gt; In het hoofdstuk Agile &amp;amp; Scrum laat ik zien via welke methodiek we werken, welke meerwaarde dit biedt en tegen welke uitdagingen we hierbij aanlopen.&lt;/p&gt;
+
+&lt;p&gt;Vooraf wil ik mijn collega‘s bij Boerdam bedanken. In het bijzonder Heidie en Ivo voor het begeleiden en motiveren van mij in deze stageperiode.&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 18:00:00 +0100</pubDate>
         <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/preface.html</link>
@@ -57,6 +64,9 @@
 &lt;blockquote&gt;
   &lt;p&gt;the practice of designing interactive digital products, environments, systems, and services. &lt;small&gt;De definitie van interaction design volgens &lt;a href=&quot;https://en.wikipedia.org/wiki/Interaction_design&quot;&gt;Wikipedia&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h2 id=&quot;werkzaamheden&quot;&gt;Werkzaamheden&lt;/h2&gt;
+&lt;p&gt;Mijn dag begint met de stand-up. Hierbij zijn scrum-teamleden en eventuele stakeholders. Daarna ga ik verder waar ik de vorige dag was gebleven of begin ik met backlog-item met de hoogste prioriteit. Dit item kan in verschillende fases zijn. Het project kan in de conceptfase zijn, maar ook in de ontwerp-/onderzoeksfase of in de afrondingsfase. Afhankelijk van de fases zijn dit de de taken waar ik verantwoordelijk voor ben:&lt;/p&gt;
 
 &lt;h3 id=&quot;interaction-design&quot;&gt;Interaction design&lt;/h3&gt;
 &lt;ul&gt;
@@ -138,7 +148,7 @@
 &lt;p&gt;Elke dag beginnen we met een stand-up. Een meeting van maximaal 15 minuten waarin elk scrum team-lid vertelt wat hij gisteren heeft gedaan, vandaag gaat doen en tegen welke blokkades hij aanloopt. Geduurde de dag wordt er intensief samengewerkt met product owners, developers en contentmakers. Stakeholders worden bij het ontwerp- en ontwikkelwerk ook vroeg in het proces betrokken.&lt;/p&gt;
 
 &lt;h2 id=&quot;wat-levert-het-op&quot;&gt;Wat levert het op?&lt;/h2&gt;
-&lt;p&gt;Klanttevredenheid, door snelle en constiste releases. Voorspelbaarheid, door inschatting van kosten van backlog-items en registreren van behaald werk per sprint (velocity). Gemakklijk kunnen inspelen op veranderingen in requirements voorhoogd flexibiliteit en daardoor klanttevredenheid.&lt;/p&gt;
+&lt;p&gt;Klanttevredenheid, door snelle en consistente releases. Voorspelbaarheid, door inschatting van kosten van backlog-items en registreren van behaald werk per sprint (velocity). Gemakklijk kunnen inspelen op veranderingen in requirements voorhoogd flexibiliteit en daardoor klanttevredenheid.&lt;/p&gt;
 
 &lt;h2 id=&quot;scrum-en-design&quot;&gt;Scrum en design&lt;/h2&gt;
 &lt;p&gt;Toen we begonnen te &lt;em&gt;scrummen&lt;/em&gt; vond ik het moeilijk om mijn design-proces aan te passen binnen de flow van een sprint. Als designer wil je het complete product vormgeven, maar binnen sprints ben je bezig met kleine componenten van een product.&lt;/p&gt;
@@ -150,7 +160,7 @@
 &lt;p&gt;Onze scrum-master kwam toen met het idee om de doelen beter in kaart te brengen. Dit zijn we gaan doen door doelen op een groot papier in de spreekkamer op te hangen en deze wanneer nodig te updaten. Elk backlog-item wordt getoetst aan de hand van deze doelen, waardoor de klantwaarde hoog blijft en het scrum-team een brid-eye-view blijft houden over de projecten.&lt;/p&gt;
 
 &lt;h2 id=&quot;scrum-en-budget&quot;&gt;Scrum en budget&lt;/h2&gt;
-&lt;p&gt;Een ander punt waar we achter kwamen toen we gingen scrummen was dat niet elk project even winstgevend is. Waar ik als scrum-teamlid veel me te maken heb is de &lt;a href=&quot;https://en.wikipedia.org/wiki/Scope_creep&quot;&gt;scope screep&lt;/a&gt;. Dit betekent dat een backlog-item groter en groter wordt door het toevoegen van onnodige requirements en features waar geen klantwaarde in zit. Verder is binnen een sprint veel ruimte voor overleg. Zo word elke laatse maandag van de sprint een review-dag gepland die soms wel vijf uur kan duren. Gedurende de sprint wordt nog een aantal keer gerefined. Dit alles factureren we niet.&lt;/p&gt;
+&lt;p&gt;Een ander punt waar we achter kwamen toen we gingen scrummen was dat niet elk project even winstgevend is. Waar ik als scrum-teamlid veel me te maken heb is de &lt;a href=&quot;https://en.wikipedia.org/wiki/Scope_creep&quot;&gt;scope screep&lt;/a&gt;. Dit betekent dat een backlog-item groter en groter wordt door het toevoegen van onnodige requirements en features waar geen klantwaarde in zit. Verder is binnen een sprint veel ruimte voor overleg. Zo word elke laatste maandag van de sprint een review-dag gepland die soms wel vijf uur kan duren. Gedurende de sprint wordt nog een aantal keer gerefined. Dit alles factureren we niet. Doormiddel van het timeboxen van meetings kan overlegtijd worden geminimaliseerd. De scope creep kan worden verhoorkomen door de klantwaarde en doelen in het oog te houden.&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 15:00:00 +0100</pubDate>
         <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/agile-and-scrum.html</link>
@@ -180,30 +190,32 @@
     
       <item>
         <title>Conclusion</title>
-        <description>&lt;p&gt;Binnen Boerdam werken volgens het agile principe aan de hand van de SCRUM-methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderen. De 12 agile principes volgens de Engelse Wikipedia:&lt;/p&gt;
+        <description>&lt;p&gt;Als interaction designer bij Boerdam werk je aan toffe projecten binnen een kundig multidiciplinair team. Ik vind de combinatie tussen creatie en development erg leuk. Ik leer veel van andere scrum-team leden die vanuit een andere expertise werken. Van content tot back-end development, tot concept.&lt;/p&gt;
+
+&lt;p&gt;Een agile-traject met een klant aangaan is een grote aanrader. Ik merk dat ik als designer veel leer van de klant en zijn doelstellingen en daardoor uiteindelijk tot een beter resultaat kom.&lt;/p&gt;
+
+&lt;p&gt;De balans vinden tussen budget, klantwaarde en een stevig design willen neerzet blijft lastig. In de toekomst zou ik mogelijke oplossingen verder willen onderzoeken.&lt;/p&gt;
+
+&lt;p&gt;Komende periode wil ik mijzelf in de volle breedte verder ontwikkelen. Mijn leerdoelen zijn:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Customer satisfaction by early and continuous delivery of valuable software&lt;/li&gt;
-  &lt;li&gt;Welcome changing requirements, even in late development&lt;/li&gt;
-  &lt;li&gt;Working software is delivered frequently (weeks rather than months)&lt;/li&gt;
-  &lt;li&gt;Close, daily cooperation between business people and developers&lt;/li&gt;
-  &lt;li&gt;Projects are built around motivated individuals, who should be trusted&lt;/li&gt;
-  &lt;li&gt;Face-to-face conversation is the best form of communication (co-location)&lt;/li&gt;
-  &lt;li&gt;Working software is the principal measure of progress&lt;/li&gt;
-  &lt;li&gt;Sustainable development, able to maintain a constant pace&lt;/li&gt;
-  &lt;li&gt;Continuous attention to technical excellence and good design&lt;/li&gt;
-  &lt;li&gt;Simplicity—the art of maximizing the amount of work not done—is essential&lt;/li&gt;
-  &lt;li&gt;Best architectures, requirements, and designs emerge from self-organizing teams&lt;/li&gt;
-  &lt;li&gt;Regularly, the team reflects on how to become more effective, and adjusts accordingly&lt;/li&gt;
+  &lt;li&gt;Verbreding zoeken in grafisch design en branding, doormiddel van aansluiten bij vakvereniging en lezen van vakbladen/-blogs&lt;/li&gt;
+  &lt;li&gt;Samenwerking met content verbeteren, door meer te communiceren met contentmakers en backlog-items samen starten&lt;/li&gt;
+  &lt;li&gt;Front-end skills verbeteren. Sass, Javascript, Angular, NodeJS, HTML5, etc.&lt;/li&gt;
+  &lt;li&gt;Opleiding Interaction Design afronden&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In de praktijk ziet dat bij ons er als volgt uit. We werken in korte sprints. Elke sprint duurt 2 week, daarna begint de volgende sprint. Elke twee week is er sprake van een oplevering. Tijdens de sprints werken teamleden samen met product owners en stakeholders aan een product.&lt;/p&gt;
+&lt;ul class=&quot;links&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;build with Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tympanus.net/codrops/2015/12/23/freebie-colored-line-icons-svg-ai-png/&quot;&gt;colored line icons&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.io&quot;&gt;hosted by Github Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://boerdam.nl/mensen/janneke/&quot;&gt;photography by Janneke&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ChrisTheButcher/ChrisTheButcher.github.io&quot;&gt;code, design and concept by me ;)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;We werken aan de hand van een backlog waarin user stories staan. Bijvoorbeeld “Als geïnteresseerde wil ik me gemakkelijk en snel kunnen inschrijven voor de nieuwsbrief”. Deze user stories staan gerangschikt op prioriteit. De items die bovenaan de lijst staan komen in de volgende sprint.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Credits aan het Boerdam-team en Shirley van den Berg voor het geven van feedback&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;De belangrijkste dag is de review dag. Dit is de laatste dag van de sprint. Dan worden de gemaakte producten gepresenteerd door het scrum team aan alle betrokken stakeholders. Aan de hand van nieuwe inzichten worden nieuwe user stories geschreven. Na de review beginnen we de nieuwe sprint met het plannen. Hierna gaan we aan de gang met de sprint.&lt;/p&gt;
-
-&lt;p&gt;Elke dag beginnen we met een stand-up. Een meeting van maximaal 15 minuten waarin elk scrum team-lid vertelt wat hij gisteren heeft gedaan, vandaag gaat doen en tegen welke blokkades hij aanloopt. Geduurde de dag wordt er intensief samengewerkt met product owners, developers en contentmakers. Stakeholders worden bij het ontwerp- en ontwikkelwerk ook vroeg in het proces betrokken.&lt;/p&gt;
+&lt;p&gt;&lt;small class=&quot;foot-note&quot;&gt;Christian Wijnia&lt;/small&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 13:00:00 +0100</pubDate>
         <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/conclusion.html</link>

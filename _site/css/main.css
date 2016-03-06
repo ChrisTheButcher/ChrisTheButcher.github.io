@@ -752,6 +752,14 @@ h3, .h3 {
 .text-center {
   text-align: center; }
 
+.foot-note {
+  display: block;
+  text-align: right;
+  font-size: 100%;
+  font-family: "chivoblack_italic";
+  text-transform: uppercase;
+  margin-top: 3em; }
+
 a {
   color: #00f; }
   a:hover {
@@ -770,14 +778,14 @@ a {
     .lead, .chapter-content p:first-of-type {
       font-size: 22px; } }
 
-.chapter-content ul {
+.chapter-content ul:not(.links) {
   list-style: none;
   padding: 0;
   margin: 2em 0;
   background: #303030;
   color: white;
   margin-bottom: 3em; }
-  .chapter-content ul li {
+  .chapter-content ul:not(.links) li {
     padding: 1em;
     border-bottom: 2px solid #f4f4f4;
     font-family: "chivoregular";
@@ -962,6 +970,8 @@ blockquote {
   .chapter-content .img-small-right {
     float: right;
     margin-left: 1em; }
+  .chapter-content h2 {
+    margin-top: 2em; }
 
 .chapter-header {
   background: white;
@@ -1002,7 +1012,7 @@ blockquote {
   .chapter-slider ul[rn-carousel] {
     background: #cecece;
     height: 0;
-    padding-bottom: 65.72265625%;
+    padding-bottom: 43.94531%;
     overflow: hidden;
     position: relative;
     margin: 0;
@@ -1077,6 +1087,7 @@ blockquote {
   .chapter-details.active {
     height: auto;
     opacity: 1;
+    overflow: initial;
     visibility: visible;
     z-index: 2; }
 
