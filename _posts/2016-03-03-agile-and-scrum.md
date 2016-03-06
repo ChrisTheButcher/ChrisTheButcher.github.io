@@ -31,7 +31,7 @@ Binnen Boerdam werken volgens het agile principe aan de hand van de [Scrum](http
 - Regularly, the team reflects on how to become more effective, and adjusts accordingly
 
 ## De praktijk
-We werken in korte sprints. Elke sprint duurt 2 week, daarna begint de volgende sprint. Elke twee week is er sprake van een oplevering. Tijdens de sprints werken teamleden samen met product owners en stakeholders aan een product.
+We werken in korte sprints. Elke sprint duurt twee week, daarna begint de volgende sprint. Elke twee week is er sprake van een oplevering. Tijdens de sprints werken teamleden samen met product owners en stakeholders aan een product.
 
 We werken aan de hand van een backlog waarin user stories staan. 
 
@@ -50,7 +50,7 @@ Klanttevredenheid, door snelle en consistente releases. Voorspelbaarheid, door i
 ## Scrum en design
 Toen we begonnen te _scrummen_ vond ik het moeilijk om mijn design-proces aan te passen binnen de flow van een sprint. Als designer wil je het complete product vormgeven, maar binnen sprints ben je bezig met kleine componenten van een product.
 
-Onze eerste aanpak was als volgt. We maakten een of twee globale ontwerpen en op basis hiervan werden compenenten in detail ontworpen en ontwikkeld.
+Onze eerste aanpak was als volgt: we maakten een of twee globale ontwerpen en op basis hiervan werden compenenten in detail ontworpen en ontwikkeld.
 
 We liepen met deze aanpak tegen problemen aan. Zo waren we na een aantal sprints de grote lijnen uit het oog verloren. We waren niet meer bezig met klantwaarde, maar met individuele backlog-items.
 
