@@ -6,7 +6,7 @@ chapter: Chapter IV
 categories: ixd chapter
 date:   2016-03-03 15:00 +0100
 slides:
-  - cover: /img/rugby.jpg 
+  - cover: /img/haka.jpg 
     theme: light
   - cover: /img/slide-scrum-s.svg
   - cover: /img/slide-sprints-alt2-s.svg  
@@ -15,20 +15,20 @@ slides:
 
 Binnen Boerdam werken volgens het agile principe aan de hand van de [scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderingen.
 
-## De 12 agile principes volgens [wikipedia](https://en.wikipedia.org/wiki/Interaction_design)
+## De 12 agile principes volgens het [agile manifesto](https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto)
  
-- Customer satisfaction by early and continuous delivery of valuable software
-- Welcome changing requirements, even in late development
-- Working software is delivered frequently (weeks rather than months)
-- Close, daily cooperation between business people and developers
-- Projects are built around motivated individuals, who should be trusted
-- Face-to-face conversation is the best form of communication (co-location)
-- Working software is the principal measure of progress
-- Sustainable development, able to maintain a constant pace
-- Continuous attention to technical excellence and good design
-- Simplicity—the art of maximizing the amount of work not done—is essential
-- Best architectures, requirements, and designs emerge from self-organizing teams
-- Regularly, the team reflects on how to become more effective, and adjusts accordingly
+- hoogste prioriteit is de klant tevreden te stellen door het vroegtijdig en voortdurend opleveren van bruikbare software
+- Verwelkom veranderende behoeftes, zelfs laat in het ontwikkelproces. Agile processen benutten verandering en leveren zo een concurrentie voordeel voor de business
+- Lever regelmatig werkende software op. Liefst iedere paar weken, hooguit iedere paar maanden
+- Vertegenwoordigers van de business en ontwikkelaars werken dagelijks samen gedurende het gehele project
+- Bouw projecten rond gemotiveerde individuen. Geef hen de omgeving en ondersteuning die ze nodig hebben en vertrouw erop dat ze de klus klaren
+- De meest efficiënte en effectieve manier om informatie te delen in een ontwikkelteam is met elkaar te praten
+- Werkende software is de belangrijkste maat voor voortgang
+- Agile processen maken continue ontwikkeling mogelijk. Opdrachtgever, ontwikkelaars en gebruikers moeten een constant tempo eindeloos kunnen volhouden.
+- Voortdurende aandacht voor een hoge technische kwaliteit en voor een goed ontwerp versterken agility
+- Eenvoud – de kunst van het maximaliseren van het werk dat niet gedaan wordt – is essentieel
+- De beste architecturen, eisen en ontwerpen komen voort uit zelfsturende teams
+- Op vaste tijden, onderzoekt het team hoe het effectiever kan worden en past vervolgens zijn gedrag daarop aan
 
 ## De praktijk
 We werken in korte sprints. Elke sprint duurt twee week, daarna begint de volgende sprint. Elke twee week is er sprake van een oplevering. Tijdens de sprints werken teamleden samen met product owners en stakeholders aan een product.

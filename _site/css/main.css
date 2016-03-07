@@ -821,6 +821,7 @@ blockquote {
       blockquote small, .chapter-content blockquote small, blockquote p:first-of-type small, .chapter-content blockquote p:first-of-type small {
         display: block;
         margin-top: 1em;
+        color: #303030;
         font-family: "chivoregular";
         line-height: 1.3; }
 
