@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title:  Agile & Scrum
-cover: /img/rugby.jpg
+cover: /img/haka.jpg
 chapter: Chapter IV
 categories: ixd chapter
 date:   2016-03-03 15:00 +0100
