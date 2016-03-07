@@ -1,12 +1,12 @@
 ---
 layout: chapter
 title:  Agile & Scrum
-cover: /img/scrum.jpg
+cover: /img/rugby.jpg
 chapter: Chapter IV
 categories: ixd chapter
 date:   2016-03-03 15:00 +0100
 slides:
-  - cover: /img/scrum.jpg
+  - cover: /img/rugby.jpg 
     theme: light
   - cover: /img/slide-scrum-s.svg
   - cover: /img/slide-sprints-alt2-s.svg  
@@ -57,4 +57,4 @@ We liepen met deze aanpak tegen problemen aan. Zo waren we na een aantal sprints
 Onze scrum-master kwam toen met het idee om de doelen beter in kaart te brengen. Dit zijn we gaan doen door doelen op een groot papier in de spreekkamer op te hangen en deze wanneer nodig te updaten. Elk backlog-item wordt getoetst aan de hand van deze doelen, waardoor de klantwaarde hoog blijft en het scrum-team een brid-eye-view blijft houden over de projecten.
 
 ## Scrum en budget
-Een ander punt waar we achter kwamen toen we gingen scrummen was dat niet elk project even winstgevend is. Waar ik als scrum-teamlid veel me te maken heb is de [scope screep](https://en.wikipedia.org/wiki/Scope_creep). Dit betekent dat een backlog-item groter en groter wordt door het toevoegen van onnodige requirements en features waar geen klantwaarde in zit. Verder is binnen een sprint veel ruimte voor overleg. Zo word elke laatste maandag van de sprint een review-dag gepland die soms wel vijf uur kan duren. Gedurende de sprint wordt nog een aantal keer gerefined. Dit alles factureren we niet. Doormiddel van het timeboxen van meetings kan overlegtijd worden geminimaliseerd. De scope creep kan worden verhoorkomen door de klantwaarde en doelen in het oog te houden.
+Een ander punt waar we achter kwamen toen we gingen scrummen was dat niet elk project even winstgevend is. Waar ik als scrum-teamlid veel me te maken heb is de [scope screep](https://en.wikipedia.org/wiki/Scope_creep). Dit betekent dat een backlog-item groter en groter wordt door het toevoegen van onnodige requirements en features waar geen klantwaarde in zit. Verder is binnen een sprint veel ruimte voor overleg. Zo word elke laatste maandag van de sprint een review-dag gepland die soms wel vijf uur kan duren. Gedurende de sprint wordt nog een aantal keer gerefined. Dit alles factureren we niet. Door middel van het timeboxen van meetings kan overlegtijd worden geminimaliseerd. De scope creep kan worden verhoorkomen door de klantwaarde en doelen in het oog te houden.
