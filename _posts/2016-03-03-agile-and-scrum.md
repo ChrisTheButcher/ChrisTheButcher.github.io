@@ -33,7 +33,7 @@ Binnen Boerdam werken volgens het agile principe aan de hand van de [scrum](http
 ## Rollen
 **De product owner** werkt binnen de uitvoerende organisiatie. Hij heeft een visie en is verantwoordelijk voor het resultaat. Scrum teamleden kunnen met vragen bij de product owner terecht.
 
-**De scrum master** is baak een teamlid. Iemand die zorgt dat scrum goed wordt uitgevoerd.
+**De scrum master** is vaak een teamlid. Iemand die zorgt dat scrum goed wordt uitgevoerd.
 
 **Het scrum team** bestaat uit front- en back-end developers, designers, contentmakers en interaction designers. Deze doen het uitvoerende werk in sprints van twee weken.
 
