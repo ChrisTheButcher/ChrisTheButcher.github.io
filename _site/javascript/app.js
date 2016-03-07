@@ -48,16 +48,19 @@ app.controller("SliderController", function($scope, $timeout, $location){
         running = false;    
       },300);
     };
-    var prev = function(){
+    $scope.prev = function(){
         if($scope.index === 0) return;
         $scope.index--;
         run();  
     }
-    var next = function(){
+    $scope.next = function(){
         if($scope.index === $scope.slides.length - 1) return;
         $scope.index++;
         run();
     }
+    
+    $scope.prevSlide = null;    
+    $scope.nextSlide = null;
     
     var setUrl = function(){
         if($scope.slides.length < 2) return;
@@ -82,8 +85,8 @@ app.controller("SliderController", function($scope, $timeout, $location){
     document.addEventListener("keydown", function(e){      
         if(running || $scope.slides.length < 2) return;
         
-        if (e.which == 37) prev();
-        if (e.which == 39) next();
+        if (e.which == 37) $scope.prev();
+        if (e.which == 39) $scope.next();
         
         $scope.$apply();  
     });
@@ -94,6 +97,14 @@ app.controller("SliderController", function($scope, $timeout, $location){
         }
         else if (document.body.classList.contains('theme-light')){
             document.body.classList.remove('theme-light');
+        }
+        
+         if ($scope.slides && $scope.slides.length > 1) {
+            var prev = $scope.slides[$scope.index - 1];
+            var next = $scope.slides[$scope.index + 1];
+            
+            $scope.prevSlide = prev ? prev : null;    
+            $scope.nextSlide = next ? next : null;
         }
         
         $timeout(function(){

@@ -20,6 +20,14 @@
     &.btn-prev:hover {
         transform: skew(7deg) translateX(-3.5%);
     }
+    
+    @extend %reset-btn;
+    
+    &:hover, &:active, &:focus {
+        outline: 0;
+        box-shadow: none;
+        text-decoration: none;
+    }
 }
 
 .btn.btn-next,
@@ -53,6 +61,20 @@
     img {
         vertical-align: middle;
         margin-left: 30px;
+    }
+}
+
+.btn.btn-default {
+    background: white;
+    
+    .angular-ripple {
+        background-color: $color-grey-lightest;
+    }
+    
+    &.btn-next, &.btn-prev {
+        &:hover {
+            transform: none;
+        }
     }
 }
 

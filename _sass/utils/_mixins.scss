@@ -176,3 +176,19 @@
     }
   }
 }
+
+%reset-btn {
+    outline: 0!important;
+    appearance: none;
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    color: inherit;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
