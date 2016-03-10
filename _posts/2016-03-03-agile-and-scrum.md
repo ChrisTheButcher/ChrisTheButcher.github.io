@@ -8,8 +8,6 @@ date:   2016-03-03 15:00 +0100
 slides:
   - cover: /img/haka.jpg 
     theme: light
-  - cover: /img/haka.jpg 
-    theme: light
   - cover: /img/slide-scrum-s.svg
   - cover: /img/slide-sprints-alt2-s.svg  
     theme: light
