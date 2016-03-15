@@ -11,7 +11,7 @@ slides:
     theme: light
 ---
 
-Wat houdt interaction design in hij ons?
+Wat houdt interaction design in bij ons?
 
 > De ontwerpdiscipline is gericht op het creëren van producten en diensten die nuttig, bruikbaar en betekenisvol zijn voor de mensen die ze gebruiken. <small>De beschrijving van interaction design volgens [wikipedia](https://nl.wikipedia.org/wiki/Interaction_design)</small>
 
