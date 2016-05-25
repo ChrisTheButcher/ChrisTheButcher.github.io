@@ -7,9 +7,9 @@
 
 # Site settings
 title: Christian Wijnia
-subtitle: Interaction Designer
+subtitle: Interaction Design
 email: christian@boerdam.nl
-description: Christian Wijnia - Interaction Designer @ boerdam.
+description: Christian Wijnia - Interaction Design
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://christhebutcher.github.io" # the base hostname & protocol for your site
 twitter_username: chriswijnia
