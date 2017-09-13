@@ -188,7 +188,7 @@ dl {
     left: 0;
     z-index: -1;
     background-color: white;
-    background-image: url("/dist/img/tower.jpg");
+    background-image: url("/v2/dist/img/tower.jpg");
     background-size: cover;
     background-position: bottom center;
     opacity: .3; }
