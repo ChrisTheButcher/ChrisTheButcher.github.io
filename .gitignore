@@ -2,3 +2,5 @@
 .jekyll-metadata
 /_site
 node_modules
+v2/node_modules
+v2/src
