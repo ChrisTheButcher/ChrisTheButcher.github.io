@@ -1,0 +1,23 @@
+@mixin h {
+	h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 { @content; }
+}
+
+@mixin bp($width, $minmax: min) {
+    @media screen and (#{$minmax}-width: $width) {
+        @content;
+    }
+  }
+
+  @mixin abs($top: 0, $right: $top, $bottom: $top, $left: $top) {
+    position:absolute;
+    top:$top; right:$right; bottom:$bottom; left:$left;
+  }
+
+  @mixin fxd($top: 0, $right: $top, $bottom: $top, $left: $top) {
+    position:fixed;
+    top:$top; right:$right; bottom:$bottom; left:$left;
+  }
+
+  @function rem($pixels, $context: 32) {
+    @return #{$pixels/$context}rem;
+  }

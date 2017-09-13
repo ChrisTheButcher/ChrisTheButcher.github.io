@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+:root {
+    font-size: 16px;
+    @include bp($sm) { font-size: 17px; }
+    @include bp($md) { font-size: 18px; }
+    @include bp($lg) { font-size: 20px; }
+    @include bp($xl) { font-size: 22px; }
+}
+
+body {
+    font-family: 'Chivo';
+    font-size: rem(32);
+    margin: 0;
+    line-height: 1.5;
+    color: black;
+    border-top: 0;
+
+    @include bp($xl) {
+        &:before {
+            content: '';
+            user-select: none;
+            @include fxd;
+            border: rem(50) solid $color-primary;
+        }
+    }
+}
+
+a {
+    color: $color-secondary;
+    text-decoration: underline;
+    .is-inverted & { color: white; }
+    &:hover { background: $color-primary; }
+}
+
+mark {
+    background: $color-primary;
+}
+
+@include h {
+    margin: 0 0 .7em;
+    font-weight: 700;   
+    line-height: .85;    
+}
+
+h2 {
+    font-size: rem(100);
+    @include bp($sm) { font-size: rem(150); }
+    font-weight: 900;
+}
+
+h3 {
+    font-size: rem(60);
+}
+
+.lead {
+    font-size: rem(55);
+    margin: 0 0 rem(170);
+    line-height: 1.1;    
+    font-weight: 400;
+}
+
+p {
+    font-size: rem(32);
+}

@@ -1,0 +1,30 @@
+.link-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline;
+        font-size: rem(40);
+        line-height: 2.5;
+        margin-right: rem(60);
+    }
+}
+
+.link-list-slash {
+    @extend .link-list;
+    //padding: rem(30) 0 0;
+    //border-top: $stroke-width solid black;
+
+    // &:after {
+    //     .is-inverted & {
+    //         border-color: white;
+    //     }
+    // }
+
+    li {
+        margin-right: 0;
+        font-size: rem(40);
+        &:not(:last-of-type):after { content: ' / '; }
+    }
+}
