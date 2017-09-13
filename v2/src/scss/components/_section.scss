@@ -15,7 +15,7 @@ section {
     }
 }
 
-.bg-tower {
+.bg {
     position: relative;
     background: none;
     @include bp($sm) { min-height: 160vw; }
@@ -26,7 +26,6 @@ section {
         @include abs;
         z-index: -1;
         background-color: white;
-        background-image: url('dist/img/tower.jpg');
         background-size: cover;
         background-position: bottom center;
         opacity: .3;
