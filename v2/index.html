@@ -131,6 +131,9 @@
     const hashLinks = Array.from(document.querySelectorAll("[href*='#']"));
     const inverted = Array.from(document.querySelectorAll("section.is-inverted"));
     const body = document.body;
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    body.classList.toggle("is-mobile", isMobile);
 
     function inView(element) {
       const nav = document.querySelector(".nav").getBoundingClientRect();
@@ -145,6 +148,8 @@
       const themeInverted = inverted.map(x => inView(x)).indexOf(true) > -1;
       body.classList.toggle("theme-inverted", themeInverted)
     });
+
+
   </script>
 </body>
 

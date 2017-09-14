@@ -115,6 +115,26 @@ header {
   @media screen and (min-width: 576px) {
     header {
       min-height: 100vh; } }
+  header:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: linear-gradient(#FFF568 0%, transparent 30%, transparent 70%, #FFF568 100%); }
+  .is-mobile header:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: color-burn;
+    opacity: .2;
+    filter: brightness(140%) contrast(110%);
+    content: '';
+    background: url("../img/travel.jpg");
+    background-size: cover; }
   header .container {
     position: relative;
     z-index: 2; }
@@ -139,14 +159,8 @@ header {
     mix-blend-mode: color-burn;
     opacity: .2;
     filter: brightness(140%) contrast(110%); }
-  header:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(#FFF568 0%, transparent 30%, transparent 70%, #FFF568 100%); }
+    .is-mobile header video {
+      display: none; }
 
 h1 {
   font-size: 2.8125rem;

@@ -1,11 +1,33 @@
 header {
+    @mixin filter {
+        mix-blend-mode: color-burn;
+        opacity: .2;
+        filter: brightness(140%) contrast(110%);
+    }
+
     background: $color-primary;
     position: relative;
     padding: rem($gutter-vertical) rem($gutter-horizontal);    
     overflow: hidden;
     display: flex;
     align-items: center;
-    @include bp($sm) { min-height: 100vh; }    
+    @include bp($sm) { min-height: 100vh; }
+
+    &:after {
+        @include abs;
+        content: '';
+        background: linear-gradient($color-primary 0%, transparent 30%, transparent 70%, $color-primary 100%);
+    }
+
+    .is-mobile & {
+        &:before {
+            @include abs;
+            @include filter;
+            content: '';
+            background: url("../img/travel.jpg");
+            background-size: cover;
+        }
+    }
 
     .container {
         position: relative;
@@ -14,9 +36,7 @@ header {
 
     a {
         color: black;
-        &:hover {
-            color: blue;
-        }
+        &:hover { color: blue; }
     }
 
     .lead {
@@ -24,7 +44,6 @@ header {
         line-height: 1.5;
         margin-bottom: 0;
         font-size: rem(48);
-        //font-weight: 300;
     }
 
     video {
@@ -36,15 +55,8 @@ header {
         width: auto;
         height: auto;
         transform: translate(-50%, -50%);
-        mix-blend-mode: color-burn;
-        opacity: .2;
-        filter: brightness(140%) contrast(110%);
-    }
-
-    &:after {
-        content: '';
-        @include abs;
-        background: linear-gradient($color-primary 0%, transparent 30%, transparent 70%, $color-primary 100%);
+        @include filter;       
+        .is-mobile & { display: none; }
     }
 }
 
@@ -54,7 +66,6 @@ h1 {
     z-index: 1;
     small { 
         font-weight: 300; 
-
         @include bp($md, max) { 
             display: block; 
             margin-top: .5em;
