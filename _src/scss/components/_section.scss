@@ -1,6 +1,7 @@
 section {
     padding: rem($gutter-vertical) rem($gutter-horizontal);    
     position: relative;
+    overflow: hidden;
     @include bp($sm) { min-height: 100vh; }        
 
     &[data-inverted="true"] {
@@ -16,10 +17,8 @@ section {
 
 
     .bg {
-        @include abs;
+        @extend %overlay;
         z-index: -1;
-        background-color: white;
-        background-image: url('../img/tower.jpg');
         background-size: cover;
         background-position: bottom center;
         opacity: .3;

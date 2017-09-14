@@ -50,6 +50,11 @@
 
 	var _ToggleClass = __webpack_require__(2);
 
+	var _Parallax = __webpack_require__(3);
+
+	new _Parallax.Parallax("header", "", "video, .bg");
+	new _Parallax.Parallax("section", "", ".bg");
+
 	var hashLinks = (0, _DomHelper.$select)("[href*='#']");
 	var inverted = (0, _DomHelper.$select)("section.is-inverted");
 	var media = (0, _DomHelper.$select)("img, video, [style*='background-image']");
@@ -167,6 +172,51 @@
 	    (0, _DomHelper.$select)('[data-toggle-class]').forEach(function (el) {
 	        return el.addEventListener('click', toggleClass);
 	    });
+	};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Parallax = undefined;
+
+	var _DomHelper = __webpack_require__(1);
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Parallax = exports.Parallax = function Parallax(container, text, bg) {
+	    _classCallCheck(this, Parallax);
+
+	    function update() {
+	        (0, _DomHelper.$select)(container).forEach(function (element, i) {
+	            var rect = element.getBoundingClientRect();
+	            var newPosition = rect.top / window.innerHeight * 100;
+	            var bgPos = newPosition * -1 + 'px';
+	            var txtPos = newPosition * -1 + 'px';
+
+	            if (bg) {
+	                [].concat(_toConsumableArray(element.querySelectorAll(bg))).forEach(function (e) {
+	                    return e.style.transform = 'translate(-50%, calc(-50% + ' + bgPos + '))';
+	                });
+	            }
+
+	            if (text) {
+	                [].concat(_toConsumableArray(element.querySelectorAll(text))).forEach(function (e) {
+	                    return e.style.top = '' + txtPos;
+	                });
+	            }
+	        });
+	    }
+
+	    update();
+	    document.addEventListener('scroll', update);
 	};
 
 /***/ })

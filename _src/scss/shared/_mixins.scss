@@ -21,3 +21,21 @@
   @function rem($pixels, $context: 32) {
     @return #{$pixels/$context}rem;
   }
+
+  %overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+
+}
+
+%filter {
+  mix-blend-mode: color-burn;
+  opacity: .2;
+  filter: brightness(140%) contrast(110%);
+}

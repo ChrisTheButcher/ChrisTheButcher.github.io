@@ -1,5 +1,9 @@
 import {$select} from "./components/DomHelper";
 import {ToggleClass} from "./components/ToggleClass";
+import {Parallax} from "./components/Parallax";
+
+new Parallax("header", "", "video, .bg")
+new Parallax("section", "", ".bg")
 
 const hashLinks = $select("[href*='#']");
 const inverted = $select("section.is-inverted");

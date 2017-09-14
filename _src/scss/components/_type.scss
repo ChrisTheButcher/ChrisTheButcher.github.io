@@ -8,6 +8,10 @@
     @include bp($xl) { font-size: 22px; }
 }
 
+figure {
+    margin: 0;
+}
+
 body {
     font-family: 'Chivo';
     font-size: rem(32);

@@ -1,21 +1,23 @@
 import {$select} from "./DomHelper";
 
 export class Parallax {
-    constructor(container, text, background) {
-        console.log(container)
+    constructor(container, text, bg) {
         function update() {           
             $select(container).forEach((element, i) => {
-                const backgroundElements = [...element.querySelectorAll(background)];
-                const textElements = [...element.querySelectorAll(text)];
                 const rect = element.getBoundingClientRect();
-                const newPosition = rect.top * -1;
+                const newPosition = (rect.top / window.innerHeight) * 100;
+                const bgPos = newPosition * -1 + 'px';
+                const txtPos = newPosition * -1 + 'px';
 
-                const bgPos = newPosition * .3 + 'px';
-                const txtPos = newPosition * .15 + 'px';
-
+                if (bg) {
+                    [...element.querySelectorAll(bg)]                 
+                        .forEach(e => e.style.transform = `translate(-50%, calc(-50% + ${bgPos}))`);                    
+                }
                 
-                backgroundElements.forEach(e => e.style.transform = `translateY(${bgPos})`);
-                textElements.forEach(e => e.style.top = `${txtPos}`);
+                if (text) {
+                    [...element.querySelectorAll(text)]                   
+                        .forEach(e => e.style.top = `${txtPos}`);                    
+                }
             });
         }
         

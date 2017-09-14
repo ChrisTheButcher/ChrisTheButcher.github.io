@@ -1,10 +1,4 @@
 header {
-    @mixin filter {
-        mix-blend-mode: color-burn;
-        opacity: .2;
-        filter: brightness(140%) contrast(110%);
-    }
-
     background: $color-primary;
     position: relative;
     padding: rem($gutter-vertical) rem($gutter-horizontal);    
@@ -21,8 +15,8 @@ header {
 
     .is-mobile & {
         .bg {
-            @include abs;
-            @include filter;
+            @extend %overlay;
+            @extend %filter;
             background-size: cover;
         }
     }
@@ -42,18 +36,12 @@ header {
         line-height: 1.5;
         margin-bottom: 0;
         font-size: rem(48);
+        position: relative;
     }
 
     video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        transform: translate(-50%, -50%);
-        @include filter;       
+        @extend %overlay;
+        @extend %filter;
         .is-mobile & { display: none; }
     }
 }
@@ -62,6 +50,8 @@ h1 {
     font-size: rem(90);
     font-weight: 900;
     z-index: 1;
+    position: relative;
+
     small { 
         font-weight: 300; 
         @include bp($md, max) { 
