@@ -103,11 +103,13 @@
 	  });
 	});
 
-	document.addEventListener("scroll", function (e) {
-	  var themeInverted = inverted.map(function (x) {
-	    return inView(x);
-	  }).indexOf(true) > -1;
-	  body.classList.toggle("theme-inverted", themeInverted);
+	["scroll", "resize"].forEach(function (e) {
+	  return addEventListener(e, function () {
+	    var themeInverted = inverted.map(function (x) {
+	      return inView(x);
+	    }).indexOf(true) > -1;
+	    body.classList.toggle("theme-inverted", themeInverted);
+	  });
 	});
 
 /***/ }),
@@ -225,7 +227,9 @@
 	    }
 
 	    update();
-	    document.addEventListener('scroll', update);
+	    ["scroll", "resize"].forEach(function (e) {
+	        return addEventListener(e, update);
+	    });
 	};
 
 /***/ })

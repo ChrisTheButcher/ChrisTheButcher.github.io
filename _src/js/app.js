@@ -43,7 +43,7 @@ media.forEach(e => {
 
 hashLinks.forEach(e => e.addEventListener("click", e => body.classList.toggle("menu-open")));
 
-document.addEventListener("scroll", e => {
+["scroll", "resize"].forEach(e => addEventListener(e, () => {
   const themeInverted = inverted.map(x => inView(x)).indexOf(true) > -1;
   body.classList.toggle("theme-inverted", themeInverted)
-});
+}));

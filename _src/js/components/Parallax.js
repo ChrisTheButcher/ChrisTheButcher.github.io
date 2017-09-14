@@ -22,6 +22,6 @@ export class Parallax {
         }
         
         update();
-        document.addEventListener('scroll', update)
+        ["scroll", "resize"].forEach(e => addEventListener(e, update))
     }
 }

@@ -230,8 +230,8 @@ nav {
   left: 0;
   z-index: 30;
   opacity: 0;
-  -webkit-transition: opacity .3s linear;
-  transition: opacity .3s linear;
+  -webkit-transition: opacity .4s ease-in;
+  transition: opacity .4s ease-in;
   pointer-events: none; }
   nav ul {
     margin: auto;
@@ -275,8 +275,8 @@ body.menu-open {
     border: 3px solid black;
     content: '';
     display: inline-block;
-    -webkit-transition: border-color .1s linear;
-    transition: border-color .1s linear; }
+    -webkit-transition: border-color .15s ease-in;
+    transition: border-color .15s ease-in; }
     .theme-inverted:not(.menu-open) .nav:before {
       border-color: white; }
 

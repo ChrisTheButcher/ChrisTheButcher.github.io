@@ -8,7 +8,7 @@ nav {
     @include fxd;
     z-index: 30;
     opacity: 0;
-    transition: opacity .3s linear;
+    transition: opacity .4s ease-in;
     pointer-events: none;
 
     ul {
@@ -60,7 +60,7 @@ body.menu-open {
         border: $stroke-width solid black;
         content: '';
         display: inline-block;
-        transition: border-color .1s linear;
+        transition: border-color .15s ease-in;
 
         .theme-inverted:not(.menu-open) & {
             border-color: white;
