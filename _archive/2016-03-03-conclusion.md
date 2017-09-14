@@ -1,10 +1,10 @@
 ---
+title: Conclusion
+date: 2016-03-03 12:00:00 Z
 layout: chapter
-title:  Conclusion
 chapter: Chapter VI
-cover: /img/sunset.jpg
+cover: "/img/sunset.jpg"
 categories: ixd chapter
-date:   2016-03-03 13:00 +0100 
 ---
 
 Als interaction designer bij Boerdam werk je aan toffe projecten binnen een kundig multidiciplinair team. Ik vind de combinatie tussen creatie en development erg leuk. Ik leer veel van andere scrum teamleden die vanuit een andere expertise werken. Van content tot back-end development, tot concept.
