@@ -52,6 +52,7 @@
 
 	var hashLinks = (0, _DomHelper.$select)("[href*='#']");
 	var inverted = (0, _DomHelper.$select)("section.is-inverted");
+	var media = (0, _DomHelper.$select)("img, video, [style*='background-image']");
 	var body = document.body;
 	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -63,6 +64,24 @@
 	  var section = element.getBoundingClientRect();
 	  return section.top < navHalf && !(section.bottom < navHalf);
 	};
+
+	media.forEach(function (e) {
+	  var saved = void 0;
+
+	  if (e.matches("[style*='background-image']")) {
+	    saved = e.style.backgroundImage;
+	    e.style.backgroundImage = "";
+	    setTimeout(function () {
+	      e.style.backgroundImage = saved;
+	    });
+	  } else {
+	    saved = e.src;
+	    e.src = "";
+	    setTimeout(function () {
+	      e.src = saved;
+	    });
+	  }
+	});
 
 	hashLinks.forEach(function (e) {
 	  return e.addEventListener("click", function (e) {

@@ -3,6 +3,7 @@ import {ToggleClass} from "./components/ToggleClass";
 
 const hashLinks = $select("[href*='#']");
 const inverted = $select("section.is-inverted");
+const media = $select("img, video, [style*='background-image']");
 const body = document.body;
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -14,6 +15,21 @@ function inView(element) {
   const section = element.getBoundingClientRect();
   return (section.top < navHalf) && !(section.bottom < navHalf);
 };
+
+media.forEach(e => {
+  let saved;
+
+  if (e.matches("[style*='background-image']")) {
+    saved = e.style.backgroundImage;
+    e.style.backgroundImage = "";
+    setTimeout(()=> { e.style.backgroundImage = saved })
+  }
+  else {
+    saved = e.src;    
+    e.src = "";
+    setTimeout(()=> { e.src = saved })    
+  }
+})
 
 hashLinks.forEach(e => e.addEventListener("click", e => body.classList.toggle("menu-open")));
 
