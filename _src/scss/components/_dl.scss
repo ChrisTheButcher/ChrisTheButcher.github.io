@@ -1,0 +1,42 @@
+dl {
+    position: relative;
+    width: 100%;
+    margin: 0; padding: 0;
+    overflow: hidden;
+
+
+    dt {
+        margin: 0;
+        padding: rem(40) 0 0;
+        @extend h3;        
+
+        &:before {
+            left: 0; right: 0;
+            content: "";
+            position: absolute;
+            margin-top: rem(-40);
+            border-top: $stroke-width solid black;
+            display: block;  
+            
+            [data-inverted="true"] & {
+                border-color: white;
+            }
+        }
+    }
+    dd {
+        @extend p;
+        margin: rem(35) 0 rem(90);
+        padding: 0;
+    }
+
+    @include bp($md) {
+        dt {
+            float: left;
+            width: 33%;
+        }
+        dd {
+            width: 67%;
+            float: left;
+        }
+    }
+}

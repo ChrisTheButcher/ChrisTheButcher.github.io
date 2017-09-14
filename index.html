@@ -1,24 +1,14 @@
+---
+layout: default
+---
 
-<!DOCTYPE html>
-<html">
+{% 
+    assign sections = site.posts | where: "onHome", true 
+%}
 
-    <head>
-        <meta charset="utf-8">
-        <title>ChrisTheButcher</title>
-        <link rel="stylesheet" href="/css/main.css">
-        <style>
-            body {
-                padding: 40px;
-            }
-            a {
-                display: inline-block;
-                margin-right: 15px;
-            }
-        </style>
-    </head>
+{% include nav.md %}
+{% include header.md %}
 
-  <body>
-       <a href="https://github.com/christhebutcher">github.com/christhebutcher</a> <a href="/ixd">IxD</a>
-  </body> 
- 
-</html>
+{% for section in sections %}
+    {{ section }}
+{% endfor %}

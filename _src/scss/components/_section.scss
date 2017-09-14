@@ -1,0 +1,26 @@
+section {
+    padding: rem($gutter-vertical) rem($gutter-horizontal);    
+    position: relative;
+    @include bp($sm) { min-height: 100vh; }        
+
+    &[data-inverted="true"] {
+        color: white;
+        &:after {
+            content: '';
+            @include abs;
+            display: block;
+            background: black; 
+            z-index: -1;       
+        }
+    }
+}
+
+.bg {
+    @include abs;
+    z-index: -1;
+    background-color: white;
+    background-image: url('../img/tower.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    opacity: .3;
+}

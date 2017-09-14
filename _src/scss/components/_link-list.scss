@@ -1,0 +1,22 @@
+.link-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline;
+        font-size: rem(40);
+        line-height: 2.5;
+        margin-right: rem(60);
+    }
+}
+
+.link-list-slash {
+    @extend .link-list;
+
+    li {
+        margin-right: 0;
+        font-size: rem(40);
+        &:not(:last-of-type):after { content: ' / '; }
+    }
+}

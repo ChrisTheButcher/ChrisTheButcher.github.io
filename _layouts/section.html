@@ -1,0 +1,9 @@
+<section id="{{page.hook}}" data-inverted="{{page.inverted}}">
+    <div class="container">
+        {{content}}            
+    </div>
+
+    {% if page.background %}
+    <div class="bg" style="background-image: url('{{page.background}}');"></div>
+    {% endif %}
+</section>

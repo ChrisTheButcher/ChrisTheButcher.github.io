@@ -1,104 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Christian Wijnia</title>
-    <description>Christian Wijnia - Interaction Design</description>
-    <link>http://christhebutcher.github.io/</link>
-    <atom:link href="http://christhebutcher.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 May 2016 17:05:16 +0200</pubDate>
-    <lastBuildDate>Wed, 25 May 2016 17:05:16 +0200</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
-    
-      <item>
-        <title>Blog</title>
-        <description>&lt;p&gt;Wat houdt interaction design in bij ons?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-09-14T22:01:31+02:00</updated><id>/</id><title type="html">Chris Wijnia / designer &amp;amp; developer</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">What I make</title><link href="/2017/09/14/portfolio.html" rel="alternate" type="text/html" title="What I make" /><published>2017-09-14T00:00:00+02:00</published><updated>2017-09-14T00:00:00+02:00</updated><id>/2017/09/14/portfolio</id><content type="html" xml:base="/2017/09/14/portfolio.html">&lt;h2 id=&quot;what-i-make&quot;&gt;What I make&lt;/h2&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;De ontwerpdiscipline is gericht op het creëren van producten en diensten die nuttig, bruikbaar en betekenisvol zijn voor de mensen die ze gebruiken. &lt;small&gt;De beschrijving van interaction design volgens &lt;a href=&quot;https://nl.wikipedia.org/wiki/Interaction_design&quot;&gt;wikipedia&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;dl&gt;
+  &lt;dt&gt;MVRDV&lt;/dt&gt;
+  &lt;dd&gt;With a background in graphic design and programming I posses a wide range of abilities that can contribute to your business. Starting by laying out the groundworks in a well thought out concept. The starting point for a successful project.&lt;/dd&gt;
+  &lt;dt&gt;Province of Overijssel&lt;/dt&gt;
+  &lt;dd&gt;With a background in graphic design and programming I posses a wide range of abilities that can contribute to your business. Starting by laying out the groundworks in a well thought out concept. The starting point for a successful project.&lt;/dd&gt;
+&lt;/dl&gt;</content><author><name></name></author><summary type="html">What I make</summary></entry><entry><title type="html">What I do</title><link href="/2017/09/13/services.html" rel="alternate" type="text/html" title="What I do" /><published>2017-09-13T00:00:00+02:00</published><updated>2017-09-13T00:00:00+02:00</updated><id>/2017/09/13/services</id><content type="html" xml:base="/2017/09/13/services.html">&lt;h2 id=&quot;what-i-do&quot;&gt;What I do&lt;/h2&gt;
 
-&lt;h2 id=&quot;werkzaamheden&quot;&gt;Werkzaamheden&lt;/h2&gt;
-&lt;p&gt;Mijn dag begint met de stand-up. Hierbij zijn scrum teamleden en eventuele stakeholders. Daarna ga ik verder waar ik de vorige dag was gebleven of begin ik met backlog-item met de hoogste prioriteit. Dit item kan in verschillende fases zijn. Het project kan in de conceptfase zijn, maar ook in de ontwerp-/onderzoeksfase of in de afrondingsfase. Afhankelijk van de fases zijn dit de de taken waar ik verantwoordelijk voor ben:&lt;/p&gt;
+&lt;p class=&quot;lead&quot;&gt;Wanna &lt;mark&gt;collaborate&lt;/mark&gt;?&lt;br /&gt; You’re not in bad company at all.&lt;/p&gt;
 
-&lt;h3 id=&quot;interaction-design&quot;&gt;Interaction design&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Concepting&lt;/li&gt;
-  &lt;li&gt;Research&lt;/li&gt;
-  &lt;li&gt;Schetsen&lt;/li&gt;
-  &lt;li&gt;Wireframing&lt;/li&gt;
-  &lt;li&gt;Flowcharting&lt;/li&gt;
-  &lt;li&gt;Moodboard ontwerp&lt;/li&gt;
-  &lt;li&gt;Styleguide ontwerp&lt;/li&gt;
-  &lt;li&gt;Pagina ontwerp&lt;/li&gt;
-  &lt;li&gt;User interface component ontwerp&lt;/li&gt;
-  &lt;li&gt;Bewaken design en concept&lt;/li&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Concept&lt;/dt&gt;
+  &lt;dd&gt;With a background in graphic design and programming I posses a wide range of abilities that can contribute to your business. Starting by laying out the groundworks in a well thought out concept. The starting point for a successful project.&lt;/dd&gt;
+  &lt;dt&gt;Design&lt;/dt&gt;
+  &lt;dd&gt;With a background in graphic design and programming I posses a wide range of abilities that can contribute to your business. Starting by laying out the groundworks in a well thought out concept. The starting point for a successful project.&lt;/dd&gt;
+  &lt;dt&gt;Development&lt;/dt&gt;
+  &lt;dd&gt;With a background in graphic design and programming I posses a wide range of abilities that can contribute to your business. Starting by laying out the groundworks in a well thought out concept. The starting point for a successful project.&lt;/dd&gt;
+  &lt;dt&gt;Marketing&lt;/dt&gt;
+  &lt;dd&gt;With a background in graphic design and programming I posses a wide range of abilities that can contribute to your business. Starting by laying out the groundworks in a well thought out concept. The starting point for a successful project.&lt;/dd&gt;
+&lt;/dl&gt;</content><author><name></name></author><summary type="html">What I do</summary></entry><entry><title type="html">Who I work with</title><link href="/2017/09/12/clients.html" rel="alternate" type="text/html" title="Who I work with" /><published>2017-09-12T00:00:00+02:00</published><updated>2017-09-12T00:00:00+02:00</updated><id>/2017/09/12/clients</id><content type="html" xml:base="/2017/09/12/clients.html">&lt;h2 id=&quot;who-i-work-with&quot;&gt;Who I work with&lt;/h2&gt;
+
+&lt;p class=&quot;lead&quot;&gt;Wanna &lt;mark&gt;collaborate&lt;/mark&gt;?&lt;br /&gt; You’re not in bad company at all.&lt;/p&gt;
+
+&lt;ul class=&quot;link-list-slash&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;show-img&quot;&gt;Province of Noord-Brabant&lt;img src=&quot;//media.giphy.com/media/14fwByvqlMmIrm/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//boerdam.nl&quot; class=&quot;show-img&quot;&gt;Boerdam&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDRaI_YYthKoGMmDqfiaRvcWsLsZGj46485MkHdPN07cnTsYfF&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//dimpact.nl&quot; class=&quot;show-img&quot;&gt;Hedon Zwolle&lt;img src=&quot;//media.giphy.com/media/3og0IGjLXRttYbbtcc/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//tedx.com&quot; class=&quot;show-img&quot;&gt;TedX&lt;img src=&quot;//media.giphy.com/media/JxOnUIbVk3ZWU/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;show-img&quot;&gt;Liberation Day Overijssel&lt;img src=&quot;//media.giphy.com/media/l41m5BrAMV1FFQ8yk/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;show-img&quot;&gt;Tele2&lt;img src=&quot;//media.giphy.com/media/UE9JPTe7LySli/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//mvrdv.com&quot; class=&quot;show-img&quot;&gt;MVRDV&lt;img src=&quot;//media.giphy.com/media/3oEduMkS4VLz7x8eYg/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;rova.nl&quot; class=&quot;show-img&quot;&gt;ROVA&lt;img src=&quot;//media.giphy.com/media/3oEhmCVfXL9o75NcPe/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//jijenoverijssel.nl&quot; class=&quot;show-img&quot;&gt;Province of Overijssel&lt;img src=&quot;//media.giphy.com/media/VguFFBXa22mn6/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//monitorgroningen.nl&quot; class=&quot;show-img&quot;&gt;Province of Groningen&lt;img src=&quot;//i.dailymail.co.uk/i/pix/2017/08/12/08/4323FE4700000578-0-Noorderhaven_canal_at_night-a-3_1502524336663.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Who I work with</summary></entry><entry><title type="html">Where to find me</title><link href="/2017/09/11/contact.html" rel="alternate" type="text/html" title="Where to find me" /><published>2017-09-11T00:00:00+02:00</published><updated>2017-09-11T00:00:00+02:00</updated><id>/2017/09/11/contact</id><content type="html" xml:base="/2017/09/11/contact.html">&lt;h2 id=&quot;where-to-find-me&quot;&gt;Where to find me&lt;/h2&gt;
+
+&lt;ul class=&quot;link-list-slash&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;//twitter.com/ChristianWijnia&quot; class=&quot;show-img&quot;&gt;Twitter&lt;img src=&quot;//media.giphy.com/media/W5YVAfSttCqre/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//www.facebook.com/ChristianWijnia&quot; class=&quot;show-img&quot;&gt;Facebook&lt;img src=&quot;//media.giphy.com/media/vgyUbeBAVeTy8/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//instagram.com/christhebutcher&quot; class=&quot;show-img&quot;&gt;Instagram&lt;img src=&quot;//media.giphy.com/media/3owypf6HrM3J7UTvAA/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//www.linkedin.com/in/christian-wijnia-1364a29b/&quot; class=&quot;show-img&quot;&gt;LinkedIn&lt;img src=&quot;//media.giphy.com/media/IEbrIbqMDfIdO/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//github.com/christhebutcher&quot; class=&quot;show-img&quot;&gt;Github&lt;img src=&quot;//media.giphy.com/media/gU25raLP4pUu4/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:ccwijnia@gmail.com&quot; class=&quot;show-img&quot;&gt;Email&lt;img src=&quot;//media.giphy.com/media/T8Dhl1KPyzRqU/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;//api.whatsapp.com/send?phone=31642407442&quot; class=&quot;show-img&quot;&gt;WhatsApp&lt;img src=&quot;//media.giphy.com/media/WirhZMBF1AZVK/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;front-end-development&quot;&gt;Front-end development&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;C# razor&lt;/li&gt;
-  &lt;li&gt;ECMAScript (JavaScript, AngularJS, jQuery, GulpJS, TypeScript)&lt;/li&gt;
-  &lt;li&gt;CSS (SASS)&lt;/li&gt;
-  &lt;li&gt;HTML5 (SVG, accessibility, Canvas)&lt;/li&gt;
-  &lt;li&gt;Versiebeheer (Git, TFS)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;scrum&quot;&gt;Scrum&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Advies aan stakeholders en product owners&lt;/li&gt;
-  &lt;li&gt;Presentatie aan stakeholders en product owners&lt;/li&gt;
-  &lt;li&gt;Samenwerken in een scrum team&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Thu, 03 Mar 2016 16:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/blog.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/blog.html</guid>
-        
-        
-        <category>ixd</category>
-        
-        <category>chapter</category>
-        
-      </item>
-    
-      <item>
-        <title>Cases</title>
-        <description>
-</description>
-        <pubDate>Thu, 03 Mar 2016 14:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/cases.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/cases.html</guid>
-        
-        
-        <category>ixd</category>
-        
-        <category>chapter</category>
-        
-      </item>
-    
-      <item>
-        <title>About</title>
-        <description>&lt;div class=&quot;text-center&quot;&gt;
-    &lt;img src=&quot;/img/avatar.png&quot; class=&quot;img-small&quot; alt=&quot;Christian Wijnia&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ik ben Christian Wijnia, sinds 2012 interaction designer bij &lt;a href=&quot;http://boerdam.nl&quot;&gt;Boerdam&lt;/a&gt; in Zwolle. Afgelopen half jaar heb ik hier ook stage gelopen.&lt;/p&gt;
-
-&lt;p&gt;Op deze site laat ik je zien wat een interaction designer dagelijks in de praktijk doet. Dit doe ik aan de hand van een aantal cases. &lt;br /&gt; In het hoofdstuk Agile &amp;amp; Scrum laat ik zien via welke methodiek we werken, welke meerwaarde dit biedt en tegen welke uitdagingen we hierbij aanlopen.&lt;/p&gt;
-
-&lt;p&gt;Vooraf wil ik mijn collega‘s bij Boerdam bedanken. In het bijzonder Heidie en Ivo voor het begeleiden en motiveren van mij in deze stageperiode.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 03 Mar 2016 09:00:00 +0100</pubDate>
-        <link>http://christhebutcher.github.io/ixd/chapter/2016/03/03/about.html</link>
-        <guid isPermaLink="true">http://christhebutcher.github.io/ixd/chapter/2016/03/03/about.html</guid>
-        
-        
-        <category>ixd</category>
-        
-        <category>chapter</category>
-        
-      </item>
-    
-  </channel>
-</rss>
+&lt;p class=&quot;thanks&quot;&gt;Thanks for stopping by.&lt;br /&gt; Here’s a cool &lt;a href=&quot;//api.whatsapp.com/send?phone=31642407442&quot; class=&quot;show-img&quot;&gt;picture&lt;img src=&quot;//media.giphy.com/media/l6Td5sKDNmDGU/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; of a cat.&lt;/p&gt;</content><author><name></name></author><summary type="html">Where to find me</summary></entry></feed>
