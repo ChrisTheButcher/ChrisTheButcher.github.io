@@ -11,7 +11,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-title_html: Chris Wijnia <small><span>/</span> designer &amp; front-end developer</small>
+title_html: Chris Wijnia <small><span>/</span> designer &amp; developer</small>
 email: ccwijnia@gmail.com
 description: "\n"
 baseurl: 
