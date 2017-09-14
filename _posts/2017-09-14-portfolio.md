@@ -1,7 +1,7 @@
 ---
-layout: section
 title: What I make
 date: 2017-09-14 02:00:00 +02:00
+layout: section
 hook: portfolio
 onHome: true
 ---
