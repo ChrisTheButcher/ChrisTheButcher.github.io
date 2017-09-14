@@ -1,15 +1,15 @@
 ---
 title: What I make
-date: 2017-09-14 00:00:00 Z
-layout: section
+date: 2017-09-14 02:00:00 +02:00
 hook: portfolio
 onHome: true
+layout: section
 ---
 
 ## {{page.title}}
 
 MVRDV
-: With a background in graphic design and programming I posses a wide range of abilities that can contribute to your business. Starting by laying out the groundworks in a well thought out concept. The starting point for a successful project.
+: Fully responsive redesign of the website using Sass and Angular. <br><br>[mvrdv.com](//mvrdv.com)</p>
 
 Province of Overijssel
-: With a background in graphic design and programming I posses a wide range of abilities that can contribute to your business. Starting by laying out the groundworks in a well thought out concept. The starting point for a successful project.
+: With Boerdam we won the competition to make an online participation platform for [JIJ&Overijssel]. In 2016 we won The Galjaard Award for our revolutionary concept.<br><br>[jijenoverijssel.nl](//jijenoverijssel.nl)
