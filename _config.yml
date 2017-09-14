@@ -2,6 +2,9 @@
 title: Chris Wijnia / designer & developer
 timezone: Europe/Amsterdam
 collections:
+  includes:
+    title: Includes
+    output: true
   posts:
     title: Posts
     output: true
