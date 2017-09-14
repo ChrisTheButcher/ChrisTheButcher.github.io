@@ -2,7 +2,7 @@
 title: What I make
 date: 2017-09-14 02:00:00 +02:00
 hook: portfolio
-onHome: true
+on_home: true
 layout: section
 ---
 
