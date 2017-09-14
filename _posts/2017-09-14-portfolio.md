@@ -9,7 +9,7 @@ layout: section
 ## {{page.title}}
 
 MVRDV
-: Online re-branding. Fully mobile first redesign of the website using the latest front-end technologies. <br><br>[mvrdv.com](//mvrdv.com)
+: Online re-branding. Fully responsive mobile first redesign of the website using the latest front-end technologies. <br><br>[mvrdv.com](//mvrdv.com)
 
 Province of Overijssel
 : With Boerdam we won the competition to make an online participation platform for JIJ&Overijssel. In 2016 we won The Galjaard Award for our revolutionary concept.<br><br>[jijenoverijssel.nl](//jijenoverijssel.nl)
