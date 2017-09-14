@@ -13,6 +13,8 @@ collections:
     output: true
 title_html: Chris Wijnia <small><span>/</span> designer &amp; developer</small>
 email: ccwijnia@gmail.com
+header_img: 
+header_video: 
 description: "\n"
 baseurl: 
 url: chriswijnia.com
@@ -23,5 +25,3 @@ include:
 - _pages
 plugins:
 - jekyll-feed
-header_img: 
-header_video: 
