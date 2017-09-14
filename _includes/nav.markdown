@@ -1,8 +1,3 @@
----
-title: nav
-date: 2017-09-14 22:24:00 +02:00
----
-
 {% 
     assign sections = site.posts | where: "onHome", true 
 %}

@@ -1,8 +1,3 @@
----
-title: header
-date: 2017-09-14 22:08:00 +02:00
----
-
 <header id="about">
     <video src="{{site.header_video}}" loop autoplay></video>
 
