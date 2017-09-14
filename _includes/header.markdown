@@ -4,7 +4,7 @@ date: 2017-09-14 22:08:00 +02:00
 ---
 
 <header id="about">
-    <video src="/assets/img/travel.mp4" loop autoplay></video>
+    <video src="{{site.header_vide}}" loop autoplay></video>
     <div class="container">
         <h1>{{site.title_html}}</h1>
         <p class="lead">
