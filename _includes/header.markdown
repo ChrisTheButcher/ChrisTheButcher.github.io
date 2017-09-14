@@ -6,7 +6,7 @@ date: 2017-09-14 22:08:00 +02:00
 <header id="about">
     <video src="/assets/img/travel.mp4" loop autoplay></video>
     <div class="container">
-        <h1>Chris Wijnia <small><span>/</span> designer &amp; developer</small></h1>
+        <h1>{{site.title_html}}</h1>
         <p class="lead">
             Hi, my name is 
             <a href="#" class="show-img">Chris<img src="assets/img/avatar.png"></a>. 
