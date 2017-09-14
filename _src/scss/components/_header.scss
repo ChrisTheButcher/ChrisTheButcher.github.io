@@ -20,11 +20,9 @@ header {
     }
 
     .is-mobile & {
-        &:before {
+        .bg {
             @include abs;
             @include filter;
-            content: '';
-            background: url("../img/travel.jpg");
             background-size: cover;
         }
     }
