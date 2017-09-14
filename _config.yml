@@ -23,3 +23,5 @@ include:
 - _pages
 plugins:
 - jekyll-feed
+header_img: 
+header_video: 
