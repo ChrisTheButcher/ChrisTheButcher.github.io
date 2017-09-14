@@ -1,16 +1,16 @@
 ---
+title: Agile & Scrum
+date: 2016-03-03 14:00:00 Z
 layout: chapter
-title:  Agile & Scrum
-cover: /img/haka.jpg
+cover: "/img/haka.jpg"
 chapter: Chapter IV
 categories: ixd chapter
-date:   2016-03-03 15:00 +0100
 slides:
-  - cover: /img/haka.jpg 
-    theme: light
-  - cover: /img/slide-scrum-s.svg
-  - cover: /img/slide-sprints-alt2-s.svg  
-    theme: light
+- cover: "/img/haka.jpg"
+  theme: light
+- cover: "/img/slide-scrum-s.svg"
+- cover: "/img/slide-sprints-alt2-s.svg"
+  theme: light
 ---
 
 Binnen Boerdam werken volgens het agile principe aan de hand van de [scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) methode. Agile betekent wendbaar en gaat uit van het inspelen op veranderingen.
