@@ -17,7 +17,7 @@ section {
 
 
     .bg {
-        @extend %overlay;
+        @include overlay;
         z-index: -1;
         background-size: cover;
         background-position: bottom center;

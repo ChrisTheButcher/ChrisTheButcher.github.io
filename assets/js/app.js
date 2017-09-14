@@ -71,21 +71,30 @@
 	};
 
 	media.forEach(function (e) {
-	  var saved = void 0;
+	  var saved = void 0,
+	      img = void 0;
+	  var listerer = e.tagName === "VIDEO" ? "loadeddata" : "load";
 
 	  if (e.matches("[style*='background-image']")) {
 	    saved = e.style.backgroundImage;
 	    e.style.backgroundImage = "";
+	    img = document.createElement("img");
+	    img.src = saved.slice(4, -1).replace(/"/g, "");
 	    setTimeout(function () {
 	      e.style.backgroundImage = saved;
-	    });
+	    }, 30);
 	  } else {
 	    saved = e.src;
 	    e.src = "";
+	    img = e;
 	    setTimeout(function () {
 	      e.src = saved;
-	    });
+	    }, 30);
 	  }
+
+	  img.addEventListener(listerer, function () {
+	    return e.classList.add("loaded");
+	  });
 	});
 
 	hashLinks.forEach(function (e) {

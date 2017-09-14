@@ -21,18 +21,24 @@ function inView(element) {
 };
 
 media.forEach(e => {
-  let saved;
+  let saved, img;
+  let listerer = e.tagName === "VIDEO" ? "loadeddata" : "load";
 
   if (e.matches("[style*='background-image']")) {
     saved = e.style.backgroundImage;
     e.style.backgroundImage = "";
-    setTimeout(()=> { e.style.backgroundImage = saved })
+    img = document.createElement("img");
+    img.src = saved.slice(4, -1).replace(/"/g, "");
+    setTimeout(()=> { e.style.backgroundImage = saved }, 30)
   }
   else {
     saved = e.src;    
     e.src = "";
-    setTimeout(()=> { e.src = saved })    
+    img = e;
+    setTimeout(()=> { e.src = saved }, 30)    
   }
+
+  img.addEventListener(listerer, () => e.classList.add("loaded"))
 })
 
 hashLinks.forEach(e => e.addEventListener("click", e => body.classList.toggle("menu-open")));

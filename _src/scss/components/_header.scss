@@ -13,9 +13,10 @@ header {
         background: linear-gradient($color-primary 0%, transparent 30%, transparent 70%, $color-primary 100%);
     }
 
-    .is-mobile & {
-        .bg {
-            @extend %overlay;
+    .bg {
+        opacity: 0;
+        .is-mobile & {
+            @include overlay;
             @extend %filter;
             background-size: cover;
         }
@@ -39,8 +40,8 @@ header {
         position: relative;
     }
 
-    video {
-        @extend %overlay;
+    video {    
+        @include overlay;
         @extend %filter;
         .is-mobile & { display: none; }
     }
