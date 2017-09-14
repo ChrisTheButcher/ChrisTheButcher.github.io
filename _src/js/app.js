@@ -6,7 +6,7 @@ new Parallax("header", "", "video, .bg")
 new Parallax("section", "", ".bg")
 
 const hashLinks = $select("[href*='#']");
-const inverted = $select("section.is-inverted");
+const inverted = $select("section[data-inverted='true']");
 const media = $select("img, video, [style*='background-image']");
 const body = document.body;
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

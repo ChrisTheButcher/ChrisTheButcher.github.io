@@ -56,7 +56,7 @@
 	new _Parallax.Parallax("section", "", ".bg");
 
 	var hashLinks = (0, _DomHelper.$select)("[href*='#']");
-	var inverted = (0, _DomHelper.$select)("section.is-inverted");
+	var inverted = (0, _DomHelper.$select)("section[data-inverted='true']");
 	var media = (0, _DomHelper.$select)("img, video, [style*='background-image']");
 	var body = document.body;
 	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
