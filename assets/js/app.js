@@ -92,8 +92,11 @@
 	      setTimeout(function () {
 	        e.src = saved;
 	      });
+	    } else {
+	      setTimeout(function () {
+	        e.src = saved;
+	      }, 3000);
 	    }
-	    //setTimeout(()=> { e.src = saved }, 30)    
 	  }
 
 	  img.addEventListener(listerer, function () {
