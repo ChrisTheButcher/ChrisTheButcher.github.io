@@ -35,7 +35,11 @@ media.forEach(e => {
     saved = e.src;    
     e.src = "";
     img = e;
-    setTimeout(()=> { e.src = saved }, 30)    
+
+    if (e.tagName === "VIDEO") {
+      setTimeout(()=> { e.src = saved })    
+    }
+    //setTimeout(()=> { e.src = saved }, 30)    
   }
 
   img.addEventListener(listerer, () => e.classList.add("loaded"))

@@ -6,8 +6,8 @@ layout: default
     assign sections = site.posts | where: on_home, true 
 %}
 
-{% include nav.markdown %}
-{% include header.markdown %}
+{% include nav.html %}
+{% include header.html %}
 
 {% for section in sections %}
     {{ section }}

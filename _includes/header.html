@@ -1,0 +1,18 @@
+<header id="about">
+
+    <div class="container">
+        <h1>{{site.title_html}}</h1>
+
+        {% if site.description %}
+            <p class="lead">{{site.description}}</p>
+        {% endif %}
+    </div>
+
+    {% if site.header_video %}
+        <video src="{{site.header_video}}" loop autoplay></video>
+    {% endif %}
+
+    {% if site.header_img %}
+        <div class="bg" style="background-image: url('{{site.header_img}}');"></div>
+    {% endif %}
+</header>

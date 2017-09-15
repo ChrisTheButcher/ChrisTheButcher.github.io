@@ -87,9 +87,13 @@
 	    saved = e.src;
 	    e.src = "";
 	    img = e;
-	    setTimeout(function () {
-	      e.src = saved;
-	    }, 30);
+
+	    if (e.tagName === "VIDEO") {
+	      setTimeout(function () {
+	        e.src = saved;
+	      });
+	    }
+	    //setTimeout(()=> { e.src = saved }, 30)    
 	  }
 
 	  img.addEventListener(listerer, function () {
