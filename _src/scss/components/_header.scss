@@ -1,6 +1,7 @@
 header {
     background: $color-primary;
     position: relative;
+    z-index: 110;
     padding: rem($gutter-vertical) rem($gutter-horizontal);    
     overflow: hidden;
     display: flex;
@@ -13,12 +14,21 @@ header {
         background: linear-gradient($color-primary 0%, transparent 30%, transparent 70%, $color-primary 100%);
     }
 
-    .bg {
-        opacity: 0;
-        .is-mobile & {
+    .hero-img {
+        img { display: none; }
+
+        .bg {
             @include overlay;
             @extend %filter;
             background-size: cover;
+            display: none;
+            .is-mobile & { display: block; }            
+        }
+
+        video {
+            @include overlay;
+            @extend %filter;
+            .is-mobile & { display: none; }
         }
     }
 
@@ -38,12 +48,6 @@ header {
         margin-bottom: 0;
         font-size: rem(48);
         position: relative;
-    }
-
-    video {    
-        @include overlay;
-        @extend %filter;
-        .is-mobile & { display: none; }
     }
 }
 

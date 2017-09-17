@@ -1,4 +1,4 @@
-.is-mobile header .bg, header video {
+header .hero-img .bg, header .hero-img video {
   mix-blend-mode: color-burn;
   opacity: .2;
   -webkit-filter: brightness(140%) contrast(110%);
@@ -45,6 +45,8 @@ body {
       right: 0;
       bottom: 0;
       left: 0;
+      pointer-events: none;
+      z-index: 100;
       border: 1.5625rem solid #FFF568; } }
 
 a {
@@ -128,6 +130,7 @@ dl {
 header {
   background: #FFF568;
   position: relative;
+  z-index: 110;
   padding: 10.9375rem 2.8125rem;
   overflow: hidden;
   display: -webkit-box;
@@ -148,23 +151,44 @@ header {
     content: '';
     background: -webkit-gradient(linear, left top, left bottom, from(#FFF568), color-stop(30%, transparent), color-stop(70%, transparent), to(#FFF568));
     background: linear-gradient(#FFF568 0%, transparent 30%, transparent 70%, #FFF568 100%); }
-  header .bg {
+  header .hero-img img {
+    display: none; }
+  header .hero-img .bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+    opacity: 0;
+    background-size: cover;
+    display: none; }
+    header .hero-img .bg.loaded {
+      opacity: .2; }
+    .is-mobile header .hero-img .bg {
+      display: block; }
+  header .hero-img video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
     opacity: 0; }
-    .is-mobile header .bg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      -webkit-transition: opacity 2s ease-in;
-      transition: opacity 2s ease-in;
-      background-size: cover; }
-      .is-mobile header .bg:not(.loaded) {
-        opacity: 0; }
+    header .hero-img video.loaded {
+      opacity: .2; }
+    .is-mobile header .hero-img video {
+      display: none; }
   header .container {
     position: relative;
     z-index: 2; }
@@ -178,22 +202,6 @@ header {
     margin-bottom: 0;
     font-size: 1.5rem;
     position: relative; }
-  header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-transition: opacity 2s ease-in;
-    transition: opacity 2s ease-in; }
-    header video:not(.loaded) {
-      opacity: 0; }
-    .is-mobile header video {
-      display: none; }
 
 h1 {
   font-size: 2.8125rem;
@@ -228,7 +236,7 @@ nav {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 30;
+  z-index: 120;
   opacity: 0;
   pointer-events: none; }
   nav ul {
@@ -259,11 +267,27 @@ body.menu-open {
     pointer-events: all; }
 
 .nav {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: normal;
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
   position: fixed;
   top: 0.9375rem;
   right: 0.9375rem;
-  z-index: 35;
+  z-index: 130;
   font-size: 0; }
+  .nav::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
   .nav:hover {
     background: none; }
   @media screen and (min-width: 1200px) {
@@ -333,12 +357,13 @@ section {
             transform: translate(-50%, -50%);
     -webkit-transition: opacity 2s ease-in;
     transition: opacity 2s ease-in;
+    opacity: 0;
     z-index: -2;
     background-size: cover;
     background-position: bottom center;
     opacity: .3; }
-    section .bg:not(.loaded) {
-      opacity: 0; }
+    section .bg.loaded {
+      opacity: .2; }
 
 .container {
   max-width: 960px;
@@ -363,6 +388,10 @@ section {
 
 .instagram {
   position: relative; }
+  .instagram figure, .instagram figcaption {
+    padding: 0; }
+  .instagram img {
+    display: none; }
   .instagram ul {
     margin: 0;
     padding: 0;
@@ -388,8 +417,8 @@ section {
     display: block;
     background-size: cover;
     background-position: center;
-    -webkit-transition: opacity .3s ease-in;
-    transition: opacity .3s ease-in;
+    -webkit-transition: opacity .6s ease-in;
+    transition: opacity .6s ease-in;
     position: relative; }
     .instagram a.loaded {
       opacity: 1; }

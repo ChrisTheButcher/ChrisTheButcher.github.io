@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="chriswijnia.com/feed.xml" rel="self" type="application/atom+xml" /><link href="chriswijnia.com/" rel="alternate" type="text/html" /><updated>2017-09-17T14:30:38+02:00</updated><id>chriswijnia.com/</id><title type="html">Chris Wijnia / designer &amp;amp; developer</title><subtitle>Hi, my name is &lt;a href=&quot;javascript:&quot; class=&quot;show-img&quot;&gt;Chris&lt;img src=&quot;assets/img/avatar.png&quot;&gt;&lt;/a&gt;. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="chriswijnia.com/feed.xml" rel="self" type="application/atom+xml" /><link href="chriswijnia.com/" rel="alternate" type="text/html" /><updated>2017-09-17T19:59:43+02:00</updated><id>chriswijnia.com/</id><title type="html">Chris Wijnia / designer &amp;amp; developer</title><subtitle>Hi, my name is &lt;a href=&quot;javascript:&quot; class=&quot;show-img&quot;&gt;Chris&lt;img src=&quot;assets/img/avatar.png&quot;&gt;&lt;/a&gt;. 
 I currently work for &lt;a class=&quot;show-img&quot; href=&quot;//boerdam.nl&quot;&gt;Boerdam&lt;img src=&quot;/assets/img/gifs/boerdam.png&quot;&gt;&lt;/a&gt;
 - a digital agency based in The Netherlands.
 I design and code things. When I'm not working on something tech-related I like to spend my time traveling, playing
@@ -25,7 +25,8 @@ I design and code things. When I'm not working on something tech-related I like 
   &lt;dd&gt;Specialized in digital marketing strategies. Utilising possibilities of social media and new technologies in an evolving digital landscape.&lt;/dd&gt;
 &lt;/dl&gt;</content><author><name></name></author><summary type="html">What I do</summary></entry><entry><title type="html">Who I work with</title><link href="chriswijnia.com/2017/09/12/clients.html" rel="alternate" type="text/html" title="Who I work with" /><published>2017-09-12T02:00:00+02:00</published><updated>2017-09-12T02:00:00+02:00</updated><id>chriswijnia.com/2017/09/12/clients</id><content type="html" xml:base="chriswijnia.com/2017/09/12/clients.html">&lt;h2 id=&quot;who-i-work-with&quot;&gt;Who I work with&lt;/h2&gt;
 
-&lt;p class=&quot;lead&quot;&gt;Wanna &lt;mark&gt;collaborate&lt;/mark&gt;?&lt;br /&gt; You’re not in bad company at all.&lt;/p&gt;
+&lt;!--Wanna &lt;mark&gt;collaborate&lt;/mark&gt;?&lt;br&gt; You’re not in bad company at all.
+{: .lead}--&gt;
 
 &lt;ul class=&quot;link-list-slash&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;javascript:&quot; class=&quot;show-img&quot;&gt;Province of Noord-Brabant&lt;img src=&quot;/assets/img/gifs/netherlands.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
@@ -50,6 +51,6 @@ I design and code things. When I'm not working on something tech-related I like 
   &lt;li&gt;&lt;a href=&quot;//api.whatsapp.com/send?phone=31642407442&quot; class=&quot;show-img&quot;&gt;WhatsApp&lt;img src=&quot;/assets/img/gifs/spiderman.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;instagram&quot;&gt;&lt;/div&gt;
+&lt;instagram&gt;&lt;/instagram&gt;
 
 &lt;p class=&quot;thanks&quot;&gt;Thanks for stopping by.&lt;br /&gt; Here’s a cool &lt;a href=&quot;javascript:&quot; class=&quot;show-img&quot;&gt;picture&lt;img src=&quot;/assets/img/gifs/cat.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; of a cat.&lt;/p&gt;</content><author><name></name></author><summary type="html">Where to find me</summary></entry></feed>

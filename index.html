@@ -1,17 +1,15 @@
 ---
 layout: default
-customHtml: <script>getInstagram()</script>
 ---
 
-{% assign sections = site.posts | where: on_home, true %}
-{% for operation in menuItems %}
-    {% assign controllerName = operation.Title | split: '_' | first | split: '' %}
-    {% assign controllers = controllers | concat: controllerName %}
-{% endfor %}
+{% assign chapters = "" %}
+{% assign sections = site.posts | where: "onHome", true %}
 
-{% include nav.html %}
 {% include header.html %}
 
 {% for section in sections %}
+    {% assign chapters = chapters | append: "," | append: section.hook | append: ":" | append: section.title %}
     {{ section }}
 {% endfor %}
+
+<main-menu chapters="about:Chris Wijnia{{chapters}}"></main-menu>

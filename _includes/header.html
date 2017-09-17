@@ -8,11 +8,8 @@
         {% endif %}
     </div>
 
-    {% if site.header_video %}
-        <video src="{{site.header_video}}" loop autoplay></video>
-    {% endif %}
-
-    {% if site.header_img %}
-        <div class="bg" style="background-image: url('{{site.header_img}}');"></div>
-    {% endif %}
+    <hero-img 
+        video="{{ site.header_video }}"
+        img="{{ site.header_img }}">
+    </hero-img>
 </header>

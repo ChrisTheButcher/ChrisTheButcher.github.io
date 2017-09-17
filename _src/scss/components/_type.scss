@@ -25,6 +25,8 @@ body {
             content: '';
             user-select: none;
             @include fxd;
+            pointer-events: none;
+            z-index: 100;
             border: rem(50) solid $color-primary;
         }
     }

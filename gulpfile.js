@@ -21,6 +21,11 @@ const webpackConfig = {
             }
         ]
     },
+    resolve: {
+        alias: {
+          vue: 'vue/dist/vue.js'
+        }
+      },
     output: { filename: 'app.js' }
 }
 

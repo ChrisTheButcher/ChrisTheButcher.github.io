@@ -1,5 +1,13 @@
 .instagram {
     position: relative;
+
+    figure, figcaption {
+        padding: 0;
+    }
+
+    img {
+        display: none;
+    }
     
     ul {
         margin: 0;
@@ -26,7 +34,7 @@
         display: block;
         background-size: cover;
         background-position: center;
-        transition: opacity .3s ease-in;
+        transition: opacity .6s ease-in;
         position: relative;
 
         &.loaded {

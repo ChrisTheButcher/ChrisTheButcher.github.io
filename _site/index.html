@@ -30,27 +30,10 @@
     </head>
 
     <body>
-        
+        <div id="app">
+            
 
 
-
-
-<a href="#menu" class="nav">Menu</a>
-
-<nav id="menu">
-    <ul>
-        <li><a href="#about" data-alt="Chris Wijnia"><span>About</span></a></li>
-        
-            <li><a href="#portfolio" data-alt="What I make">portfolio</a></li>
-        
-            <li><a href="#services" data-alt="What I do">services</a></li>
-        
-            <li><a href="#clients" data-alt="Who I work with">clients</a></li>
-        
-            <li><a href="#contact" data-alt="Where to find me">contact</a></li>
-        
-    </ul>
-</nav>
 <header id="about">
 
     <div class="container">
@@ -66,16 +49,14 @@ I design and code things. When I'm not working on something tech-related I like 
         
     </div>
 
-    
-        <video src="/assets/img/travel.mp4" loop autoplay></video>
-    
-
-    
-        <div class="bg" style="background-image: url('/assets/img/travel.jpg');"></div>
-    
+    <hero-img 
+        video="/assets/img/travel.mp4"
+        img="/assets/img/travel.jpg">
+    </hero-img>
 </header>
 
 
+    
     <section id="portfolio" data-inverted="">
     <div class="container">
         <h2 id="what-i-make">What I make</h2>
@@ -92,6 +73,7 @@ I design and code things. When I'm not working on something tech-related I like 
     
 </section>
 
+    
     <section id="services" data-inverted="true">
     <div class="container">
         <h2 id="what-i-do">What I do</h2>
@@ -114,11 +96,13 @@ I design and code things. When I'm not working on something tech-related I like 
     
 </section>
 
+    
     <section id="clients" data-inverted="">
     <div class="container">
         <h2 id="who-i-work-with">Who I work with</h2>
 
-<p class="lead">Wanna <mark>collaborate</mark>?<br /> You’re not in bad company at all.</p>
+<!--Wanna <mark>collaborate</mark>?<br> You’re not in bad company at all.
+{: .lead}-->
 
 <ul class="link-list-slash">
   <li><a href="javascript:" class="show-img">Province of Noord-Brabant<img src="/assets/img/gifs/netherlands.gif" alt="" /></a></li>
@@ -140,6 +124,7 @@ I design and code things. When I'm not working on something tech-related I like 
     
 </section>
 
+    
     <section id="contact" data-inverted="">
     <div class="container">
         <h2 id="where-to-find-me">Where to find me</h2>
@@ -154,7 +139,7 @@ I design and code things. When I'm not working on something tech-related I like 
   <li><a href="//api.whatsapp.com/send?phone=31642407442" class="show-img">WhatsApp<img src="/assets/img/gifs/spiderman.gif" alt="" /></a></li>
 </ul>
 
-<div class="instagram"></div>
+<instagram></instagram>
 
 <p class="thanks">Thanks for stopping by.<br /> Here’s a cool <a href="javascript:" class="show-img">picture<img src="/assets/img/gifs/cat.gif" alt="" /></a> of a cat.</p>
             
@@ -164,8 +149,11 @@ I design and code things. When I'm not working on something tech-related I like 
 </section>
 
 
+<main-menu chapters="about:Chris Wijnia,portfolio:What I make,services:What I do,clients:Who I work with,contact:Where to find me"></main-menu>                
+        </div>
+
         <script src="assets/js/app.js"></script>  
         
-        <script>getInstagram()</script>
+        
     </body>
 </html>

@@ -32,11 +32,30 @@
     height: auto;
     transform: translate(-50%, -50%);
     transition: opacity 2s ease-in;
-    &:not(.loaded) { opacity: 0; }    
+    opacity: 0;
+    &.loaded { opacity: .2; }
 }
 
 %filter {
   mix-blend-mode: color-burn;
   opacity: .2;
   filter: brightness(140%) contrast(110%);
+}
+
+@mixin link-button() {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit; 
+  line-height: normal;
+  text-decoration: underline;
+  cursor: pointer; 
+  user-select: text;
+
+  &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+  }
 }
