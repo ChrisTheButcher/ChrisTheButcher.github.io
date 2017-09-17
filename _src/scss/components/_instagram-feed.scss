@@ -36,7 +36,7 @@
             overflow: hidden;
             background: $color-primary;
             opacity: 0;
-            transition: opacity .2s ease-in-out;        
+            transition: opacity .15s linear;        
             padding: rem(20);
             font-size: rem(30);
             display: flex;

@@ -158,7 +158,6 @@
 
 	    $select("[" + selector + "]").forEach(function (e) {
 	        e.src = e.getAttribute(selector);
-	        e.classList.add("loaded");
 	    });
 	};
 
