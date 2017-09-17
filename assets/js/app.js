@@ -26208,6 +26208,7 @@
 	        return {
 	            parsedChapters: null,
 	            open: false,
+	            toggle: null,
 	            active: null
 	        };
 	    },
@@ -26233,6 +26234,9 @@
 	            return addEventListener(e, _this.updateTheme);
 	        });
 	    },
+	    mounted: function mounted() {
+	        this.toggle = this.$refs.toggle;
+	    },
 
 	    methods: {
 	        activate: function activate(data) {
@@ -26243,7 +26247,7 @@
 	            this.open = !this.open;
 	        },
 	        updateTheme: function updateTheme() {
-	            var offset = 30;
+	            var offset = this.toggle ? this.toggle.getBoundingClientRect().bottom : 40;
 	            var inverted = (0, _DomHelper.$select)("[data-inverted=true]").some(function (e) {
 	                var rect = document.querySelector("[data-inverted=true]").getBoundingClientRect();
 	                return rect.top < offset && rect.bottom > offset;
@@ -26256,7 +26260,7 @@
 	            document.body.setAttribute("data-main-menu-open", this.open);
 	        }
 	    },
-	    template: "\n        <div class=\"main-menu\" input v-on:keyup.esc=\"open = false\">\n            <button class=\"toggle\" v-on:click=\"toggleOpen\">Menu</button>\n            <nav id=\"menu\">\n                <ul>\n                    <li v-for=\"chapter in parsedChapters\">\n                        <a  v-bind:class=\"{active: active === chapter}\"\n                            v-on:click=\"activate(chapter)\"\n                            v-bind:href=\"chapter.hash\" \n                            v-bind:data-alt=\"chapter.title\">\n                            {{chapter.hook}}\n                        </a>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    "
+	    template: "\n        <div class=\"main-menu\" input v-on:keyup.esc=\"open = false\">\n            <button \n                class=\"toggle\" \n                ref=\"toggle\"\n                v-on:click=\"toggleOpen\">\n                Menu\n            </button>\n            <nav id=\"menu\">\n                <ul>\n                    <li v-for=\"chapter in parsedChapters\">\n                        <a  v-bind:class=\"{active: active === chapter}\"\n                            v-on:click=\"activate(chapter)\"\n                            v-bind:href=\"chapter.hash\" \n                            v-bind:data-alt=\"chapter.title\">\n                            {{chapter.hook}}\n                        </a>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    "
 	});
 
 /***/ }),

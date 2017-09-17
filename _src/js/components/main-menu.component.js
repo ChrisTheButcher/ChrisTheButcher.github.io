@@ -5,6 +5,7 @@ Vue.component('main-menu', {
     data: () => ({
         parsedChapters: null,
         open: false,
+        toggle: null,
         active: null
     }),
     props: ['chapters'],    
@@ -23,6 +24,9 @@ Vue.component('main-menu', {
         this.updateTheme();
         ["scroll", "resize"].forEach(e => addEventListener(e, this.updateTheme));
     },
+    mounted() {
+        this.toggle = this.$refs.toggle;
+    },
     methods: {
         activate(data) {
             this.active = data;
@@ -32,7 +36,7 @@ Vue.component('main-menu', {
             this.open = !this.open;
         },
         updateTheme() {
-            const offset = 30;
+            const offset = this.toggle ? this.toggle.getBoundingClientRect().bottom : 40;
             const inverted = $select("[data-inverted=true]").some(e => {
                 const rect = document.querySelector("[data-inverted=true]").getBoundingClientRect();
                 return (rect.top < offset) && (rect.bottom > offset);
@@ -47,7 +51,12 @@ Vue.component('main-menu', {
     },
     template: `
         <div class="main-menu" input v-on:keyup.esc="open = false">
-            <button class="toggle" v-on:click="toggleOpen">Menu</button>
+            <button 
+                class="toggle" 
+                ref="toggle"
+                v-on:click="toggleOpen">
+                Menu
+            </button>
             <nav id="menu">
                 <ul>
                     <li v-for="chapter in parsedChapters">
