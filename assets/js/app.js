@@ -26351,7 +26351,7 @@
 	            this.videoLoaded = true;
 	        }
 	    },
-	    template: '\n        <figure class="hero-img">\n            <video \n                v-on:loadeddata="loadVideo"\n                v-if="video" \n                v-bind:class="{loaded : videoLoaded}"\n                v-bind:src="video" \n                loop \n                autoplay>\n            </video>\n\n            <img v-on:load="loadImg"\n                v-if="img" \n                v-bind:src="img" \n                alt="">\n\n            <div class="bg"\n                 v-if="img"  \n                 v-bind:class="{loaded : img}"                 \n                 v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }">\n            </div>\n        </figure>\n    '
+	    template: '\n        <figure class="hero-img">\n            <video \n                v-on:loadeddata="loadVideo"\n                v-if="video" \n                v-bind:class="{loaded : videoLoaded}"\n                v-bind:src="video" \n                loop \n                preload="none"\n                autoplay>\n            </video>\n\n            <img v-on:load="loadImg"\n                v-if="img" \n                v-bind:src="img" \n                alt="">\n\n            <div class="bg"\n                 v-if="img"  \n                 v-bind:class="{loaded : img}"                 \n                 v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }">\n            </div>\n        </figure>\n    '
 	});
 
 /***/ })

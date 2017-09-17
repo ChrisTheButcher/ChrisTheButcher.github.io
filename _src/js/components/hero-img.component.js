@@ -22,6 +22,7 @@ Vue.component('hero-img', {
                 v-bind:class="{loaded : videoLoaded}"
                 v-bind:src="video" 
                 loop 
+                preload="none"
                 autoplay>
             </video>
 
