@@ -14,7 +14,9 @@ collections:
 title_html: Chris Wijnia <small><span>/</span> designer &amp; developer</small>
 header_img: "/assets/img/travel.jpg"
 header_video: "/assets/img/travel.mp4"
-description: "Hi, my name is <a href=\"javascript:\" class=\"show-img\">Chris<img
+share_img: "/assets/img/og_img.jpg"
+description: Hi, my name is Chris. I currently work for Boerdam - a digital agency based in The Netherlands. I design and code things. 
+description_html: "Hi, my name is <a href=\"javascript:\" class=\"show-img\">Chris<img
   data-src=\"assets/img/avatar.png\"></a>. \nI currently work for <a class=\"show-img\"
   href=\"//boerdam.nl\">Boerdam<img data-src=\"/assets/img/gifs/boerdam.png\"></a>\n-
   a digital agency based in The Netherlands.\nI design and code things. When I'm not
@@ -24,7 +26,7 @@ description: "Hi, my name is <a href=\"javascript:\" class=\"show-img\">Chris<im
   src=\"/assets/img/gifs/photo.gif\"></a>."
 email: ccwijnia@gmail.com
 baseurl: 
-url: chriswijnia.com
+url: http://chriswijnia.com
 twitter_username: christianwijnia
 github_username: christhebutcher
 markdown: kramdown

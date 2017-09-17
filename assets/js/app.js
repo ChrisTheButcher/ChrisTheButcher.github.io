@@ -46,13 +46,13 @@
 
 	"use strict";
 
-	var _vue = __webpack_require__(3);
+	var _vue = __webpack_require__(1);
 
 	var _vue2 = _interopRequireDefault(_vue);
 
-	var _Parallax = __webpack_require__(1);
+	var _Parallax = __webpack_require__(2);
 
-	var _DomHelper = __webpack_require__(2);
+	var _DomHelper = __webpack_require__(3);
 
 	__webpack_require__(4);
 
@@ -72,97 +72,6 @@
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.Parallax = undefined;
-
-	var _DomHelper = __webpack_require__(2);
-
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var Parallax = exports.Parallax = function Parallax(container, text, bg) {
-	    _classCallCheck(this, Parallax);
-
-	    function update() {
-	        (0, _DomHelper.$select)(container).forEach(function (element, i) {
-	            var rect = element.getBoundingClientRect();
-	            var newPosition = rect.top / window.innerHeight * 100;
-	            var bgPos = newPosition * -1 + 'px';
-	            var txtPos = newPosition * -1 + 'px';
-
-	            if (bg) {
-	                [].concat(_toConsumableArray(element.querySelectorAll(bg))).forEach(function (e) {
-	                    return e.style.transform = 'translate(-50%, calc(-50% + ' + bgPos + '))';
-	                });
-	            }
-
-	            if (text) {
-	                [].concat(_toConsumableArray(element.querySelectorAll(text))).forEach(function (e) {
-	                    return e.style.top = '' + txtPos;
-	                });
-	            }
-	        });
-	    }
-
-	    update();
-	    ["scroll", "resize"].forEach(function (e) {
-	        return addEventListener(e, update);
-	    });
-	};
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.fetchJson = fetchJson;
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-	var $select = exports.$select = function $select(selector) {
-	    return [].concat(_toConsumableArray(document.querySelectorAll(selector)));
-	};
-
-	function fetchJson(url) {
-	    return new Promise(function (resolve, reject) {
-	        var s4 = function s4() {
-	            return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-	        };
-	        var callbackName = "cb_" + s4();
-	        var script = document.createElement('script');
-	        window[callbackName] = function (data) {
-	            delete window[callbackName];
-	            resolve(data);
-	        };
-	        script.src = url + "&callback=" + callbackName;
-	        document.body.appendChild(script);
-	        script.onload = script.remove();
-	    });
-	}
-
-	var LazyLoad = exports.LazyLoad = function LazyLoad(selector) {
-	    _classCallCheck(this, LazyLoad);
-
-	    $select("[" + selector + "]").forEach(function (e) {
-	        e.src = e.getAttribute(selector);
-	    });
-	};
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -10352,12 +10261,103 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Parallax = undefined;
+
+	var _DomHelper = __webpack_require__(3);
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Parallax = exports.Parallax = function Parallax(container, text, bg) {
+	    _classCallCheck(this, Parallax);
+
+	    function update() {
+	        (0, _DomHelper.$select)(container).forEach(function (element, i) {
+	            var rect = element.getBoundingClientRect();
+	            var newPosition = rect.top / window.innerHeight * 100;
+	            var bgPos = newPosition * -1 + 'px';
+	            var txtPos = newPosition * -1 + 'px';
+
+	            if (bg) {
+	                [].concat(_toConsumableArray(element.querySelectorAll(bg))).forEach(function (e) {
+	                    return e.style.transform = 'translate(-50%, calc(-50% + ' + bgPos + '))';
+	                });
+	            }
+
+	            if (text) {
+	                [].concat(_toConsumableArray(element.querySelectorAll(text))).forEach(function (e) {
+	                    return e.style.top = '' + txtPos;
+	                });
+	            }
+	        });
+	    }
+
+	    update();
+	    ["scroll", "resize"].forEach(function (e) {
+	        return addEventListener(e, update);
+	    });
+	};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.fetchJson = fetchJson;
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	var $select = exports.$select = function $select(selector) {
+	    return [].concat(_toConsumableArray(document.querySelectorAll(selector)));
+	};
+
+	function fetchJson(url) {
+	    return new Promise(function (resolve, reject) {
+	        var s4 = function s4() {
+	            return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+	        };
+	        var callbackName = "cb_" + s4();
+	        var script = document.createElement('script');
+	        window[callbackName] = function (data) {
+	            delete window[callbackName];
+	            resolve(data);
+	        };
+	        script.src = url + "&callback=" + callbackName;
+	        document.body.appendChild(script);
+	        script.onload = script.remove();
+	    });
+	}
+
+	var LazyLoad = exports.LazyLoad = function LazyLoad(selector) {
+	    _classCallCheck(this, LazyLoad);
+
+	    $select("[" + selector + "]").forEach(function (e) {
+	        e.src = e.getAttribute(selector);
+	    });
+	};
+
+/***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _vue = __webpack_require__(3);
+	var _vue = __webpack_require__(1);
 
 	var _vue2 = _interopRequireDefault(_vue);
 
@@ -10365,7 +10365,7 @@
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _DomHelper = __webpack_require__(2);
+	var _DomHelper = __webpack_require__(3);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26223,7 +26223,7 @@
 
 	'use strict';
 
-	var _vue = __webpack_require__(3);
+	var _vue = __webpack_require__(1);
 
 	var _vue2 = _interopRequireDefault(_vue);
 
@@ -26250,11 +26250,11 @@
 
 	"use strict";
 
-	var _vue = __webpack_require__(3);
+	var _vue = __webpack_require__(1);
 
 	var _vue2 = _interopRequireDefault(_vue);
 
-	var _DomHelper = __webpack_require__(2);
+	var _DomHelper = __webpack_require__(3);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26324,7 +26324,7 @@
 
 	'use strict';
 
-	var _vue = __webpack_require__(3);
+	var _vue = __webpack_require__(1);
 
 	var _vue2 = _interopRequireDefault(_vue);
 
