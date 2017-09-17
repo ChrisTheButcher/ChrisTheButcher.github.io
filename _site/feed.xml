@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="chriswijnia.com/feed.xml" rel="self" type="application/atom+xml" /><link href="chriswijnia.com/" rel="alternate" type="text/html" /><updated>2017-09-15T13:23:54+02:00</updated><id>chriswijnia.com/</id><title type="html">Chris Wijnia / designer &amp;amp; developer</title><subtitle>Hi, my name is &lt;a href=&quot;javascript:&quot; class=&quot;show-img&quot;&gt;Chris&lt;img src=&quot;assets/img/avatar.png&quot;&gt;&lt;/a&gt;. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="chriswijnia.com/feed.xml" rel="self" type="application/atom+xml" /><link href="chriswijnia.com/" rel="alternate" type="text/html" /><updated>2017-09-17T14:30:38+02:00</updated><id>chriswijnia.com/</id><title type="html">Chris Wijnia / designer &amp;amp; developer</title><subtitle>Hi, my name is &lt;a href=&quot;javascript:&quot; class=&quot;show-img&quot;&gt;Chris&lt;img src=&quot;assets/img/avatar.png&quot;&gt;&lt;/a&gt;. 
 I currently work for &lt;a class=&quot;show-img&quot; href=&quot;//boerdam.nl&quot;&gt;Boerdam&lt;img src=&quot;/assets/img/gifs/boerdam.png&quot;&gt;&lt;/a&gt;
 - a digital agency based in The Netherlands.
 I design and code things. When I'm not working on something tech-related I like to spend my time traveling, playing
@@ -49,5 +49,7 @@ I design and code things. When I'm not working on something tech-related I like 
   &lt;li&gt;&lt;a href=&quot;mailto:ccwijnia@gmail.com&quot; class=&quot;show-img&quot;&gt;Email&lt;img src=&quot;/assets/img/gifs/monkey.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;//api.whatsapp.com/send?phone=31642407442&quot; class=&quot;show-img&quot;&gt;WhatsApp&lt;img src=&quot;/assets/img/gifs/spiderman.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div class=&quot;instagram&quot;&gt;&lt;/div&gt;
 
 &lt;p class=&quot;thanks&quot;&gt;Thanks for stopping by.&lt;br /&gt; Here’s a cool &lt;a href=&quot;javascript:&quot; class=&quot;show-img&quot;&gt;picture&lt;img src=&quot;/assets/img/gifs/cat.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt; of a cat.&lt;/p&gt;</content><author><name></name></author><summary type="html">Where to find me</summary></entry></feed>

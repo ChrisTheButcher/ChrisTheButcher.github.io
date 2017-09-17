@@ -1,0 +1,30 @@
+{
+  "name": "christhebutcher.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-webpack": "^1.5.0",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "moment": "^2.18.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisTheButcher/ChrisTheButcher.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisTheButcher/ChrisTheButcher.github.io/issues"
+  },
+  "homepage": "https://github.com/ChrisTheButcher/ChrisTheButcher.github.io#readme"
+}

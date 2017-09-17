@@ -230,8 +230,6 @@ nav {
   left: 0;
   z-index: 30;
   opacity: 0;
-  -webkit-transition: opacity .4s ease-in;
-  transition: opacity .4s ease-in;
   pointer-events: none; }
   nav ul {
     margin: auto;
@@ -241,13 +239,18 @@ nav {
     font-size: 2.96875rem; }
   nav a {
     color: black;
-    text-decoration: none; }
+    text-decoration: none;
+    display: block; }
+    nav a::first-letter {
+      text-transform: uppercase; }
+    nav a.active {
+      text-decoration: underline; }
     nav a:hover, nav a:active, nav a:focus {
-      font-weight: 900; }
-      nav a:hover span, nav a:active span, nav a:focus span {
-        display: none; }
+      font-weight: 900;
+      font-size: 0; }
       nav a:hover:after, nav a:active:after, nav a:focus:after {
-        content: attr(data-alt); }
+        content: attr(data-alt);
+        font-size: 2.96875rem; }
 
 body.menu-open {
   overflow: hidden; }
@@ -259,9 +262,8 @@ body.menu-open {
   position: fixed;
   top: 0.9375rem;
   right: 0.9375rem;
-  z-index: 35; }
-  .nav span {
-    display: none; }
+  z-index: 35;
+  font-size: 0; }
   .nav:hover {
     background: none; }
   @media screen and (min-width: 1200px) {
@@ -358,3 +360,65 @@ section {
   font-size: 1.25rem; }
   .link-list-slash li:not(:last-of-type):after {
     content: ' / '; }
+
+.instagram {
+  position: relative; }
+  .instagram ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    margin: 3.125rem -0.9375rem 0; }
+  .instagram li {
+    margin: 0;
+    width: 100%;
+    padding: 1.40625rem;
+    float: left; }
+    @media screen and (min-width: 576px) {
+      .instagram li {
+        width: 50%; } }
+    @media screen and (min-width: 768px) {
+      .instagram li {
+        width: 33.33333%; } }
+  .instagram a {
+    opacity: 0;
+    -webkit-transition: .6 ease-in;
+    transition: .6 ease-in;
+    padding-bottom: 66.66667%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+    position: relative; }
+    .instagram a.loaded {
+      opacity: 1; }
+    .instagram a .caption {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      background: #FFF568;
+      opacity: 0;
+      padding: 0.625rem;
+      font-size: 0.9375rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: black; }
+    .instagram a .user {
+      font-weight: 900; }
+    .instagram a:hover .caption {
+      opacity: 1; }

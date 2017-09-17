@@ -1,10 +1,13 @@
 ---
 layout: default
+customHtml: <script>getInstagram()</script>
 ---
 
-{% 
-    assign sections = site.posts | where: on_home, true 
-%}
+{% assign sections = site.posts | where: on_home, true %}
+{% for operation in menuItems %}
+    {% assign controllerName = operation.Title | split: '_' | first | split: '' %}
+    {% assign controllers = controllers | concat: controllerName %}
+{% endfor %}
 
 {% include nav.html %}
 {% include header.html %}
