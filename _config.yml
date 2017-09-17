@@ -14,7 +14,7 @@ collections:
 title_html: Chris Wijnia <small><span>/</span> designer &amp; developer</small>
 header_img: "/assets/img/travel.jpg"
 header_video: "/assets/img/travel.mp4"
-share_img: "/assets/img/og_img.jpg"
+share_img: "/assets/img/og-img.jpg"
 description: Hi, my name is Chris. I currently work for Boerdam - a digital agency
   based in The Netherlands. I design and code things.
 description_html: "Hi, my name is <a href=\"javascript:\" class=\"show-img\">Chris<img
