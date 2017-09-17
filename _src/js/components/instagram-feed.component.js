@@ -2,7 +2,7 @@ import Vue from "vue";
 import moment from "moment";
 import {fetchJson} from "./../modules/DomHelper";
 
-Vue.component('instagram', {
+Vue.component('instagram-feed', {
     data: () => ({ 
         posts: []            
     }),
@@ -25,7 +25,7 @@ Vue.component('instagram', {
         }
     },
     template: `
-        <div class="instagram">
+        <div class="instagram-feed">
             <ul>
                 <instagram-post 
                     v-for="post in posts" 

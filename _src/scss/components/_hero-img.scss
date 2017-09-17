@@ -1,0 +1,17 @@
+.hero-img {
+    img { display: none; }
+
+    .bg {
+        @include overlay;
+        @extend %filter;
+        background-size: cover;
+        display: none;
+        [data-is-mobile="true"]  & { display: block; }            
+    }
+
+    video {
+        @include overlay;
+        @extend %filter;
+        [data-is-mobile="true"] & { display: none; }
+    }
+}

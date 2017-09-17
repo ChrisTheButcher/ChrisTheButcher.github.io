@@ -35,7 +35,7 @@ body {
 a {
     color: $color-secondary;
     text-decoration: underline;
-    .is-inverted & { color: white; }
+    [data-inverted="true"] & { color: white; }
     &:hover { background: $color-primary; }
 }
 

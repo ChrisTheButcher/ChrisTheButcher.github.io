@@ -1,13 +1,7 @@
-.instagram {
+.instagram-feed {
     position: relative;
-
-    figure, figcaption {
-        padding: 0;
-    }
-
-    img {
-        display: none;
-    }
+    figure, figcaption { padding: 0; }
+    img { display: none; }
     
     ul {
         margin: 0;
@@ -16,16 +10,15 @@
         overflow: hidden;
         margin: rem(100) rem(-30) 0;
     }
+}
 
-    li {
-        margin: 0;
-        width: 100%;
-        @include bp($sm) { width: percentage(1 / 2); }
-        @include bp($md) { width: percentage(1 / 3); }
-        padding: rem(45);
-        float: left;
-    }
-
+.instagram-post {
+    margin: 0;
+    width: 100%;
+    @include bp($sm) { width: percentage(1 / 2); }
+    @include bp($md) { width: percentage(1 / 3); }
+    padding: rem(45);
+    float: left;
 
     a {
         opacity: 0;
@@ -36,17 +29,14 @@
         background-position: center;
         transition: opacity .6s ease-in;
         position: relative;
-
-        &.loaded {
-            opacity: 1;
-        }
+        &.loaded { opacity: 1; }
 
         .caption {
             @include abs();
             overflow: hidden;
             background: $color-primary;
             opacity: 0;
-            //transition: opacity .2s linear;        
+            transition: opacity .2s ease-in-out;        
             padding: rem(20);
             font-size: rem(30);
             display: flex;

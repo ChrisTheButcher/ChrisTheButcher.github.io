@@ -17,7 +17,7 @@ Vue.component('main-menu', {
             return { hook: parsed[0], title: parsed[1], hash: "#" + parsed[0] }
         })
 
-        document.body.classList.toggle("is-mobile", isMobile);                
+        document.body.setAttribute("data-is-mobile", isMobile);                
         this.parsedChapters = parsedChapters;
         this.active = this.parsedChapters.find(chapter => chapter.hash === hash) || this.parsedChapters[0];
         this.updateTheme();
@@ -37,17 +37,17 @@ Vue.component('main-menu', {
                 const rect = document.querySelector("[data-inverted=true]").getBoundingClientRect();
                 return (rect.top < offset) && (rect.bottom > offset);
             })
-            document.body.classList.toggle("theme-inverted", inverted)  
+            document.body.setAttribute("data-theme-inverted", inverted)  
         }
     },
     watch: {
         open() {
-            document.body.classList.toggle('menu-open', this.open)
+            document.body.setAttribute("data-main-menu-open", this.open)  
         }
     },
     template: `
-        <div>
-            <button class="nav" v-on:click="toggleOpen">Menu</button>
+        <div class="main-menu" input v-on:keyup.esc="open = false">
+            <button class="toggle" v-on:click="toggleOpen">Menu</button>
             <nav id="menu">
                 <ul>
                     <li v-for="chapter in parsedChapters">

@@ -9,7 +9,7 @@ Vue.component('instagram-post', {
         loadImg(e) { this.loaded = true }
     },  
     template: `
-        <li>
+        <li class="instagram-post">
             <a  v-bind:href="link" 
                 v-bind:style="{ backgroundImage: 'url('+img+')' }"  
                 v-bind:class="{ loaded: loaded }">

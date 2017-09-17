@@ -1,4 +1,4 @@
-nav {
+.main-menu nav {
     background: $color-primary;
     z-index: 10;
     min-height: 100vh;
@@ -8,7 +8,7 @@ nav {
     @include fxd;
     z-index: 120;
     opacity: 0;
-    //transition: opacity .4s ease-in;
+    transition: opacity .3s ease-in-out;
     pointer-events: none;
     $size: rem(95);
 
@@ -28,7 +28,7 @@ nav {
         &::first-letter { text-transform: uppercase; }
         &.active { text-decoration: underline; }
 
-       &:hover, &:active, &:focus {
+       &:hover {
             font-weight: 900;
             font-size: 0;
             &:after { 
@@ -39,7 +39,7 @@ nav {
     }
 }
 
-body.menu-open {
+body[data-main-menu-open="true"] {
     overflow: hidden;
 
     nav {
@@ -48,7 +48,7 @@ body.menu-open {
     }
 }
 
-.nav {
+.main-menu .toggle {
     @include link-button;
     position: fixed;
     top: rem(30);
@@ -71,7 +71,7 @@ body.menu-open {
         display: inline-block;
         transition: border-color .15s ease-in;
 
-        .theme-inverted:not(.menu-open) & {
+        [data-theme-inverted="true"]:not([data-main-menu-open="true"]) & {
             border-color: white;
         }
     }

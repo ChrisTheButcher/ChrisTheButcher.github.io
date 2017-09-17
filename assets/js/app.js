@@ -52,7 +52,7 @@
 
 	var _vue2 = _interopRequireDefault(_vue);
 
-	__webpack_require__(129);
+	__webpack_require__(133);
 
 	__webpack_require__(130);
 
@@ -26162,56 +26162,7 @@
 	}
 
 /***/ }),
-/* 129 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var _vue = __webpack_require__(3);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	var _moment = __webpack_require__(5);
-
-	var _moment2 = _interopRequireDefault(_moment);
-
-	var _DomHelper = __webpack_require__(128);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	_vue2.default.component('instagram', {
-	    data: function data() {
-	        return {
-	            posts: []
-	        };
-	    },
-	    created: function created() {
-	        this.getPosts();
-	    },
-
-	    methods: {
-	        getPosts: function getPosts() {
-	            var _this = this;
-
-	            var token = '5222788.2177b6c.daf90d77db5441b0a707808c1ebfc6da';
-	            var url = "https://api.instagram.com/v1/users/self/media/recent?access_token=" + token + "&count=9";
-	            (0, _DomHelper.fetchJson)(url).then(function (data) {
-	                _this.posts = data.data.map(function (post) {
-	                    return {
-	                        link: post.link,
-	                        user: post.user.username,
-	                        img: post.images.standard_resolution.url,
-	                        likes: post.likes.count,
-	                        time: (0, _moment2.default)(post.created_time * 1000).format("MM/DD/YYYY")
-	                    };
-	                });
-	            });
-	        }
-	    },
-	    template: "\n        <div class=\"instagram\">\n            <ul>\n                <instagram-post \n                    v-for=\"post in posts\" \n                    v-bind=\"post\" \n                    :key=\"post.$index\">\n                </instagram-post>\n            </ul>\n        </div>\n    "
-	});
-
-/***/ }),
+/* 129 */,
 /* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26235,7 +26186,7 @@
 	            this.loaded = true;
 	        }
 	    },
-	    template: '\n        <li>\n            <a  v-bind:href="link" \n                v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }"  \n                v-bind:class="{ loaded: loaded }">\n\n                <figure>\n                    <img v-on:load="loadImg" v-bind:src="img" alt="">      \n                                \n                    <figcaption class="caption">\n                        <span class="user">@{{user}}</span>\n                        <span class="meta">{{time}} \u2014 \u2764{{likes}}</span>\n                    </figcaption>\n                </figure>\n            </a>\n        </li>\n    '
+	    template: '\n        <li class="instagram-post">\n            <a  v-bind:href="link" \n                v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }"  \n                v-bind:class="{ loaded: loaded }">\n\n                <figure>\n                    <img v-on:load="loadImg" v-bind:src="img" alt="">      \n                                \n                    <figcaption class="caption">\n                        <span class="user">@{{user}}</span>\n                        <span class="meta">{{time}} \u2014 \u2764{{likes}}</span>\n                    </figcaption>\n                </figure>\n            </a>\n        </li>\n    '
 	});
 
 /***/ }),
@@ -26272,7 +26223,7 @@
 	            return { hook: parsed[0], title: parsed[1], hash: "#" + parsed[0] };
 	        });
 
-	        document.body.classList.toggle("is-mobile", isMobile);
+	        document.body.setAttribute("data-is-mobile", isMobile);
 	        this.parsedChapters = parsedChapters;
 	        this.active = this.parsedChapters.find(function (chapter) {
 	            return chapter.hash === hash;
@@ -26297,15 +26248,15 @@
 	                var rect = document.querySelector("[data-inverted=true]").getBoundingClientRect();
 	                return rect.top < offset && rect.bottom > offset;
 	            });
-	            document.body.classList.toggle("theme-inverted", inverted);
+	            document.body.setAttribute("data-theme-inverted", inverted);
 	        }
 	    },
 	    watch: {
 	        open: function open() {
-	            document.body.classList.toggle('menu-open', this.open);
+	            document.body.setAttribute("data-main-menu-open", this.open);
 	        }
 	    },
-	    template: "\n        <div>\n            <button class=\"nav\" v-on:click=\"toggleOpen\">Menu</button>\n            <nav id=\"menu\">\n                <ul>\n                    <li v-for=\"chapter in parsedChapters\">\n                        <a  v-bind:class=\"{active: active === chapter}\"\n                            v-on:click=\"activate(chapter)\"\n                            v-bind:href=\"chapter.hash\" \n                            v-bind:data-alt=\"chapter.title\">\n                            {{chapter.hook}}\n                        </a>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    "
+	    template: "\n        <div class=\"main-menu\" input v-on:keyup.esc=\"open = false\">\n            <button class=\"toggle\" v-on:click=\"toggleOpen\">Menu</button>\n            <nav id=\"menu\">\n                <ul>\n                    <li v-for=\"chapter in parsedChapters\">\n                        <a  v-bind:class=\"{active: active === chapter}\"\n                            v-on:click=\"activate(chapter)\"\n                            v-bind:href=\"chapter.hash\" \n                            v-bind:data-alt=\"chapter.title\">\n                            {{chapter.hook}}\n                        </a>\n                    </li>\n                </ul>\n            </nav>\n        </div>\n    "
 	});
 
 /***/ }),
@@ -26324,9 +26275,7 @@
 	    data: function data() {
 	        return {
 	            imgLoaded: false,
-	            videoLoaded: false,
-	            videoSrc: null,
-	            imgSrc: null
+	            videoLoaded: false
 	        };
 	    },
 	    props: ['video', 'img'],
@@ -26343,7 +26292,57 @@
 	            this.videoLoaded = true;
 	        }
 	    },
-	    template: '\n        <figure class="hero-img">\n            <video \n                v-on:loadeddata="loadVideo"\n                v-if="videoSrc" \n                v-bind:class="{loaded : videoLoaded}"\n                v-bind:src="videoSrc" \n                loop \n                autoplay>\n            </video>\n\n            <img v-on:load="loadImg"\n                v-if="imgSrc" \n                v-bind:src="imgSrc" \n                alt="">\n\n            <div class="bg"\n                 v-if="imgSrc"  \n                 v-bind:class="{loaded : imgLoaded}"                 \n                 v-bind:style="{ backgroundImage: \'url(\'+imgSrc+\')\' }">\n            </div>\n        </figure>\n    '
+	    template: '\n        <figure class="hero-img">\n            <video \n                v-on:loadeddata="loadVideo"\n                v-if="video" \n                v-bind:class="{loaded : videoLoaded}"\n                v-bind:src="video" \n                loop \n                autoplay>\n            </video>\n\n            <img v-on:load="loadImg"\n                v-if="img" \n                v-bind:src="img" \n                alt="">\n\n            <div class="bg"\n                 v-if="img"  \n                 v-bind:class="{loaded : img}"                 \n                 v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }">\n            </div>\n        </figure>\n    '
+	});
+
+/***/ }),
+/* 133 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _vue = __webpack_require__(3);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _moment = __webpack_require__(5);
+
+	var _moment2 = _interopRequireDefault(_moment);
+
+	var _DomHelper = __webpack_require__(128);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	_vue2.default.component('instagram-feed', {
+	    data: function data() {
+	        return {
+	            posts: []
+	        };
+	    },
+	    created: function created() {
+	        this.getPosts();
+	    },
+
+	    methods: {
+	        getPosts: function getPosts() {
+	            var _this = this;
+
+	            var token = '5222788.2177b6c.daf90d77db5441b0a707808c1ebfc6da';
+	            var url = "https://api.instagram.com/v1/users/self/media/recent?access_token=" + token + "&count=9";
+	            (0, _DomHelper.fetchJson)(url).then(function (data) {
+	                _this.posts = data.data.map(function (post) {
+	                    return {
+	                        link: post.link,
+	                        user: post.user.username,
+	                        img: post.images.standard_resolution.url,
+	                        likes: post.likes.count,
+	                        time: (0, _moment2.default)(post.created_time * 1000).format("MM/DD/YYYY")
+	                    };
+	                });
+	            });
+	        }
+	    },
+	    template: "\n        <div class=\"instagram-feed\">\n            <ul>\n                <instagram-post \n                    v-for=\"post in posts\" \n                    v-bind=\"post\" \n                    :key=\"post.$index\">\n                </instagram-post>\n            </ul>\n        </div>\n    "
 	});
 
 /***/ })

@@ -3,9 +3,7 @@ import Vue from "vue";
 Vue.component('hero-img', {
     data: () => ({
         imgLoaded: false,
-        videoLoaded: false,
-        videoSrc: null,
-        imgSrc: null,
+        videoLoaded: false
     }),
     props: ['video', 'img'],    
     created() {
@@ -20,22 +18,22 @@ Vue.component('hero-img', {
         <figure class="hero-img">
             <video 
                 v-on:loadeddata="loadVideo"
-                v-if="videoSrc" 
+                v-if="video" 
                 v-bind:class="{loaded : videoLoaded}"
-                v-bind:src="videoSrc" 
+                v-bind:src="video" 
                 loop 
                 autoplay>
             </video>
 
             <img v-on:load="loadImg"
-                v-if="imgSrc" 
-                v-bind:src="imgSrc" 
+                v-if="img" 
+                v-bind:src="img" 
                 alt="">
 
             <div class="bg"
-                 v-if="imgSrc"  
-                 v-bind:class="{loaded : imgLoaded}"                 
-                 v-bind:style="{ backgroundImage: 'url('+imgSrc+')' }">
+                 v-if="img"  
+                 v-bind:class="{loaded : img}"                 
+                 v-bind:style="{ backgroundImage: 'url('+img+')' }">
             </div>
         </figure>
     `

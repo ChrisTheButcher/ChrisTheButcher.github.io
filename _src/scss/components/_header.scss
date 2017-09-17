@@ -14,24 +14,6 @@ header {
         background: linear-gradient($color-primary 0%, transparent 30%, transparent 70%, $color-primary 100%);
     }
 
-    .hero-img {
-        img { display: none; }
-
-        .bg {
-            @include overlay;
-            @extend %filter;
-            background-size: cover;
-            display: none;
-            .is-mobile & { display: block; }            
-        }
-
-        video {
-            @include overlay;
-            @extend %filter;
-            .is-mobile & { display: none; }
-        }
-    }
-
     .container {
         position: relative;
         z-index: 2;
