@@ -27,7 +27,7 @@ description_html: "Hi, my name is <a href=\"javascript:\" class=\"show-img\">Chr
   src=\"/assets/img/gifs/photo.gif\"></a>."
 email: ccwijnia@gmail.com
 baseurl: 
-url: http://chriswijnia.com
+url: http://www.chriswijnia.com
 twitter_username: christianwijnia
 github_username: christhebutcher
 markdown: kramdown
