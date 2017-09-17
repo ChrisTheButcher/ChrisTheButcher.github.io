@@ -14,3 +14,12 @@ export function fetchJson(url) {
         script.onload = script.remove();
     })
 }
+
+export class LazyLoad {
+    constructor(selector) {
+        $select(`[${selector}]`).forEach(e => {
+            e.src = e.getAttribute(selector)
+            e.classList.add("loaded")
+        })
+    }
+}

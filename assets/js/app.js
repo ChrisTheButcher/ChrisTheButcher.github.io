@@ -46,30 +46,123 @@
 
 	"use strict";
 
-	var _Parallax = __webpack_require__(127);
-
 	var _vue = __webpack_require__(3);
 
 	var _vue2 = _interopRequireDefault(_vue);
 
-	__webpack_require__(133);
+	var _Parallax = __webpack_require__(1);
 
-	__webpack_require__(130);
+	var _DomHelper = __webpack_require__(2);
 
-	__webpack_require__(131);
+	__webpack_require__(4);
 
-	__webpack_require__(132);
+	__webpack_require__(123);
+
+	__webpack_require__(124);
+
+	__webpack_require__(125);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	new _Parallax.Parallax("header", "", "video, .bg");
-	new _Parallax.Parallax("section", "", ".bg");
+	var heroBg = new _Parallax.Parallax("header", "", "video, .bg");
+	var sectionBg = new _Parallax.Parallax("section", "", ".bg");
+	var lazyLoad = new _DomHelper.LazyLoad("data-src");
 
 	var app = new _vue2.default({ el: "#app" });
 
 /***/ }),
-/* 1 */,
-/* 2 */,
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Parallax = undefined;
+
+	var _DomHelper = __webpack_require__(2);
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Parallax = exports.Parallax = function Parallax(container, text, bg) {
+	    _classCallCheck(this, Parallax);
+
+	    function update() {
+	        (0, _DomHelper.$select)(container).forEach(function (element, i) {
+	            var rect = element.getBoundingClientRect();
+	            var newPosition = rect.top / window.innerHeight * 100;
+	            var bgPos = newPosition * -1 + 'px';
+	            var txtPos = newPosition * -1 + 'px';
+
+	            if (bg) {
+	                [].concat(_toConsumableArray(element.querySelectorAll(bg))).forEach(function (e) {
+	                    return e.style.transform = 'translate(-50%, calc(-50% + ' + bgPos + '))';
+	                });
+	            }
+
+	            if (text) {
+	                [].concat(_toConsumableArray(element.querySelectorAll(text))).forEach(function (e) {
+	                    return e.style.top = '' + txtPos;
+	                });
+	            }
+	        });
+	    }
+
+	    update();
+	    ["scroll", "resize"].forEach(function (e) {
+	        return addEventListener(e, update);
+	    });
+	};
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.fetchJson = fetchJson;
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	var $select = exports.$select = function $select(selector) {
+	    return [].concat(_toConsumableArray(document.querySelectorAll(selector)));
+	};
+
+	function fetchJson(url) {
+	    return new Promise(function (resolve, reject) {
+	        var s4 = function s4() {
+	            return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+	        };
+	        var callbackName = "cb_" + s4();
+	        var script = document.createElement('script');
+	        window[callbackName] = function (data) {
+	            delete window[callbackName];
+	            resolve(data);
+	        };
+	        script.src = url + "&callback=" + callbackName;
+	        document.body.appendChild(script);
+	        script.onload = script.remove();
+	    });
+	}
+
+	var LazyLoad = exports.LazyLoad = function LazyLoad(selector) {
+	    _classCallCheck(this, LazyLoad);
+
+	    $select("[" + selector + "]").forEach(function (e) {
+	        e.src = e.getAttribute(selector);
+	        e.classList.add("loaded");
+	    });
+	};
+
+/***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10260,7 +10353,56 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 4 */,
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _vue = __webpack_require__(3);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _moment = __webpack_require__(5);
+
+	var _moment2 = _interopRequireDefault(_moment);
+
+	var _DomHelper = __webpack_require__(2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	_vue2.default.component('instagram-feed', {
+	    data: function data() {
+	        return {
+	            posts: []
+	        };
+	    },
+	    created: function created() {
+	        this.getPosts();
+	    },
+
+	    methods: {
+	        getPosts: function getPosts() {
+	            var _this = this;
+
+	            var token = '5222788.2177b6c.daf90d77db5441b0a707808c1ebfc6da';
+	            var url = "https://api.instagram.com/v1/users/self/media/recent?access_token=" + token + "&count=9";
+	            (0, _DomHelper.fetchJson)(url).then(function (data) {
+	                _this.posts = data.data.map(function (post) {
+	                    return {
+	                        link: post.link,
+	                        user: post.user.username,
+	                        img: post.images.standard_resolution.url,
+	                        likes: post.likes.count,
+	                        time: (0, _moment2.default)(post.created_time * 1000).format("MM/DD/YYYY")
+	                    };
+	                });
+	            });
+	        }
+	    },
+	    template: "\n        <div class=\"instagram-feed\">\n            <ul>\n                <instagram-post \n                    v-for=\"post in posts\" \n                    v-bind=\"post\" \n                    :key=\"post.$index\">\n                </instagram-post>\n            </ul>\n        </div>\n    "
+	});
+
+/***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26077,93 +26219,7 @@
 
 
 /***/ }),
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
-/* 127 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.Parallax = undefined;
-
-	var _DomHelper = __webpack_require__(128);
-
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var Parallax = exports.Parallax = function Parallax(container, text, bg) {
-	    _classCallCheck(this, Parallax);
-
-	    function update() {
-	        (0, _DomHelper.$select)(container).forEach(function (element, i) {
-	            var rect = element.getBoundingClientRect();
-	            var newPosition = rect.top / window.innerHeight * 100;
-	            var bgPos = newPosition * -1 + 'px';
-	            var txtPos = newPosition * -1 + 'px';
-
-	            if (bg) {
-	                [].concat(_toConsumableArray(element.querySelectorAll(bg))).forEach(function (e) {
-	                    return e.style.transform = 'translate(-50%, calc(-50% + ' + bgPos + '))';
-	                });
-	            }
-
-	            if (text) {
-	                [].concat(_toConsumableArray(element.querySelectorAll(text))).forEach(function (e) {
-	                    return e.style.top = '' + txtPos;
-	                });
-	            }
-	        });
-	    }
-
-	    update();
-	    ["scroll", "resize"].forEach(function (e) {
-	        return addEventListener(e, update);
-	    });
-	};
-
-/***/ }),
-/* 128 */
-/***/ (function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.fetchJson = fetchJson;
-
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-	var $select = exports.$select = function $select(selector) {
-	    return [].concat(_toConsumableArray(document.querySelectorAll(selector)));
-	};
-
-	function fetchJson(url) {
-	    return new Promise(function (resolve, reject) {
-	        var s4 = function s4() {
-	            return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-	        };
-	        var callbackName = "cb_" + s4();
-	        var script = document.createElement('script');
-	        window[callbackName] = function (data) {
-	            delete window[callbackName];
-	            resolve(data);
-	        };
-	        script.src = url + "&callback=" + callbackName;
-	        document.body.appendChild(script);
-	        script.onload = script.remove();
-	    });
-	}
-
-/***/ }),
-/* 129 */,
-/* 130 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26190,7 +26246,7 @@
 	});
 
 /***/ }),
-/* 131 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26199,7 +26255,7 @@
 
 	var _vue2 = _interopRequireDefault(_vue);
 
-	var _DomHelper = __webpack_require__(128);
+	var _DomHelper = __webpack_require__(2);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26264,7 +26320,7 @@
 	});
 
 /***/ }),
-/* 132 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26297,56 +26353,6 @@
 	        }
 	    },
 	    template: '\n        <figure class="hero-img">\n            <video \n                v-on:loadeddata="loadVideo"\n                v-if="video" \n                v-bind:class="{loaded : videoLoaded}"\n                v-bind:src="video" \n                loop \n                autoplay>\n            </video>\n\n            <img v-on:load="loadImg"\n                v-if="img" \n                v-bind:src="img" \n                alt="">\n\n            <div class="bg"\n                 v-if="img"  \n                 v-bind:class="{loaded : img}"                 \n                 v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }">\n            </div>\n        </figure>\n    '
-	});
-
-/***/ }),
-/* 133 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var _vue = __webpack_require__(3);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	var _moment = __webpack_require__(5);
-
-	var _moment2 = _interopRequireDefault(_moment);
-
-	var _DomHelper = __webpack_require__(128);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	_vue2.default.component('instagram-feed', {
-	    data: function data() {
-	        return {
-	            posts: []
-	        };
-	    },
-	    created: function created() {
-	        this.getPosts();
-	    },
-
-	    methods: {
-	        getPosts: function getPosts() {
-	            var _this = this;
-
-	            var token = '5222788.2177b6c.daf90d77db5441b0a707808c1ebfc6da';
-	            var url = "https://api.instagram.com/v1/users/self/media/recent?access_token=" + token + "&count=9";
-	            (0, _DomHelper.fetchJson)(url).then(function (data) {
-	                _this.posts = data.data.map(function (post) {
-	                    return {
-	                        link: post.link,
-	                        user: post.user.username,
-	                        img: post.images.standard_resolution.url,
-	                        likes: post.likes.count,
-	                        time: (0, _moment2.default)(post.created_time * 1000).format("MM/DD/YYYY")
-	                    };
-	                });
-	            });
-	        }
-	    },
-	    template: "\n        <div class=\"instagram-feed\">\n            <ul>\n                <instagram-post \n                    v-for=\"post in posts\" \n                    v-bind=\"post\" \n                    :key=\"post.$index\">\n                </instagram-post>\n            </ul>\n        </div>\n    "
 	});
 
 /***/ })

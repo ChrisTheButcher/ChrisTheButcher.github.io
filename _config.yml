@@ -15,11 +15,11 @@ title_html: Chris Wijnia <small><span>/</span> designer &amp; developer</small>
 header_img: "/assets/img/travel.jpg"
 header_video: "/assets/img/travel.mp4"
 description: "Hi, my name is <a href=\"javascript:\" class=\"show-img\">Chris<img
-  src=\"assets/img/avatar.png\"></a>. \nI currently work for <a class=\"show-img\"
-  href=\"//boerdam.nl\">Boerdam<img src=\"/assets/img/gifs/boerdam.png\"></a>\n- a
+  data-src=\"assets/img/avatar.png\"></a>. \nI currently work for <a class=\"show-img\"
+  href=\"//boerdam.nl\">Boerdam<img data-src=\"/assets/img/gifs/boerdam.png\"></a>\n- a
   digital agency based in The Netherlands.\nI design and code things. When I'm not
   working on something tech-related I like to spend my time traveling, playing\n<a
-  href=\"//lichess.org/@/christhebutcher\" class=\"show-img\">chess<img src=\"/assets/img/gifs/chess.gif\"></a>
+  href=\"//lichess.org/@/christhebutcher\" class=\"show-img\">chess<img data-src=\"/assets/img/gifs/chess.gif\"></a>
   or taking\n<a href=\"//instagram.com/christhebutcher\" class=\"show-img\">photos<img
   src=\"/assets/img/gifs/photo.gif\"></a>."
 email: ccwijnia@gmail.com
