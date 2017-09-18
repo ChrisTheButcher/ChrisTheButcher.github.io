@@ -6,10 +6,6 @@ Vue.component('hero-img', {
         videoLoaded: false
     }),
     props: ['video', 'img'],    
-    created() {
-        this.videoSrc = this.video;
-        this.imgSrc = this.img;
-    },
     methods: {
         loadImg() { this.imgLoaded = true },
         loadVideo() { this.videoLoaded = true }

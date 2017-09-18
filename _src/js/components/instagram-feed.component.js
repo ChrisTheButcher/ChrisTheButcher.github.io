@@ -6,14 +6,19 @@ Vue.component('instagram-feed', {
     data: () => ({ 
         posts: []            
     }),
-    created() {
+    props: {
+        user: {default: 'self'},
+        token: {default: '5222788.2177b6c.daf90d77db5441b0a707808c1ebfc6da'},        
+        count: {default: 6},
+    },
+    mounted() {
         this.getPosts()
     },
     methods: {
         getPosts() {
-            const token = '5222788.2177b6c.daf90d77db5441b0a707808c1ebfc6da';
-            const url = `https://api.instagram.com/v1/users/self/media/recent?access_token=${token}&count=9`;
+            const url = `https://api.instagram.com/v1/users/${this.user}/media/recent?access_token=${this.token}&count=${this.count}`;
             fetchJson(url).then(data => {
+                //console.log(data)
                 this.posts = data.data.map(post => ({
                     link: post.link,
                     user: post.user.username,

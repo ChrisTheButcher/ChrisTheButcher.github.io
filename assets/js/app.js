@@ -10375,7 +10375,12 @@
 	            posts: []
 	        };
 	    },
-	    created: function created() {
+	    props: {
+	        user: { default: 'self' },
+	        token: { default: '5222788.2177b6c.daf90d77db5441b0a707808c1ebfc6da' },
+	        count: { default: 6 }
+	    },
+	    mounted: function mounted() {
 	        this.getPosts();
 	    },
 
@@ -10383,9 +10388,9 @@
 	        getPosts: function getPosts() {
 	            var _this = this;
 
-	            var token = '5222788.2177b6c.daf90d77db5441b0a707808c1ebfc6da';
-	            var url = "https://api.instagram.com/v1/users/self/media/recent?access_token=" + token + "&count=9";
+	            var url = "https://api.instagram.com/v1/users/" + this.user + "/media/recent?access_token=" + this.token + "&count=" + this.count;
 	            (0, _DomHelper.fetchJson)(url).then(function (data) {
+	                //console.log(data)
 	                _this.posts = data.data.map(function (post) {
 	                    return {
 	                        link: post.link,
@@ -26338,11 +26343,6 @@
 	        };
 	    },
 	    props: ['video', 'img'],
-	    created: function created() {
-	        this.videoSrc = this.video;
-	        this.imgSrc = this.img;
-	    },
-
 	    methods: {
 	        loadImg: function loadImg() {
 	            this.imgLoaded = true;

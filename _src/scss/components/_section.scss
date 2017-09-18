@@ -24,3 +24,13 @@ section {
         opacity: .3;
     }
 }
+
+// #clients {
+//     &:after {
+//         @include abs;
+//         z-index: -2;
+//         background: lightgray;
+//         opacity: .5;
+//         content: '';        
+//     }
+// }

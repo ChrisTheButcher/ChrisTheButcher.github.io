@@ -13,3 +13,5 @@ MVRDV
 
 Province of Overijssel
 : Changing democracy. With Boerdam we won the competition to make a democratic online participation platform for JIJ&Overijssel. In 2016 we won The Galjaard Award for our revolutionary concept.<br><br>[jijenoverijssel.nl](//jijenoverijssel.nl)
+
+<instagram-feed user="6060632487"></instagram-feed>

@@ -78,7 +78,7 @@ h3, dl dt {
 
 .lead {
   font-size: 1.71875rem;
-  margin: 0 0 5.3125rem;
+  margin: 0;
   line-height: 1.1;
   font-weight: 400; }
 
@@ -88,7 +88,7 @@ p, dl dd {
 dl {
   position: relative;
   width: 100%;
-  margin: 0;
+  margin: 5.3125rem 0 0;
   padding: 0;
   overflow: hidden; }
   dl dt {
@@ -415,6 +415,8 @@ section {
     -webkit-transition: opacity .6s ease-in;
     transition: opacity .6s ease-in;
     position: relative; }
+    #portfolio .instagram-post a {
+      padding-bottom: 100%; }
     .instagram-post a.loaded {
       opacity: 1; }
     .instagram-post a .caption {

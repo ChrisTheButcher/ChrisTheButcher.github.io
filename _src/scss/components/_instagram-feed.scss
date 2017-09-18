@@ -24,6 +24,11 @@
         opacity: 0;
         transition: .6 ease-in;
         padding-bottom: percentage(2 / 3);
+
+        #portfolio & {
+            padding-bottom: 100%;
+        }
+
         display: block;
         background-size: cover;
         background-position: center;
