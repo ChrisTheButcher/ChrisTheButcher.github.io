@@ -28,6 +28,11 @@ dl {
         @extend p;
         margin: 0;
         padding: 1.2rem 0 3rem;
+
+        a {
+            font-size: rem(17);
+            @include bp($lg) { font-size: rem(18); }
+        }
     }
 
     @include bp($md) {

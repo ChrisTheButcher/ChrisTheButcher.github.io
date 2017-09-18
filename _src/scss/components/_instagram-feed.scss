@@ -52,7 +52,7 @@
             background: $color-primary;
             opacity: 0;
             transition: opacity .15s linear;        
-            padding: rem(12.5);
+            padding: rem(20);
             font-size: 1em;
             display: flex;
             flex-direction: column;
@@ -62,7 +62,7 @@
         }
 
         .user {
-            font-weight: 900;
+            font-weight: 700;
         }
 
         .meta {
