@@ -18,7 +18,7 @@
     top:$top; right:$right; bottom:$bottom; left:$left;
   }
 
-  @function rem($pixels, $context: 32) {
+  @function rem($pixels, $context: 16) {
     @return #{$pixels/$context}rem;
   }
 
@@ -59,4 +59,11 @@
       padding: 0;
       border: 0;
   }
+}
+
+
+@mixin padding {
+  padding: rem(100) rem(25);    
+  @include bp($md) { padding: rem(170, 18) rem(50, 18); }      
+  @include bp($lg) { padding: rem(240, 20) rem(50, 20); }      
 }

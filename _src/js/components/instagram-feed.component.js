@@ -18,13 +18,14 @@ Vue.component('instagram-feed', {
         getPosts() {
             const url = `https://api.instagram.com/v1/users/${this.user}/media/recent?access_token=${this.token}&count=${this.count}`;
             fetchJson(url).then(data => {
-                //console.log(data)
+                console.log(data)
                 this.posts = data.data.map(post => ({
+                    tags: post.tags,
                     link: post.link,
                     user: post.user.username,
                     img: post.images.standard_resolution.url,
                     likes: post.likes.count,
-                    time: moment(post.created_time*1000).format("MM/DD/YYYY")
+                    time: post.created_time
                 }))
             })
         }

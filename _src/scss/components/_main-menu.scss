@@ -1,4 +1,6 @@
 .main-menu nav {
+    $size: rem(48);
+    
     background: $color-primary;
     z-index: 10;
     min-height: 100vh;
@@ -10,7 +12,6 @@
     opacity: 0;
     transition: opacity .3s ease-in-out;
     pointer-events: none;
-    $size: rem(95);
 
     ul {
         margin: auto;
@@ -51,20 +52,26 @@ body[data-main-menu-open="true"] {
 .main-menu .toggle {
     @include link-button;
     position: fixed;
-    top: rem(30);
-    right: rem(30);
+    top: rem(25);
+    right: rem(25);
+    transform: translate(9px, -9px);    
+    @include bp($sm) {
+        top: rem(50/2, 18);
+        right: rem(50/2, 18);  
+        transform: translate(5px, -5px);    
+    }
+    @include bp($md) {
+        top: rem(50, 20);
+        right: rem(50, 20);
+        //transform: none;  
+    }
     z-index: 130;
     font-size: 0;
     &:hover { background: none; }
     
-    @include bp($xl) {
-        top: rem(80);
-        right: rem(80);
-    }
-
     &:before {
-        width: rem(25);
-        height: rem(25);
+        width: 16px;
+        height: 16px;
         border-radius: 50%;
         border: $stroke-width solid black;
         content: '';

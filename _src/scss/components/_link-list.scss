@@ -1,12 +1,13 @@
 .link-list {
-    margin: 0;
+    margin: 3em 0;
     padding: 0;
     list-style: none;
-
+    font-size: rem(18);
+    @include bp($lg) { font-size: rem(20); }
+    line-height: 2.5;
+    
     li {
         display: inline;
-        font-size: rem(40);
-        line-height: 2.5;
         margin-right: rem(60);
     }
 }
@@ -16,7 +17,6 @@
 
     li {
         margin-right: 0;
-        font-size: rem(40);
         &:not(:last-of-type):after { content: ' / '; }
     }
 }

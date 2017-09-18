@@ -10390,14 +10390,15 @@
 
 	            var url = "https://api.instagram.com/v1/users/" + this.user + "/media/recent?access_token=" + this.token + "&count=" + this.count;
 	            (0, _DomHelper.fetchJson)(url).then(function (data) {
-	                //console.log(data)
+	                console.log(data);
 	                _this.posts = data.data.map(function (post) {
 	                    return {
+	                        tags: post.tags,
 	                        link: post.link,
 	                        user: post.user.username,
 	                        img: post.images.standard_resolution.url,
 	                        likes: post.likes.count,
-	                        time: (0, _moment2.default)(post.created_time * 1000).format("MM/DD/YYYY")
+	                        time: post.created_time
 	                    };
 	                });
 	            });
@@ -26226,27 +26227,43 @@
 /* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _vue = __webpack_require__(1);
 
 	var _vue2 = _interopRequireDefault(_vue);
+
+	var _moment = __webpack_require__(5);
+
+	var _moment2 = _interopRequireDefault(_moment);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_vue2.default.component('instagram-post', {
 	    data: function data() {
 	        return {
-	            loaded: false
+	            loaded: false,
+	            timeString: null,
+	            datetime: null,
+	            filteredTags: []
 	        };
 	    },
-	    props: ['user', 'img', 'time', 'link', 'likes'],
+	    created: function created() {
+	        var time = (0, _moment2.default)(this.time * 1000);
+	        this.timeString = time.format("MM/DD/YYYY");
+	        this.datetime = time.format("YYYY-MM-DDThh:mm:ssTZD");
+	        this.tagsFiltered = this.tags.filter(function (tag, i) {
+	            return i < 6;
+	        });
+	    },
+
+	    props: ['user', 'img', 'time', 'link', 'likes', 'tags'],
 	    methods: {
 	        loadImg: function loadImg(e) {
 	            this.loaded = true;
 	        }
 	    },
-	    template: '\n        <li class="instagram-post">\n            <a  v-bind:href="link" \n                v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }"  \n                v-bind:class="{ loaded: loaded }">\n\n                <figure>\n                    <img v-on:load="loadImg" v-bind:src="img" alt="">      \n                                \n                    <figcaption class="caption">\n                        <span class="user">@{{user}}</span>\n                        <span class="meta">{{time}} \u2014 \u2764{{likes}}</span>\n                    </figcaption>\n                </figure>\n            </a>\n        </li>\n    '
+	    template: "\n        <li class=\"instagram-post\">\n            <a  v-bind:href=\"link\" \n                v-bind:style=\"{ backgroundImage: 'url('+img+')' }\"  \n                v-bind:class=\"{ loaded: loaded }\">\n\n                <figure>\n                    <img v-on:load=\"loadImg\" v-bind:src=\"img\" alt=\"\">      \n                                \n                    <figcaption class=\"caption\">\n                        <span class=\"user\">@{{user}}</span>\n                        <span class=\"meta\">\n                            <time v-bind:datetime=\"datetime\">{{timeString}}</time> \n                            \u2014 \n                            \u2764{{likes}}\n                        </span>\n                        <div class=\"tags\" v-if=\"tagsFiltered\">\n                            <template v-for=\"tag of tagsFiltered\">\n                                <span class=\"tag\">#{{tag}}</span>&nbsp;\n                            </template> \n                        </div>\n                    </figcaption>\n                </figure>\n            </a>\n        </li>\n    "
 	});
 
 /***/ }),

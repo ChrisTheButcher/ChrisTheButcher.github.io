@@ -1,7 +1,7 @@
 section {
-    padding: rem($gutter-vertical) rem($gutter-horizontal);    
     position: relative;
     overflow: hidden;
+    @include padding;    
     @include bp($sm) { min-height: 100vh; }        
 
     &[data-inverted="true"] {

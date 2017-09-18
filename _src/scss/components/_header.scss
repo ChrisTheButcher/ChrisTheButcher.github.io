@@ -2,10 +2,10 @@ header {
     background: $color-primary;
     position: relative;
     z-index: 110;
-    padding: rem($gutter-vertical) rem($gutter-horizontal);    
     overflow: hidden;
     display: flex;
     align-items: center;
+    @include padding;
     @include bp($sm) { min-height: 100vh; }
 
     &:after {
@@ -24,27 +24,19 @@ header {
         &:hover { color: blue; }
     }
 
-    .lead {
-        margin-top: rem(150);
-        line-height: 1.5;
-        margin-bottom: 0;
-        font-size: rem(48);
-        position: relative;
+    h1 span {
+        display: none;
     }
-}
-
-h1 {
-    font-size: rem(90);
-    font-weight: 900;
-    z-index: 1;
-    position: relative;
-
-    small { 
-        font-weight: 300; 
-        @include bp($md, max) { 
-            display: block; 
-            margin-top: .5em;
-            span { display: none; }
+    @include bp($md) { 
+        h1 small { 
+            display: inline;
+            font-size: .9em;
         }
+        h1 span { display: inline; }
+    }
+    
+
+    .lead {
+        margin: 2em 0 0;
     }
 }
