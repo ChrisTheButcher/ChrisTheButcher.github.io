@@ -35,8 +35,9 @@ body {
 a {
     color: $color-secondary;
     text-decoration: underline;
-    transition: color .08s linear;
+    transition: color .1s linear, background-color .1s linear;
     [data-inverted="true"] & { color: white; }
+
     &:hover { 
         background: $color-primary;
     }

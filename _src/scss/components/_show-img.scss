@@ -1,9 +1,9 @@
 .show-img {
     position: relative;
-    img { display: none; }
-
-    &:hover img {
-        display: block;
+    img { 
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
         position: absolute;
         top: 50%;
         z-index: -1;
@@ -12,5 +12,11 @@
         width: 35vw;
         max-width: 350px;
         height: auto;
+        transition: opacity .1s linear, visibility .1s linear;
+     }
+
+    &:hover img {
+        opacity: 1;
+        visibility: visible;
     }
 }

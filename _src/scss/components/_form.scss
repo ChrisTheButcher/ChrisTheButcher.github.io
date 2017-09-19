@@ -1,12 +1,12 @@
-button, input[type="button"] {
-    @include link-button;
-}
-
 textarea {
     resize: vertical;
 }
 
-input[type="text"], textarea {
+button, input[type="button"] {
+    @include link-button;
+}
+
+input[type="text"], input[type="email"], textarea {
     font: inherit;
     padding: rem(10) 0;
     margin: 0;
@@ -19,7 +19,7 @@ input[type="text"], textarea {
     line-height: inherit;
     border-bottom: $stroke-width solid black;
     vertical-align: baseline;
-    transition: .15s linear;
+    transition: padding .1s linear, background-color .1s linear, height .1s linear;
 
     &::placeholder {
         color: grey;
@@ -35,7 +35,7 @@ input[type="text"], textarea {
 .input-group {
     display: flex;
     width: 100%;
-    transition: opacity .3s ease-in;
+    transition: opacity .4s ease-in;
 
     &.hidden {
         opacity: 0;
@@ -72,13 +72,13 @@ input[type="text"], textarea {
     width: 100%;
 }
 
-@include bp($sm, max) {
+@include bp($md, max) {
     .e-mail-form .col:last-child {
         margin-top: rem(25);
     }
 }
 
-@include bp($sm) {
+@include bp($md) {
     .e-mail-form {
         display: flex;
         justify-content: space-between;

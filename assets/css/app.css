@@ -34,8 +34,8 @@ body {
 a {
   color: blue;
   text-decoration: underline;
-  -webkit-transition: color .08s linear;
-  transition: color .08s linear; }
+  -webkit-transition: color .1s linear, background-color .1s linear;
+  transition: color .1s linear, background-color .1s linear; }
   [data-inverted="true"] a {
     color: white; }
   a:hover {
@@ -307,9 +307,9 @@ body[data-main-menu-open="true"] {
 .show-img {
   position: relative; }
   .show-img img {
-    display: none; }
-  .show-img:hover img {
-    display: block;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: 50%;
     z-index: -1;
@@ -318,7 +318,12 @@ body[data-main-menu-open="true"] {
             transform: translate(-50%, -50%);
     width: 35vw;
     max-width: 350px;
-    height: auto; }
+    height: auto;
+    -webkit-transition: opacity .1s linear, visibility .1s linear;
+    transition: opacity .1s linear, visibility .1s linear; }
+  .show-img:hover img {
+    opacity: 1;
+    visibility: visible; }
 
 section {
   position: relative;
@@ -447,8 +452,8 @@ section {
       overflow: hidden;
       background: #FFF568;
       opacity: 0;
-      -webkit-transition: opacity .15s linear;
-      transition: opacity .15s linear;
+      -webkit-transition: opacity .125s linear;
+      transition: opacity .125s linear;
       padding: 1.25rem;
       font-size: 1em;
       display: -webkit-box;
@@ -481,6 +486,9 @@ section {
     .instagram-post a:hover .caption {
       opacity: 1; }
 
+textarea {
+  resize: vertical; }
+
 button, input[type="button"] {
   overflow: visible;
   margin: 0;
@@ -500,10 +508,7 @@ button, input[type="button"] {
     padding: 0;
     border: 0; }
 
-textarea {
-  resize: vertical; }
-
-input[type="text"], textarea {
+input[type="text"], input[type="email"], textarea {
   font: inherit;
   padding: 0.625rem 0;
   margin: 0;
@@ -517,15 +522,15 @@ input[type="text"], textarea {
   line-height: inherit;
   border-bottom: 3px solid black;
   vertical-align: baseline;
-  -webkit-transition: .15s linear;
-  transition: .15s linear; }
-  input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  -webkit-transition: padding .1s linear, background-color .1s linear, height .1s linear;
+  transition: padding .1s linear, background-color .1s linear, height .1s linear; }
+  input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: grey; }
-  input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
     color: grey; }
-  input[type="text"]::placeholder, textarea::placeholder {
+  input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
     color: grey; }
-  input[type="text"]:focus, textarea:focus {
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     padding: 0.625rem;
     background: #FFF568;
     border-color: black; }
@@ -535,8 +540,8 @@ input[type="text"], textarea {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-transition: opacity .3s ease-in;
-  transition: opacity .3s ease-in; }
+  -webkit-transition: opacity .4s ease-in;
+  transition: opacity .4s ease-in; }
   .input-group.hidden {
     opacity: 0;
     height: 0;
@@ -567,11 +572,11 @@ input[type="text"], textarea {
 .e-mail {
   width: 100%; }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .e-mail-form .col:last-child {
     margin-top: 1.5625rem; } }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .e-mail-form {
     display: -webkit-box;
     display: -ms-flexbox;

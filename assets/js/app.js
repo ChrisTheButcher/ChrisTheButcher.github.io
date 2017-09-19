@@ -26388,7 +26388,7 @@
 	_vue2.default.component('e-mail', {
 	    data: function data() {
 	        return {
-	            subject: '',
+	            email: '',
 	            body: '',
 	            href: '',
 	            expanded: false
@@ -26398,19 +26398,19 @@
 	        this.href = 'mailto:' + this.mailto;
 	    },
 
-	    props: ['mailto'],
+	    props: ['mailto', 'placeholder'],
 	    methods: {
 	        send: function send(e) {
 	            e.preventDefault();
-	            this.href = 'mailto:' + this.mailto + '?cc=&subject=' + encodeURIComponent(this.subject) + '&body=' + encodeURIComponent(this.body);
+	            this.href = 'mailto:' + this.mailto + '?cc=&subject=' + encodeURIComponent('chriswijnia.com / message by ' + this.email) + '&body=' + encodeURIComponent(this.body);
 	            location = this.href;
 	            this.href = '';
-	            this.subject = '';
+	            this.email = '';
 	            this.body = '';
 	            this.expanded = false;
 	        }
 	    },
-	    template: '\n        <form class="e-mail" v-on:submit="send($event)">\n            <div class="input-group">\n                <input type="text" \n                    v-model="subject" \n                    required\n                    v-on:focus="expanded = true"\n                    class="input-group-input"\n                    placeholder="subject">\n                <button class="input-group-addon" v-show="!expanded">\n                    <img src="/assets/img/arrow-right.svg" alt="send">\n                </button>\n            </div>\n\n\n            <div class="input-group" v-bind:class="{ \'hidden\' : !expanded }">\n                <textarea \n                    rows="3" \n                    class="input-group-input"\n                    v-model="body" \n                    required \n                    placeholder="message">\n                </textarea>\n\n                <button type="submit" title="send" class="input-group-addon">\n                    <img src="/assets/img/arrow-right.svg" alt="send">\n                </button>\n            </div>\n        </form>\n\n    '
+	    template: '\n        <form class="e-mail" v-on:submit="send($event)">\n            <div class="input-group">\n                <textarea \n                    v-bind:rows="expanded ? 3 : 1" \n                    class="input-group-input"\n                    v-model="body" \n                    v-on:focus="expanded = true"                    \n                    required \n                    v-bind:placeholder="placeholder">\n                </textarea>\n                <button class="input-group-addon" v-show="!expanded">\n                    <img src="/assets/img/arrow-right.svg">\n                </button>\n            </div>\n\n            <div class="input-group" v-bind:class="{ \'hidden\' : !expanded }">\n                <input type="email" required v-model="email" placeholder="email" class="input-group-input"> \n                <button type="submit" title="send" class="input-group-addon">\n                    <img src="/assets/img/arrow-right.svg" alt="send">\n                </button>           \n            </div>\n        </form>\n\n    '
 	});
 
 /***/ })
