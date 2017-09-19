@@ -5,21 +5,22 @@ Vue.component('hero-img', {
         imgLoaded: false,
         videoLoaded: false
     }),
-    props: ['video', 'img'],    
+    props: ['video', 'img'],  
     methods: {
         loadImg() { this.imgLoaded = true },
-        loadVideo() { this.videoLoaded = true }
+        loadVideo(e) { this.videoLoaded = true }
     },
     template: `
         <figure class="hero-img">
             <video 
+                playsinline
                 v-on:loadeddata="loadVideo"
                 v-if="video" 
                 v-bind:class="{loaded : videoLoaded}"
-                v-bind:src="video" 
-                loop 
                 preload="none"
+                loop
                 autoplay>
+                <source v-bind:src="video"  type="video/mp4">
             </video>
 
             <img v-on:load="loadImg"

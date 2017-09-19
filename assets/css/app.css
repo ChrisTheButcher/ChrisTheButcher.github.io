@@ -160,8 +160,8 @@ header {
     bottom: 0;
     left: 0;
     content: '';
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFF568), color-stop(30%, transparent), color-stop(70%, transparent), to(#FFF568));
-    background: linear-gradient(#FFF568 0%, transparent 30%, transparent 70%, #FFF568 100%); }
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF568), color-stop(30%, rgba(255, 245, 104, 0)), color-stop(70%, rgba(255, 245, 104, 0)), to(#FFF568));
+    background: linear-gradient(#FFF568 0%, rgba(255, 245, 104, 0) 30%, rgba(255, 245, 104, 0) 70%, #FFF568 100%); }
   header .container {
     position: relative;
     z-index: 2; }

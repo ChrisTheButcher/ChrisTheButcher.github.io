@@ -11,7 +11,7 @@ header {
     &:after {
         @include abs;
         content: '';
-        background: linear-gradient($color-primary 0%, transparent 30%, transparent 70%, $color-primary 100%);
+        background: linear-gradient($color-primary 0%, rgba($color-primary, 0) 30%, rgba($color-primary, 0) 70%, $color-primary 100%);
     }
 
     .container {

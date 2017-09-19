@@ -10392,7 +10392,6 @@
 
 	            var url = "https://api.instagram.com/v1/users/" + this.user + "/media/recent?access_token=" + this.token + "&count=" + this.count;
 	            (0, _DomHelper.fetchJson)(url).then(function (data) {
-	                console.log(data);
 	                _this.posts = data.data.map(function (post) {
 	                    return {
 	                        tags: post.tags,
@@ -26366,11 +26365,11 @@
 	        loadImg: function loadImg() {
 	            this.imgLoaded = true;
 	        },
-	        loadVideo: function loadVideo() {
+	        loadVideo: function loadVideo(e) {
 	            this.videoLoaded = true;
 	        }
 	    },
-	    template: '\n        <figure class="hero-img">\n            <video \n                v-on:loadeddata="loadVideo"\n                v-if="video" \n                v-bind:class="{loaded : videoLoaded}"\n                v-bind:src="video" \n                loop \n                preload="none"\n                autoplay>\n            </video>\n\n            <img v-on:load="loadImg"\n                v-if="img" \n                v-bind:src="img" \n                alt="">\n\n            <div class="bg"\n                 v-if="img"  \n                 v-bind:class="{loaded : img}"                 \n                 v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }">\n            </div>\n        </figure>\n    '
+	    template: '\n        <figure class="hero-img">\n            <video \n                playsinline\n                v-on:loadeddata="loadVideo"\n                v-if="video" \n                v-bind:class="{loaded : videoLoaded}"\n                preload="none"\n                loop\n                autoplay>\n                <source v-bind:src="video"  type="video/mp4">\n            </video>\n\n            <img v-on:load="loadImg"\n                v-if="img" \n                v-bind:src="img" \n                alt="">\n\n            <div class="bg"\n                 v-if="img"  \n                 v-bind:class="{loaded : img}"                 \n                 v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }">\n            </div>\n        </figure>\n    '
 	});
 
 /***/ }),
