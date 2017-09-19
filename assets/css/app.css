@@ -273,20 +273,6 @@ body[data-main-menu-open="true"] {
     pointer-events: all; }
 
 .main-menu .toggle {
-  overflow: visible;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: none;
-  background: transparent;
-  font: inherit;
-  line-height: normal;
-  text-decoration: underline;
-  cursor: pointer;
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
   position: fixed;
   top: 1.5625rem;
   right: 1.5625rem;
@@ -294,9 +280,6 @@ body[data-main-menu-open="true"] {
           transform: translate(9px, -9px);
   z-index: 130;
   font-size: 0; }
-  .main-menu .toggle::-moz-focus-inner {
-    padding: 0;
-    border: 0; }
   @media screen and (min-width: 576px) {
     .main-menu .toggle {
       top: 1.38889rem;
@@ -497,3 +480,107 @@ section {
       text-decoration: underline; }
     .instagram-post a:hover .caption {
       opacity: 1; }
+
+button, input[type="button"] {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  line-height: normal;
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text; }
+  button::-moz-focus-inner, input[type="button"]::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+
+textarea {
+  resize: vertical; }
+
+input[type="text"], textarea {
+  font: inherit;
+  padding: 0.625rem 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+  line-height: inherit;
+  border-bottom: 3px solid black;
+  vertical-align: baseline;
+  -webkit-transition: .15s linear;
+  transition: .15s linear; }
+  input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: grey; }
+  input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: grey; }
+  input[type="text"]::placeholder, textarea::placeholder {
+    color: grey; }
+  input[type="text"]:focus, textarea:focus {
+    padding: 0.625rem;
+    background: #FFF568;
+    border-color: black; }
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in; }
+  .input-group.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden; }
+  .input-group + .input-group {
+    margin-top: 1em; }
+  .input-group .input-group-addon {
+    min-height: 1em;
+    border-bottom: 3px solid black;
+    padding: 0.625rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-transition: .15s linear;
+    transition: .15s linear; }
+    .input-group .input-group-addon img {
+      display: inline-block;
+      height: 1.5em;
+      vertical-align: top; }
+  .input-group .input-group-input:focus + .input-group-addon {
+    background: #FFF568;
+    padding: 0.625rem; }
+
+.e-mail {
+  width: 100%; }
+
+@media screen and (max-width: 576px) {
+  .e-mail-form .col:last-child {
+    margin-top: 1.5625rem; } }
+
+@media screen and (min-width: 576px) {
+  .e-mail-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .e-mail-form .col:last-child {
+      margin-left: 3.125rem;
+      -webkit-box-flex: 5;
+          -ms-flex-positive: 5;
+              flex-grow: 5; } }

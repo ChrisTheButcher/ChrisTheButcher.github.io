@@ -5,6 +5,7 @@ import "./components/instagram-feed.component";
 import "./components/instagram-post.component";
 import "./components/main-menu.component";
 import "./components/hero-img.component";
+import "./components/e-mail.component";
 
 const heroBg = new Parallax("header", "", "video, .bg");
 const sectionBg = new Parallax("section", "", ".bg");

@@ -62,6 +62,8 @@
 
 	__webpack_require__(125);
 
+	__webpack_require__(126);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var heroBg = new _Parallax.Parallax("header", "", "video, .bg");
@@ -26369,6 +26371,46 @@
 	        }
 	    },
 	    template: '\n        <figure class="hero-img">\n            <video \n                v-on:loadeddata="loadVideo"\n                v-if="video" \n                v-bind:class="{loaded : videoLoaded}"\n                v-bind:src="video" \n                loop \n                preload="none"\n                autoplay>\n            </video>\n\n            <img v-on:load="loadImg"\n                v-if="img" \n                v-bind:src="img" \n                alt="">\n\n            <div class="bg"\n                 v-if="img"  \n                 v-bind:class="{loaded : img}"                 \n                 v-bind:style="{ backgroundImage: \'url(\'+img+\')\' }">\n            </div>\n        </figure>\n    '
+	});
+
+/***/ }),
+/* 126 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _vue = __webpack_require__(1);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	_vue2.default.component('e-mail', {
+	    data: function data() {
+	        return {
+	            subject: '',
+	            body: '',
+	            href: '',
+	            expanded: false
+	        };
+	    },
+	    created: function created() {
+	        this.href = 'mailto:' + this.mailto;
+	    },
+
+	    props: ['mailto'],
+	    methods: {
+	        send: function send(e) {
+	            e.preventDefault();
+	            this.href = 'mailto:' + this.mailto + '?cc=&subject=' + encodeURIComponent(this.subject) + '&body=' + encodeURIComponent(this.body);
+	            location = this.href;
+	            this.href = '';
+	            this.subject = '';
+	            this.body = '';
+	            this.expanded = false;
+	        }
+	    },
+	    template: '\n        <form class="e-mail" v-on:submit="send($event)">\n            <div class="input-group">\n                <input type="text" \n                    v-model="subject" \n                    required\n                    v-on:focus="expanded = true"\n                    class="input-group-input"\n                    placeholder="subject">\n                <button class="input-group-addon" v-show="!expanded">\n                    <img src="/assets/img/arrow-right.svg" alt="send">\n                </button>\n            </div>\n\n\n            <div class="input-group" v-bind:class="{ \'hidden\' : !expanded }">\n                <textarea \n                    rows="3" \n                    class="input-group-input"\n                    v-model="body" \n                    required \n                    placeholder="message">\n                </textarea>\n\n                <button type="submit" title="send" class="input-group-addon">\n                    <img src="/assets/img/arrow-right.svg" alt="send">\n                </button>\n            </div>\n        </form>\n\n    '
 	});
 
 /***/ })

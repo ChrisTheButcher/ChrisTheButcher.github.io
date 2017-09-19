@@ -50,7 +50,6 @@ body[data-main-menu-open="true"] {
 }
 
 .main-menu .toggle {
-    @include link-button;
     position: fixed;
     top: rem(25);
     right: rem(25);
