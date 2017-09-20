@@ -23,6 +23,8 @@
     width: 100%;
     font-size: rem(18);
 
+
+
     @include bp($sm) { 
         width: percentage(1 / 2);
         padding: 0 rem(25/2)
@@ -32,11 +34,22 @@
         margin: 0 0 rem(50, 20);
         padding: 0 rem(50/2, 20);        
     }   
+
     
     a {
         opacity: 0;
         transition: .6 ease-in;
         padding-bottom: percentage(2 / 3);
+        &[data-portrait="true"] { 
+            padding-bottom: 125%;
+            @include bp($sm) {
+                padding-bottom: calc(#{percentage(4 / 3)} + #{rem(25)});                 
+            }
+            @include bp($md) {
+                padding-bottom: calc(#{percentage(4 / 3)} + #{rem(50, 20)});
+            }           
+        }
+
         #portfolio & { padding-bottom: 100%; }
 
         display: block;

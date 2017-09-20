@@ -6,13 +6,15 @@ Vue.component('instagram-post', {
         loaded: false,
         timeString: null,
         datetime: null,
+        portrait: false,
         filteredTags: []
     }),
     created() {
         const time = moment(this.time * 1000);
         this.timeString = time.format("MM/DD/YYYY");
         this.datetime = time.format("YYYY-MM-DDThh:mm:ssTZD");
-        this.tagsFiltered = this.tags.filter((tag, i) => i < 6)
+        this.tagsFiltered = this.tags.filter((tag, i) => i < 6);
+        this.portrait = this.tags.indexOf("portrait") > -1;
     },
     props: ['user', 'img', 'time', 'link', 'likes', 'tags'],
     methods: {
@@ -21,6 +23,7 @@ Vue.component('instagram-post', {
     template: `
         <li class="instagram-post">
             <a  v-bind:href="link" 
+                v-bind:data-portrait="portrait"
                 v-bind:style="{ backgroundImage: 'url('+img+')' }"  
                 v-bind:class="{ loaded: loaded }">
 

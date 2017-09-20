@@ -26246,6 +26246,7 @@
 	            loaded: false,
 	            timeString: null,
 	            datetime: null,
+	            portrait: false,
 	            filteredTags: []
 	        };
 	    },
@@ -26256,6 +26257,7 @@
 	        this.tagsFiltered = this.tags.filter(function (tag, i) {
 	            return i < 6;
 	        });
+	        this.portrait = this.tags.indexOf("portrait") > -1;
 	    },
 
 	    props: ['user', 'img', 'time', 'link', 'likes', 'tags'],
@@ -26264,7 +26266,7 @@
 	            this.loaded = true;
 	        }
 	    },
-	    template: "\n        <li class=\"instagram-post\">\n            <a  v-bind:href=\"link\" \n                v-bind:style=\"{ backgroundImage: 'url('+img+')' }\"  \n                v-bind:class=\"{ loaded: loaded }\">\n\n                <figure>\n                    <img v-on:load=\"loadImg\" v-bind:src=\"img\" alt=\"\">      \n                                \n                    <figcaption class=\"caption\">\n                        <span class=\"user\">@{{user}}</span>\n                        <span class=\"meta\">\n                            <time v-bind:datetime=\"datetime\">{{timeString}}</time> \n                            \u2014 \n                            \u2764{{likes}}\n                        </span>\n                        <div class=\"tags\" v-if=\"tagsFiltered\">\n                            <template v-for=\"tag of tagsFiltered\">\n                                <span class=\"tag\">#{{tag}}</span>&nbsp;\n                            </template> \n                        </div>\n                    </figcaption>\n                </figure>\n            </a>\n        </li>\n    "
+	    template: "\n        <li class=\"instagram-post\">\n            <a  v-bind:href=\"link\" \n                v-bind:data-portrait=\"portrait\"\n                v-bind:style=\"{ backgroundImage: 'url('+img+')' }\"  \n                v-bind:class=\"{ loaded: loaded }\">\n\n                <figure>\n                    <img v-on:load=\"loadImg\" v-bind:src=\"img\" alt=\"\">      \n                                \n                    <figcaption class=\"caption\">\n                        <span class=\"user\">@{{user}}</span>\n                        <span class=\"meta\">\n                            <time v-bind:datetime=\"datetime\">{{timeString}}</time> \n                            \u2014 \n                            \u2764{{likes}}\n                        </span>\n                        <div class=\"tags\" v-if=\"tagsFiltered\">\n                            <template v-for=\"tag of tagsFiltered\">\n                                <span class=\"tag\">#{{tag}}</span>&nbsp;\n                            </template> \n                        </div>\n                    </figcaption>\n                </figure>\n            </a>\n        </li>\n    "
 	});
 
 /***/ }),
