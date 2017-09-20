@@ -1,0 +1,77 @@
+
+$total-circle: 628.3185307179587;
+$total-line: 100;
+
+.logo svg {
+  margin: 0;
+  animation: rotate $logo-time both;
+  animation-delay: $logo-delay;
+}
+.logo circle {
+  stroke-dasharray: $total-circle;
+  animation: dash-circle $logo-time both;
+  animation-delay: $logo-delay;  
+} 
+
+.logo line {
+  stroke-dasharray: $total-line;
+  animation: dash-line $logo-time both;
+  animation-delay: $logo-delay;  
+} 
+
+
+@keyframes dash-circle {
+  0% {
+    stroke-dashoffset: $total-circle;
+  }
+  30% {
+    stroke-dashoffset: $total-circle * 1.5;
+  }
+  70% {
+    stroke-dashoffset: $total-circle * 1.5;
+  }
+  100% {
+    stroke-dashoffset: $total-circle * 3;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-90deg);
+  }
+  40% {
+    transform: rotate(-90deg);
+  }
+  60% {
+    transform: rotate(-180deg);
+  }
+  70% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes dash-line {
+  0% {
+    stroke-dashoffset: -$total-line;
+  }
+  50% {
+    stroke-dashoffset: -$total-line;
+  }
+  60% {
+    stroke-dashoffset: 0;
+  }
+  70% {
+    stroke-dashoffset: 0;
+  }
+  80% {
+    stroke-dashoffset: -$total-line;
+  }
+  100% {
+    stroke-dashoffset: -$total-line;
+  }
+}
