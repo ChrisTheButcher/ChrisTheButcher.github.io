@@ -54,8 +54,10 @@ body[data-main-menu-open="true"] {
     top: rem(25);
     right: rem(25);
     transform: translate(9px, -9px);    
-    animation: fade-in .6s both;
-    animation-delay: $logo-time + $logo-delay/3;
+    body.logo-animation {
+        animation: fade-in .6s both;
+        animation-delay: $logo-time + $logo-delay/3;    
+    }        
     @include bp($sm) {
         top: rem(50/2, 18);
         right: rem(50/2, 18);  

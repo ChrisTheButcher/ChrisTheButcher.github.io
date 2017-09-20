@@ -195,7 +195,15 @@ header {
             animation: logo .6s both;
     z-index: 90;
     -webkit-animation-delay: 4s;
-            animation-delay: 4s; }
+            animation-delay: 4s;
+    display: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none; }
+    body.intro header .logo {
+      display: block; }
   header:after {
     position: absolute;
     top: 0;
@@ -207,11 +215,12 @@ header {
     background: linear-gradient(#FFF568 0%, rgba(255, 245, 104, 0) 30%, rgba(255, 245, 104, 0) 70%, #FFF568 100%); }
   header .container {
     position: relative;
-    z-index: 2;
-    -webkit-animation: fade-in .6s both;
-            animation: fade-in .6s both;
-    -webkit-animation-delay: 4.33333s;
-            animation-delay: 4.33333s; }
+    z-index: 2; }
+    body.intro header .container {
+      -webkit-animation: fade-in .6s both;
+              animation: fade-in .6s both;
+      -webkit-animation-delay: 4.33333s;
+              animation-delay: 4.33333s; }
   header a {
     color: black; }
     header a:hover {
@@ -325,12 +334,13 @@ body[data-main-menu-open="true"] {
   right: 1.5625rem;
   -webkit-transform: translate(9px, -9px);
           transform: translate(9px, -9px);
-  -webkit-animation: fade-in .6s both;
-          animation: fade-in .6s both;
-  -webkit-animation-delay: 4.33333s;
-          animation-delay: 4.33333s;
   z-index: 130;
   font-size: 0; }
+  .main-menu .toggle body.logo-animation {
+    -webkit-animation: fade-in .6s both;
+            animation: fade-in .6s both;
+    -webkit-animation-delay: 4.33333s;
+            animation-delay: 4.33333s; }
   @media screen and (min-width: 576px) {
     .main-menu .toggle {
       top: 1.38889rem;

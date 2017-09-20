@@ -11,12 +11,18 @@ Vue.component('main-menu', {
     props: ['chapters'],    
     created() {
         const hash = location.hash;  
+        //const intro = !!sessionStorage.getItem('intro');        
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         const chapters = this.chapters.split(",");
         const parsedChapters = chapters.map(chapter => {
             const parsed = chapter.split(":");
             return { hook: parsed[0], title: parsed[1], hash: "#" + parsed[0] }
         })
+
+        //if (!intro) {
+            //sessionStorage.setItem("intro", true)
+            document.body.classList.add("intro")
+        //}
 
         document.body.setAttribute("data-is-mobile", isMobile);                
         this.parsedChapters = parsedChapters;

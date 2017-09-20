@@ -36,6 +36,13 @@ header {
         animation: logo .6s both;
         z-index: 90;
         animation-delay: $logo-time * 1;
+        display: none;
+        user-select: none;
+        pointer-events: none;
+
+        body.intro & {
+            display: block;
+        }
     }
 
     &:after {
@@ -47,8 +54,11 @@ header {
     .container {
         position: relative;
         z-index: 2;
-        animation: fade-in .6s both;
-        animation-delay: $logo-time + $logo-delay/3;
+
+        body.intro & {
+            animation: fade-in .6s both;
+            animation-delay: $logo-time + $logo-delay/3;
+        }
     }
 
     a {
