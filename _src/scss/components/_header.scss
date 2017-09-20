@@ -11,11 +11,13 @@ header {
     @keyframes logo {
         0% {
             transform: translate(50%, -50%) scale(1);
-            opacity: 1;            
+            opacity: 1;      
+            visibility: visible;      
         }
         100% {
             transform: translate(50%, -50%) scale(5.5);
-            opacity: 0;            
+            opacity: 0;   
+            visibility: hidden;         
         }
     }
 
