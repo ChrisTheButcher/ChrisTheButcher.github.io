@@ -340,7 +340,7 @@ body[data-main-menu-open="true"] {
           transform: translate(9px, -9px);
   z-index: 130;
   font-size: 0; }
-  .main-menu .toggle body.logo-animation {
+  .main-menu .toggle body.intro {
     -webkit-animation: fade-in .6s both;
             animation: fade-in .6s both;
     -webkit-animation-delay: 4.33333s;

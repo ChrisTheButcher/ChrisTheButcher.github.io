@@ -54,7 +54,7 @@ body[data-main-menu-open="true"] {
     top: rem(25);
     right: rem(25);
     transform: translate(9px, -9px);    
-    body.logo-animation {
+    body.intro {
         animation: fade-in .6s both;
         animation-delay: $logo-time + $logo-delay/3;    
     }        
