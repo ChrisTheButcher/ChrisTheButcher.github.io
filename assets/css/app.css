@@ -338,13 +338,12 @@ body[data-main-menu-open="true"] {
   right: 1.5625rem;
   -webkit-transform: translate(9px, -9px);
           transform: translate(9px, -9px);
+  -webkit-animation: fade-in .6s both;
+          animation: fade-in .6s both;
+  -webkit-animation-delay: 4.33333s;
+          animation-delay: 4.33333s;
   z-index: 130;
   font-size: 0; }
-  .main-menu .toggle body.intro {
-    -webkit-animation: fade-in .6s both;
-            animation: fade-in .6s both;
-    -webkit-animation-delay: 4.33333s;
-            animation-delay: 4.33333s; }
   @media screen and (min-width: 576px) {
     .main-menu .toggle {
       top: 1.38889rem;
