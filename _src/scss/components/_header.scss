@@ -56,6 +56,7 @@ header {
     .container {
         position: relative;
         z-index: 2;
+        opacity: 0;
 
         body.intro & {
             animation: fade-in .6s both;

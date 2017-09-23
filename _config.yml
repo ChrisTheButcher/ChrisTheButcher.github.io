@@ -31,7 +31,6 @@ url: http://www.chriswijnia.com
 twitter_username: christianwijnia
 github_username: christhebutcher
 markdown: kramdown
-include:
-- _pages
+exclude: ['gulpfile.js', 'ftp-config.js', 'Gemfile', 'Gemfile', 'package.json', 'node_modules', '_includes']
 plugins:
-- jekyll-feed
+  - jekyll-feed

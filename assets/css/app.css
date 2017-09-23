@@ -219,7 +219,8 @@ header {
     background: linear-gradient(#FFF568 0%, rgba(255, 245, 104, 0) 30%, rgba(255, 245, 104, 0) 70%, #FFF568 100%); }
   header .container {
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    opacity: 0; }
     body.intro header .container {
       -webkit-animation: fade-in .6s both;
               animation: fade-in .6s both;
